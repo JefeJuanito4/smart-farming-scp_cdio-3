@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "774197916467",
+    "project_id": "smart-farming-scp",
+    "storage_bucket": "smart-farming-scp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774197916467:android:7d47df77a9f23428be8446",
+        "android_client_info": {
+          "package_name": "com.cdio.smart_farming_scp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774197916467-dg8o9vrod2qv810anoapah7fm6eb9mh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9MSTmJL4re_ddalxXyToomwdQSDkeRgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774197916467-dg8o9vrod2qv810anoapah7fm6eb9mh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774197916467:android:2c96047022226e17be8446",
+        "android_client_info": {
+          "package_name": "com.example.loginscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774197916467-dg8o9vrod2qv810anoapah7fm6eb9mh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9MSTmJL4re_ddalxXyToomwdQSDkeRgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774197916467-dg8o9vrod2qv810anoapah7fm6eb9mh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

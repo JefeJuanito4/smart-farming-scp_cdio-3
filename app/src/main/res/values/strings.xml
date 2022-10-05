@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">smart-farming-scp</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="Ingresar">ingresar</string>
+    <string name="Registrarse">registrarse</string>
+    <string name="social">button_social</string>
+    <string name="correohome">Correo</string>
+    <string name="proveedor">Proveedor</string>
+    <string name="cerrar_session">Cerrar sesión</string>
+</resources>
