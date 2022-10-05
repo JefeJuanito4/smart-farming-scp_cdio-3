@@ -29,6 +29,7 @@ class HomeActivity : AppCompatActivity() {
         buttonOutSession.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
+            //posible error
         }
     }
 }
