@@ -1,6 +1,7 @@
 package com.cdio.smart_farming_scp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -21,6 +22,7 @@ class HomeActivity : AppCompatActivity() {
     lateinit var texto_correo:TextView
     lateinit var texto_provider:TextView
     lateinit var outSession: MenuItem
+    lateinit var  actividad_propiedades: MenuItem
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
         texto_correo=navView.getHeaderView(0).findViewById(R.id.texthome_correo)
         texto_provider=navView.getHeaderView(0).findViewById(R.id.texthome_provider)
         outSession=navView.menu.findItem(R.id.buttonOutSession)
+        actividad_propiedades=navView.menu.findItem(R.id.activid_Propiedad)
 
 
         //setup
@@ -40,6 +43,10 @@ class HomeActivity : AppCompatActivity() {
         val email: String? = bundle?.getString("email")
         val provider: String? = bundle?.getString("provider")
         setup(email ?: "", provider ?: "")
+
+
+
+
 
     }
 
@@ -56,7 +63,13 @@ class HomeActivity : AppCompatActivity() {
             //posible error
 
         }
+        actividad_propiedades.setOnMenuItemClickListener{
+            val homeIntent2 = Intent(this, PropiedadesActivity::class.java).apply {
 
+            }
+            startActivity(homeIntent2)
+            true
+        }
 
     }
 }

@@ -14,10 +14,12 @@
     <string name="calendario">Calendario</string>
     <string name="mensajes">Mensajes</string>
     <string name="ajustes">Ajustes</string>
-    <string name="login">Login</string>
+    <string name="login">Logout</string>
     <string name="compartir">Compartir</string>
     <string name="calificanos">calificanos</string>
     <string name="contactanos">contactanos</string>
     <string name="perfil">perfil</string>
+    <string name="inventario">Inventario</string>
+    <string name="datos_usuario">Datos Usuario</string>
 
 </resources>
