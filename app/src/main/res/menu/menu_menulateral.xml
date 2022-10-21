@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- … 6.1 creo un nuevo icono (el que queira) en drawable->new->vector asset … -->
+    <!-- … 6.1.2 ventanas relacionadas con el proyecto … -->
+
+    <item
+        android:id="@+id/activid_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/activid_Propiedad"
+        android:icon="@drawable/propiedades"
+        android:title="@string/propiedades"/>
+    <item
+        android:id="@+id/activid_Calendario"
+        android:icon="@drawable/calendario"
+        android:title="@string/calendario"/>
+    <item
+        android:id="@+id/activid_mensajes"
+        android:icon="@drawable/mensajes"
+        android:title="@string/mensajes"/>
+    <item
+        android:id="@+id/activid_ajustes"
+        android:icon="@drawable/ajustes"
+        android:title="@string/ajustes"/>
+
+    <!-- … 6.1.2 ventanas relacionadas con el usuario … -->
+    <item android:title="@string/perfil">
+
+        <menu>
+            <item
+                android:id="@+id/buttonOutSession"
+                android:icon="@drawable/login"
+                android:title="@string/login"/>
+        </menu>
+    </item>
+
+    <!-- … 6.1.3 ventanas relacionadas genrales de una app … -->
+    <item android:title="@string/contactanos">
+        <menu>
+            <item
+                android:id="@+id/activid_compartir"
+                android:icon="@drawable/compartir"
+                android:title="@string/compartir"/>
+            <item
+                android:id="@+id/activid_calificanos"
+                android:icon="@drawable/calificanoss"
+                android:title="@string/calificanos"/>
+        </menu>
+
+    </item>
+
+</menu>

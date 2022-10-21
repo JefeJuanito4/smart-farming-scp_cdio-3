@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- … 3.1 objeto de tipo LinearLayout … -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@color/white">
+
+    <!-- … 3.2 objeto en el cual va la imagen de la app…-->
+
+    <!-- de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"/>-->
+
+
+
+    <!-- … 3.3 Aqui va el nombre de la App … -->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/avat_user" />
+
+    <TextView
+        android:id="@+id/nombreApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Farming"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <!-- … 3.3 Aqui va el nombre de la empresa … -->
+    <TextView
+        android:id="@+id/texthome_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By SCP"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/texthome_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By SCP"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+    <!-- … 34 este es un cuadro estetico que ontiene lo hecho anterioemnte … -->
+    <!-- … 3.5 Aqui CREE mi propio color underLine, en el archivo values/colors.xml… -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/underLine"/>
+
+</LinearLayout>
