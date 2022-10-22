@@ -28,6 +28,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!-- … objeto de tipo navigation view … -->
     <com.google.android.material.navigation.NavigationView
