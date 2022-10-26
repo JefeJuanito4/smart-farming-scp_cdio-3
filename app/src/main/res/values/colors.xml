@@ -9,13 +9,9 @@
     <color name="gris">#303030</color>
     <color name="white">#FFFFFFFF</color>
     <color name="underLine">#FFEB3B</color>
-<<<<<<< Updated upstream
     <color name="red">#F44336</color>
     <color name="gray">#DCDBD9</color>
-=======
     <color name="verde">#4AEF1D</color>
     <color name="verdeclaro">#4FFF7B</color>
 
-
->>>>>>> Stashed changes
 </resources>

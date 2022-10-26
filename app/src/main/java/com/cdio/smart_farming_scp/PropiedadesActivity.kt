@@ -22,7 +22,6 @@ class PropiedadesActivity : AppCompatActivity() {
 
         val db = FirebaseFirestore.getInstance()
 
-        db.collection()
         botonPropiedad1.setOnClickListener {
             startActivity(Intent(this@PropiedadesActivity, ZonasP1Activity::class.java));
         }
@@ -58,10 +57,4 @@ class PropiedadesActivity : AppCompatActivity() {
         val nombre: String? = bundle?.getString("email")
         txtnombre.text = nombre.toString()
         }
-
-    private lateinit var database: DatabaseReference
-// ...
-    database = Firebase.database.reference
-
-
     }
