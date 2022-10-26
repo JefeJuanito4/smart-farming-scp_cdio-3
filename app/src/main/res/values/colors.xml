@@ -6,5 +6,16 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="gris">#303030</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="underLine">#FFEB3B</color>
+<<<<<<< Updated upstream
+    <color name="red">#F44336</color>
+    <color name="gray">#DCDBD9</color>
+=======
+    <color name="verde">#4AEF1D</color>
+    <color name="verdeclaro">#4FFF7B</color>
+
+
+>>>>>>> Stashed changes
 </resources>
