@@ -12,9 +12,9 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.encabezado_menulateral.*
 
-
-
-
+enum class ProviderType{
+    BASIC
+}
 
 class HomeActivity : AppCompatActivity() {
     // se crea la variable con el tipo de objeto que representa
