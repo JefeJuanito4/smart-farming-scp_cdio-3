@@ -42,7 +42,7 @@ class AuthActivity : AppCompatActivity() {
         button_login.setOnClickListener {
             if (editText_correo.text.isNotEmpty() && editText_contraseña.text.isNotEmpty()) {
 
-                FirebaseAuth.getInstance()
+                    FirebaseAuth.getInstance()
                     .signInWithEmailAndPassword(
                         editText_correo.text.toString(),
                         editText_contraseña.text.toString()
@@ -66,8 +66,6 @@ class AuthActivity : AppCompatActivity() {
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
-
-
     }
 
     private fun showHome(email: String, provider: ProviderType) {

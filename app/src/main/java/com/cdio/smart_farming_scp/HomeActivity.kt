@@ -74,6 +74,7 @@ class HomeActivity : AppCompatActivity() {
         }
         actividad_propiedades.setOnMenuItemClickListener{
             val homeIntent2 = Intent(this, PropiedadesActivity::class.java).apply {
+                putExtra("email", email )
             }
             startActivity(homeIntent2)
             true
