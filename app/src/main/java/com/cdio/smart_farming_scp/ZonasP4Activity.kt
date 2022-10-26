@@ -17,7 +17,7 @@ class ZonasP4Activity : AppCompatActivity() {
         setContentView(R.layout.activity_zonas_p4)
 
         botonZona41.setOnClickListener {
-            startActivity(Intent(this@ZonasP4Activity, zona41Activity::class.java));
+            startActivity(Intent(this@ZonasP4Activity, zonasActivity::class.java));
         }
 
         botonmasP4.setOnClickListener{
@@ -33,18 +33,5 @@ class ZonasP4Activity : AppCompatActivity() {
                 botonmasP4.visibility = View.VISIBLE
             }
         }
-
-        botonZona42.setOnClickListener{
-            startActivity(Intent(this@ZonasP4Activity,zona42Activity::class.java));
-        }
-
-        botonZona43.setOnClickListener{
-            startActivity(Intent(this@ZonasP4Activity,zona43Activity::class.java));
-        }
-
-        botonZona44.setOnClickListener{
-            startActivity(Intent(this@ZonasP4Activity,zona44Activity::class.java));
-        }
-
     }
 }
