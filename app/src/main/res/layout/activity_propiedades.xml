@@ -3,31 +3,126 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:visibility="visible">
 
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aqui va lo que hacer"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/botonPropiedad4"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:backgroundTint="#426897"
+        android:text="PROPIEDAD 4"
+        android:textSize="20sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/botonPropiedad3" />
 
+    <Button
+        android:id="@+id/botonPropiedad3"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:backgroundTint="#426897"
+        android:text="PROPIEDAD 3"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPropiedad2" />
 
-
+    <Button
+        android:id="@+id/botonPropiedad2"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:backgroundTint="#426897"
+        android:text="PROPIEDAD 2"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPropiedad1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="7dp" />
 
+    <TextView
+        android:id="@+id/txtDatosUsuario"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#30AA35"
+        android:text=" DATOS DEL USUARIO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatosUsuario"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/botonPropiedad1"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/button_rounded_border"
+        android:backgroundTint="#426897"
+        android:text="PROPIEDAD 1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonmas"
+        android:layout_width="86dp"
+        android:layout_height="76dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#9C27B0"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/add"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtpropietario"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:text="Propietario"
+        app:layout_constraintBottom_toTopOf="@+id/txtnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
