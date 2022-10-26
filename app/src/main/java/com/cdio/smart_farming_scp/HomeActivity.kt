@@ -19,6 +19,7 @@ enum class ProviderType{
 class HomeActivity : AppCompatActivity() {
     // se crea la variable con el tipo de objeto que representa
     //vamo a llorar
+    //este es el ultimo commit del dia
     lateinit var texto_correo:TextView
     lateinit var texto_provider:TextView
     lateinit var outSession: MenuItem
