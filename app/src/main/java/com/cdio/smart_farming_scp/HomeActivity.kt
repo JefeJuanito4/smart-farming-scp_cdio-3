@@ -12,14 +12,13 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.encabezado_menulateral.*
 
-
-
-
 enum class ProviderType{
     BASIC
 }
+
 class HomeActivity : AppCompatActivity() {
     // se crea la variable con el tipo de objeto que representa
+    //vamo a llorar
     lateinit var texto_correo:TextView
     lateinit var texto_provider:TextView
     lateinit var outSession: MenuItem
@@ -76,6 +75,7 @@ class HomeActivity : AppCompatActivity() {
         }
         actividad_propiedades.setOnMenuItemClickListener{
             val homeIntent2 = Intent(this, PropiedadesActivity::class.java).apply {
+                putExtra("email", email )
             }
             startActivity(homeIntent2)
             true
