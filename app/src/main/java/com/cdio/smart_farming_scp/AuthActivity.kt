@@ -71,6 +71,9 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun showHome(email: String, provider: ProviderType) {
+
+        val homeIntent = Intent(this, menuActivity::class.java).apply {
+            putExtra("email", email)
         val homeIntent = Intent(this, HomeActivity::class.java).apply {
             putExtra("email", email )
             putExtra("provider", provider.name)

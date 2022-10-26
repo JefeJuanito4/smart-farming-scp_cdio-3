@@ -15,9 +15,7 @@ import kotlinx.android.synthetic.main.encabezado_menulateral.*
 
 
 
-enum class ProviderType{
-    BASIC
-}
+
 class HomeActivity : AppCompatActivity() {
     // se crea la variable con el tipo de objeto que representa
     lateinit var texto_correo:TextView
