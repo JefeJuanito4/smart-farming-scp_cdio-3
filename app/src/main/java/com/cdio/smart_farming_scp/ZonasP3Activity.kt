@@ -20,96 +20,38 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.DatabaseReference
-import kotlinx.android.synthetic.main.activity_zonas_p2.*
 
 class ZonasP3Activity : AppCompatActivity() {
 
     var p3=0
-    var idz=0
 
     private val database = Firebase.database
     private var id_zona13 = database.getReference("USUARIO1/IDU1/IDZONAU13")
-    private var id_zonaU1 = database.getReference("ID/IDBOTONZONA")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zonas_p3)
+        botonZona31.visibility = View.VISIBLE
+        botonZona32.visibility = View.INVISIBLE
+        botonZona33.visibility = View.INVISIBLE
+        botonZona34.visibility = View.INVISIBLE
 
-        GlobalScope.launch {
-            var myID = id_zona13.get().await().value as Long
-            p3 = myID.toInt()
-
-            runOnUiThread {
+        botonmasP3.setOnClickListener{
+            when (p3){
+                0 -> botonZona32.visibility = View.VISIBLE
+                1 -> botonZona33.visibility = View.VISIBLE
+                2 -> botonZona34.visibility = View.VISIBLE
+            }
+            if (p3 == 3) {
+                botonmasP3.visibility = View.INVISIBLE
+            } else {
                 botonmasP3.visibility = View.VISIBLE
-                botonZona31.visibility = View.VISIBLE
-                botonZona32.visibility = View.INVISIBLE
-                botonZona33.visibility = View.INVISIBLE
-                botonZona34.visibility = View.INVISIBLE
-
-                if (p3 == 1) {
-                    botonmasP3.visibility = View.VISIBLE
-                    botonZona32.visibility = View.VISIBLE
-                    botonZona33.visibility = View.INVISIBLE
-                    botonZona34.visibility = View.INVISIBLE
-                } else {
-                    if (p3 == 2) {
-                        botonmasP3.visibility = View.VISIBLE
-                        botonZona32.visibility = View.VISIBLE
-                        botonZona33.visibility = View.VISIBLE
-                        botonZona34.visibility = View.INVISIBLE
-                    } else {
-                        if (p3 == 3) {
-                            botonmasP3.visibility = View.VISIBLE
-                            botonZona32.visibility = View.VISIBLE
-                            botonZona33.visibility = View.VISIBLE
-                            botonZona34.visibility = View.VISIBLE
-                        }
-                    }
-                }
-
-                botonmasP3.setOnClickListener {
-                    when (p3) {
-                        0 -> botonZona32.visibility = View.VISIBLE
-                        1 -> botonZona33.visibility = View.VISIBLE
-                        2 -> botonZona34.visibility = View.VISIBLE
-                    }
-                    if (p3 == 3) {
-                        botonmasP3.visibility = View.INVISIBLE
-                    } else {
-                        botonmasP3.visibility = View.VISIBLE
-                        p3++
-                        if (p3 == 3) {
-                            botonmasP3.visibility = View.INVISIBLE
-                        }
-                    }
-                    id_zona13.setValue(p3)
+                p3++
+                if (p3== 3) {
+                    botonmasP3.visibility = View.INVISIBLE
                 }
             }
+            id_zona13.setValue(p3)
         }
-
-        botonZona31.setOnClickListener {
-            idz = 1
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP3Activity, ZonasActivity::class.java))
-        }
-
-        botonZona32.setOnClickListener {
-            idz = 2
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP3Activity, ZonasActivity::class.java))
-        }
-
-        botonZona33.setOnClickListener {
-            idz = 3
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP3Activity, ZonasActivity::class.java))
-        }
-
-        botonZona34.setOnClickListener {
-            idz = 4
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP3Activity, ZonasActivity::class.java))
-        }
-
     }
 }
