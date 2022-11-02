@@ -102,7 +102,7 @@
         android:layout_height="76dp"
         android:background="@drawable/button_rounded"
         android:backgroundTint="#9C27B0"
-        android:tint="#000000"
+        android:tint="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
