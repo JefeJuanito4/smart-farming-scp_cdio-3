@@ -118,7 +118,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".zonasActivity"
+            android:name=".ZonasActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

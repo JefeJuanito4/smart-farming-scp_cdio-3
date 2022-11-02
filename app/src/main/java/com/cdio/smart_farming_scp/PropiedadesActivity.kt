@@ -1,30 +1,21 @@
 package com.cdio.smart_farming_scp
 
-import android.content.ContentValues.TAG
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.annotation.NonNull
-import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
-import com.google.firebase.database.ktx.getValue
-import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_propiedades.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.DatabaseReference
 
 class PropiedadesActivity : AppCompatActivity() {
 
     var id: Int= 0
 
     private val database = Firebase.database
-    private var id_propiedad = database.getReference("USUARIO1/IDU1/IDPROPIEDADU1")
+    private var id_propiedad1 = database.getReference("USUARIO1/IDU1/IDPROPIEDADU1")
     /**private val database = Firebase.database
     private val id_propiedad = database.getReference("IDPROPIEDAD")
     private lateinit var databaseref: DatabaseReference**/
@@ -101,7 +92,7 @@ class PropiedadesActivity : AppCompatActivity() {
                             botonmas.visibility = View.INVISIBLE
                         }
                     }
-                    id_propiedad.setValue(id)
+                    id_propiedad1.setValue(id)
                 }
                 }
             }
