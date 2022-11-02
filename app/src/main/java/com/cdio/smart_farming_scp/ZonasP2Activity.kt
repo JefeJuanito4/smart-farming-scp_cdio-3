@@ -1,18 +1,32 @@
 package com.cdio.smart_farming_scp
 
-import android.content.Intent
+import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_propiedades.*
-import kotlinx.android.synthetic.main.activity_zonas_p1.*
 import kotlinx.android.synthetic.main.activity_zonas_p2.*
+import androidx.appcompat.app.AppCompatActivity as AppCompatActivity1
+import android.util.Log
+import androidx.annotation.NonNull
+import com.google.firebase.database.*
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_propiedades.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.DatabaseReference
 
 class ZonasP2Activity : AppCompatActivity() {
 
     var p2=0
 
-    //private val db = FirebaseFirestore.getInstance()
+    private val database = Firebase.database
+    private var id_zona12 = database.getReference("USUARIO1/IDU1/IDZONAU12")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,12 +42,16 @@ class ZonasP2Activity : AppCompatActivity() {
                 1 -> botonZona23.visibility = View.VISIBLE
                 2 -> botonZona24.visibility = View.VISIBLE
             }
-            p2++
-            if(p2==3){
+            if (p2 == 3) {
                 botonmasP2.visibility = View.INVISIBLE
-            }else{
+            } else {
                 botonmasP2.visibility = View.VISIBLE
+                p2++
+                if (p2== 3) {
+                    botonmasP2.visibility = View.INVISIBLE
+                }
             }
+            id_zona12.setValue(p2)
         }
     }
 }
