@@ -9,38 +9,26 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_propiedades.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 
 class PropiedadesActivity : AppCompatActivity() {
 
-    var id: Int= 0
+    var id= 0
+    var idp=0
 
     private val database = Firebase.database
     private var id_propiedad1 = database.getReference("USUARIO1/IDU1/IDPROPIEDADU1")
-    /**private val database = Firebase.database
-    private val id_propiedad = database.getReference("IDPROPIEDAD")
-    private lateinit var databaseref: DatabaseReference**/
+    private var id_botonpropiedad = database.getReference("ID/IDBOTONPROPIEDAD")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_propiedades)
 
-        //databaseref = FirebaseDatabase.getInstance().getReference("IDPROPIEDAD")
-
         GlobalScope.launch {
-            //var myID = id_propiedad.get().await().value
-            //myID.
-            //id = myID
-
-            /**runOnUiThread {
-            botonmas.visibility = View.INVISIBLE
-            botonPropiedad2.visibility = View.VISIBLE
-            botonPropiedad3.visibility = View.VISIBLE
-            botonPropiedad4.visibility = View.VISIBLE
-            }**/
-
+            var myID = id_propiedad1.get().await().value as Long
+            id = myID.toInt()
 
             runOnUiThread {
-                /**
                 botonmas.visibility = View.VISIBLE
                 botonPropiedad2.visibility = View.INVISIBLE
                 botonPropiedad3.visibility = View.INVISIBLE
@@ -65,13 +53,9 @@ class PropiedadesActivity : AppCompatActivity() {
                             botonPropiedad4.visibility = View.VISIBLE
                         }
                     }
-                }**/
+                }
 
                 botonmas.setOnClickListener {
-                    /**if(id<3){
-                    id++
-                    }
-                    id_propiedad.setValue(id)**/
                     when (id) {
                         0 -> botonPropiedad2.visibility = View.VISIBLE
                         1 -> botonPropiedad3.visibility = View.VISIBLE
@@ -94,28 +78,36 @@ class PropiedadesActivity : AppCompatActivity() {
                     }
                     id_propiedad1.setValue(id)
                 }
-                }
             }
-
-            botonPropiedad1.setOnClickListener {
-                startActivity(Intent(this@PropiedadesActivity, ZonasP1Activity::class.java));
-            }
-
-            botonPropiedad2.setOnClickListener {
-                startActivity(Intent(this@PropiedadesActivity, ZonasP2Activity::class.java));
-            }
-
-            botonPropiedad3.setOnClickListener {
-                startActivity(Intent(this@PropiedadesActivity, ZonasP3Activity::class.java));
-            }
-
-            botonPropiedad4.setOnClickListener {
-                startActivity(Intent(this@PropiedadesActivity, ZonasP4Activity::class.java));
-            }
-
-            //Setup
-            val bundle: Bundle? = intent.extras
-            val nombre: String? = bundle?.getString("email")
-            txtnombre.text = nombre.toString()
         }
+
+        botonPropiedad1.setOnClickListener {
+            idp = 1;
+            id_botonpropiedad.setValue(idp)
+            startActivity(Intent(this@PropiedadesActivity, ZonasP1Activity::class.java));
+        }
+
+        botonPropiedad2.setOnClickListener {
+            idp = 2;
+            id_botonpropiedad.setValue(idp)
+            startActivity(Intent(this@PropiedadesActivity, ZonasP2Activity::class.java));
+        }
+
+        botonPropiedad3.setOnClickListener {
+            idp = 3;
+            id_botonpropiedad.setValue(idp)
+            startActivity(Intent(this@PropiedadesActivity, ZonasP3Activity::class.java));
+        }
+
+        botonPropiedad4.setOnClickListener {
+            idp = 4;
+            id_botonpropiedad.setValue(idp)
+            startActivity(Intent(this@PropiedadesActivity, ZonasP4Activity::class.java));
+        }
+
+        //Setup
+        val bundle: Bundle? = intent.extras
+        val nombre: String? = bundle?.getString("email")
+        txtnombre.text = nombre.toString()
     }
+}

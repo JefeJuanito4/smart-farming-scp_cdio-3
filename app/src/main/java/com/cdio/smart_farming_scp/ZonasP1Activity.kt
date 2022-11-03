@@ -13,9 +13,11 @@ import com.google.firebase.ktx.Firebase
 class ZonasP1Activity: AppCompatActivity1() {
 
     var p1=0
+    var idz=0
 
     private val database = Firebase.database
     private var id_zona11 = database.getReference("USUARIO1/IDU1/IDZONAU11")
+    private var id_zonaU1 = database.getReference("ID/IDBOTONZONA")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +26,6 @@ class ZonasP1Activity: AppCompatActivity1() {
         botonZona12.visibility = View.INVISIBLE
         botonZona13.visibility = View.INVISIBLE
         botonZona14.visibility = View.INVISIBLE
-
-        botonZona11.setOnClickListener {
-        startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java));
-        }
 
         botonmasP1.setOnClickListener{
             when (p1){
@@ -45,6 +43,30 @@ class ZonasP1Activity: AppCompatActivity1() {
                 }
             }
             id_zona11.setValue(p1)
+        }
+
+        botonZona11.setOnClickListener {
+            idz = 1;
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
+        }
+
+        botonZona12.setOnClickListener {
+            idz = 2
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
+        }
+
+        botonZona13.setOnClickListener {
+            idz = 3
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
+        }
+
+        botonZona14.setOnClickListener {
+            idz = 4
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
         }
     }
 }
