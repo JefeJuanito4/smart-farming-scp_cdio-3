@@ -44,5 +44,12 @@
     <string name="informe">Informe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Cantidad" />
+    <string name="Cantidadp">cantidad</string>
+    <string name="CantidadEmbolsados">Cantidad</string>
+    <string name="CantidadCultivados">Cantidad</string>
+    <string name="GuardarInfo">GUARDAR</string>
+    <string name="platanosEmbolsados">PLATANOS EMBOLSADOS</string>
+    <string name="platanosCultivados">PLATANOS CULTIVADOS</string>
 
 </resources>

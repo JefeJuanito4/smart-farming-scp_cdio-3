@@ -16,8 +16,7 @@ import android.view.View
 
 class ZonasActivity : AppCompatActivity() {
 
-    EditText editTxtEmbolsados
-    Button sa
+
 
     var idprop=0
     var idzona=0

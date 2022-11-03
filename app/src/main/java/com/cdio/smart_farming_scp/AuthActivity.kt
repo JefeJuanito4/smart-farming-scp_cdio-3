@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
 
-    private val database = Firebase.database
-    private val id_ = database.getReference("USUARIOS")
+    //private val database = Firebase.database
+    //private val id_ = database.getReference("USUARIOS")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,19 +21,14 @@ class AuthActivity : AppCompatActivity() {
 
         //Setup
         setup()
-
-
     }
 
     private fun setup() {
         title = "Autenticación"
         registerButt.setOnClickListener {
             if (editText_correo.text.isNotEmpty() && editText_contraseña.text.isNotEmpty()) {
-
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-                        editText_correo.text.toString(),
-                        editText_contraseña.text.toString()
-
+                        editText_correo.text.toString(), editText_contraseña.text.toString()
                     ).addOnCompleteListener {
                         if (it.isSuccessful) {
                             showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
@@ -42,15 +37,12 @@ class AuthActivity : AppCompatActivity() {
                         }
                     }
             }
-
         }
 
         button_login.setOnClickListener {
             if (editText_correo.text.isNotEmpty() && editText_contraseña.text.isNotEmpty()) {
-
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(
-                        editText_correo.text.toString(),
-                        editText_contraseña.text.toString()
+                        editText_correo.text.toString(),editText_contraseña.text.toString()
                     ).addOnCompleteListener {
                         if (it.isSuccessful) {
                             showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
@@ -59,10 +51,8 @@ class AuthActivity : AppCompatActivity() {
                         }
                     }
             }
-
         }
     }
-
 
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
@@ -80,6 +70,4 @@ class AuthActivity : AppCompatActivity() {
         }
         startActivity(homeIntent)
     }
-
-
 }
