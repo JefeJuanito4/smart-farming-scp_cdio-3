@@ -16,8 +16,6 @@ import android.view.View
 
 class ZonasActivity : AppCompatActivity() {
 
-
-
     var idprop=0
     var idzona=0
 
@@ -79,26 +77,26 @@ class ZonasActivity : AppCompatActivity() {
                     if(idprop==1){
                         if(idzona==1){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados111.setValue(editTxtEmbolsados)
-                                cultivados111.setValue(editTxtCultivados)
+                                embolsados111.setValue(editTxtEmbolsados.text.toString())
+                                cultivados111.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==2){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados112.setValue(editTxtEmbolsados)
-                                cultivados112.setValue(editTxtCultivados)
+                                embolsados112.setValue(editTxtEmbolsados.text.toString())
+                                cultivados112.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==3){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados113.setValue(editTxtEmbolsados)
-                                cultivados113.setValue(editTxtCultivados)
+                                embolsados113.setValue(editTxtEmbolsados.text.toString())
+                                cultivados113.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==4){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados114.setValue(editTxtEmbolsados)
-                                cultivados114.setValue(editTxtCultivados)
+                                embolsados114.setValue(editTxtEmbolsados.text.toString())
+                                cultivados114.setValue(editTxtCultivados.text.toString())
                             }
                         }
                     }
@@ -106,26 +104,26 @@ class ZonasActivity : AppCompatActivity() {
                     if(idprop==2){
                         if(idzona==1){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados121.setValue(editTxtEmbolsados)
-                                cultivados121.setValue(editTxtCultivados)
+                                embolsados121.setValue(editTxtEmbolsados.text.toString())
+                                cultivados121.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==2){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados122.setValue(editTxtEmbolsados)
-                                cultivados122.setValue(editTxtCultivados)
+                                embolsados122.setValue(editTxtEmbolsados.text.toString())
+                                cultivados122.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==3){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados123.setValue(editTxtEmbolsados)
-                                cultivados123.setValue(editTxtCultivados)
+                                embolsados123.setValue(editTxtEmbolsados.text.toString())
+                                cultivados123.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==4){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados124.setValue(editTxtEmbolsados)
-                                cultivados124.setValue(editTxtCultivados)
+                                embolsados124.setValue(editTxtEmbolsados.text.toString())
+                                cultivados124.setValue(editTxtCultivados.text.toString())
                             }
                         }
                     }
@@ -133,26 +131,26 @@ class ZonasActivity : AppCompatActivity() {
                     if(idprop==3){
                         if(idzona==1){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados131.setValue(editTxtEmbolsados)
-                                cultivados131.setValue(editTxtCultivados)
+                                embolsados131.setValue(editTxtEmbolsados.text.toString())
+                                cultivados131.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==2){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados132.setValue(editTxtEmbolsados)
-                                cultivados132.setValue(editTxtCultivados)
+                                embolsados132.setValue(editTxtEmbolsados.text.toString())
+                                cultivados132.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==3){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados133.setValue(editTxtEmbolsados)
-                                cultivados133.setValue(editTxtCultivados)
+                                embolsados133.setValue(editTxtEmbolsados.text.toString())
+                                cultivados133.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==4){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados134.setValue(editTxtEmbolsados)
-                                cultivados134.setValue(editTxtCultivados)
+                                embolsados134.setValue(editTxtEmbolsados.text.toString())
+                                cultivados134.setValue(editTxtCultivados.text.toString())
                             }
                         }
                     }
@@ -160,26 +158,26 @@ class ZonasActivity : AppCompatActivity() {
                     if(idprop==4){
                         if(idzona==1){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados141.setValue(editTxtEmbolsados)
-                                cultivados141.setValue(editTxtCultivados)
+                                embolsados141.setValue(editTxtEmbolsados.text.toString())
+                                cultivados141.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==2){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados142.setValue(editTxtEmbolsados)
-                                cultivados142.setValue(editTxtCultivados)
+                                embolsados142.setValue(editTxtEmbolsados.text.toString())
+                                cultivados142.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==3){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados143.setValue(editTxtEmbolsados)
-                                cultivados143.setValue(editTxtCultivados)
+                                embolsados143.setValue(editTxtEmbolsados.text.toString())
+                                cultivados143.setValue(editTxtCultivados.text.toString())
                             }
                         }
                         if(idzona==4){
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                                embolsados144.setValue(editTxtEmbolsados)
-                                cultivados144.setValue(editTxtCultivados)
+                                embolsados144.setValue(editTxtEmbolsados.text.toString())
+                                cultivados144.setValue(editTxtCultivados.text.toString())
                             }
                         }
                     }
