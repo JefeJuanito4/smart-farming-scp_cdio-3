@@ -34,27 +34,57 @@ class ZonasP2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zonas_p2)
-        botonZona21.visibility = View.VISIBLE
-        botonZona22.visibility = View.INVISIBLE
-        botonZona23.visibility = View.INVISIBLE
-        botonZona24.visibility = View.INVISIBLE
 
-        botonmasP2.setOnClickListener{
-            when (p2){
-                0 -> botonZona22.visibility = View.VISIBLE
-                1 -> botonZona23.visibility = View.VISIBLE
-                2 -> botonZona24.visibility = View.VISIBLE
-            }
-            if (p2 == 3) {
-                botonmasP2.visibility = View.INVISIBLE
-            } else {
+        GlobalScope.launch {
+            var myID = id_zona12.get().await().value as Long
+            p2 = myID.toInt()
+
+            runOnUiThread {
                 botonmasP2.visibility = View.VISIBLE
-                p2++
-                if (p2== 3) {
-                    botonmasP2.visibility = View.INVISIBLE
+                botonZona21.visibility = View.VISIBLE
+                botonZona22.visibility = View.INVISIBLE
+                botonZona23.visibility = View.INVISIBLE
+                botonZona24.visibility = View.INVISIBLE
+
+                if (p2 == 1) {
+                    botonmasP2.visibility = View.VISIBLE
+                    botonZona22.visibility = View.VISIBLE
+                    botonZona23.visibility = View.INVISIBLE
+                    botonZona24.visibility = View.INVISIBLE
+                } else {
+                    if (p2 == 2) {
+                        botonmasP2.visibility = View.VISIBLE
+                        botonZona22.visibility = View.VISIBLE
+                        botonZona23.visibility = View.VISIBLE
+                        botonZona24.visibility = View.INVISIBLE
+                    } else {
+                        if (p2 == 3) {
+                            botonmasP2.visibility = View.VISIBLE
+                            botonZona22.visibility = View.VISIBLE
+                            botonZona23.visibility = View.VISIBLE
+                            botonZona24.visibility = View.VISIBLE
+                        }
+                    }
+                }
+
+                botonmasP2.setOnClickListener {
+                    when (p2) {
+                        0 -> botonZona22.visibility = View.VISIBLE
+                        1 -> botonZona23.visibility = View.VISIBLE
+                        2 -> botonZona24.visibility = View.VISIBLE
+                    }
+                    if (p2 == 3) {
+                        botonmasP2.visibility = View.INVISIBLE
+                    } else {
+                        botonmasP2.visibility = View.VISIBLE
+                        p2++
+                        if (p2 == 3) {
+                            botonmasP2.visibility = View.INVISIBLE
+                        }
+                    }
+                    id_zona12.setValue(p2)
                 }
             }
-            id_zona12.setValue(p2)
         }
 
         botonZona21.setOnClickListener {
