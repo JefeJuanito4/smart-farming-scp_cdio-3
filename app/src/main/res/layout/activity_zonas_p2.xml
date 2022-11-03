@@ -77,14 +77,15 @@
         android:layout_width="86dp"
         android:layout_height="76dp"
         android:background="@drawable/button_rounded"
-        android:backgroundTint="#9C27B0"
-        android:tint="#000000"
+        android:backgroundTint="#34A515"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        app:srcCompat="@drawable/button_rounded"
-        tools:srcCompat="@drawable/add" />
+        app:srcCompat="@drawable/add"
+        tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
