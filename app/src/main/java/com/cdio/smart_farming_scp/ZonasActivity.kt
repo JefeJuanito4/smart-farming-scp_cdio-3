@@ -10,8 +10,14 @@ import kotlinx.android.synthetic.main.activity_zonas.view.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
+import android.widget.EditText
+import android.widget.Toast
+import android.view.View
 
 class ZonasActivity : AppCompatActivity() {
+
+    EditText editTxtEmbolsados
+    Button sa
 
     var idprop=0
     var idzona=0
@@ -68,15 +74,118 @@ class ZonasActivity : AppCompatActivity() {
             idprop = dbIDprop.toInt()
             idzona = dbIDzona.toInt()
 
-            runOnUiThread {
+            //runOnUiThread {
                 botonGuardarZonas.setOnClickListener {
+                    // propiedad 1
                     if(idprop==1){
-                        if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
-                            editTxtEmbolsados.text.
+                        if(idzona==1){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados111.setValue(editTxtEmbolsados)
+                                cultivados111.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==2){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados112.setValue(editTxtEmbolsados)
+                                cultivados112.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==3){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados113.setValue(editTxtEmbolsados)
+                                cultivados113.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==4){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados114.setValue(editTxtEmbolsados)
+                                cultivados114.setValue(editTxtCultivados)
+                            }
+                        }
+                    }
+                    // propiedad 2
+                    if(idprop==2){
+                        if(idzona==1){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados121.setValue(editTxtEmbolsados)
+                                cultivados121.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==2){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados122.setValue(editTxtEmbolsados)
+                                cultivados122.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==3){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados123.setValue(editTxtEmbolsados)
+                                cultivados123.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==4){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados124.setValue(editTxtEmbolsados)
+                                cultivados124.setValue(editTxtCultivados)
+                            }
+                        }
+                    }
+                    //propiedad 3
+                    if(idprop==3){
+                        if(idzona==1){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados131.setValue(editTxtEmbolsados)
+                                cultivados131.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==2){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados132.setValue(editTxtEmbolsados)
+                                cultivados132.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==3){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados133.setValue(editTxtEmbolsados)
+                                cultivados133.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==4){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados134.setValue(editTxtEmbolsados)
+                                cultivados134.setValue(editTxtCultivados)
+                            }
+                        }
+                    }
+                    // propiedad 4
+                    if(idprop==4){
+                        if(idzona==1){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados141.setValue(editTxtEmbolsados)
+                                cultivados141.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==2){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados142.setValue(editTxtEmbolsados)
+                                cultivados142.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==3){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados143.setValue(editTxtEmbolsados)
+                                cultivados143.setValue(editTxtCultivados)
+                            }
+                        }
+                        if(idzona==4){
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                                embolsados144.setValue(editTxtEmbolsados)
+                                cultivados144.setValue(editTxtCultivados)
+                            }
                         }
                     }
                 }
-            }
+            //}
         }
     }
 }
