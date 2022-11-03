@@ -110,5 +110,29 @@ class ZonasP2Activity : AppCompatActivity() {
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
         }
+
+        botonZona21.setOnClickListener {
+            idz = 1;
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona22.setOnClickListener {
+            idz = 2
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona23.setOnClickListener {
+            idz = 3
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona24.setOnClickListener {
+            idz = 4
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
     }
 }
