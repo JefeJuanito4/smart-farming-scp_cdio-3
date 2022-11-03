@@ -20,13 +20,16 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.DatabaseReference
+import kotlinx.android.synthetic.main.activity_zonas_p1.*
 
 class ZonasP2Activity : AppCompatActivity() {
 
     var p2=0
+    var idz=0
 
     private val database = Firebase.database
     private var id_zona12 = database.getReference("USUARIO1/IDU1/IDZONAU12")
+    private var id_zonaU1 = database.getReference("ID/IDBOTONZONA")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +55,30 @@ class ZonasP2Activity : AppCompatActivity() {
                 }
             }
             id_zona12.setValue(p2)
+        }
+
+        botonZona21.setOnClickListener {
+            idz = 1;
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona22.setOnClickListener {
+            idz = 2
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona23.setOnClickListener {
+            idz = 3
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
+        }
+
+        botonZona24.setOnClickListener {
+            idz = 4
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
         }
     }
 }

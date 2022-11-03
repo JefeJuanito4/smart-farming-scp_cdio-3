@@ -6,11 +6,17 @@ import android.os.Bundle
 import android.view.View
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_zonas_p3.*
 import kotlinx.android.synthetic.main.activity_zonas_p4.*
 
 class ZonasP4Activity : AppCompatActivity() {
 
     var p4=0
+    var idz=0
+
+    private val database = Firebase.database
+    private var id_zona14 = database.getReference("USUARIO1/IDU1/IDZONAU14")
+    private var id_zonaU1 = database.getReference("USUARIO1/IDU1/ID/IDBOTONZONA")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,13 +25,6 @@ class ZonasP4Activity : AppCompatActivity() {
         botonZona42.visibility = View.INVISIBLE
         botonZona43.visibility = View.INVISIBLE
         botonZona44.visibility = View.INVISIBLE
-
-        val database = Firebase.database
-        var id_zona14 = database.getReference("USUARIO1/IDU1/IDZONAU14")
-
-        botonZona41.setOnClickListener {
-            startActivity(Intent(this@ZonasP4Activity, ZonasActivity::class.java));
-        }
 
         botonmasP4.setOnClickListener{
             when (p4){
@@ -43,6 +42,30 @@ class ZonasP4Activity : AppCompatActivity() {
                 }
             }
             id_zona14.setValue(p4)
+        }
+
+        botonZona41.setOnClickListener {
+            idz = 1
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP4Activity, ZonasActivity::class.java))
+        }
+
+        botonZona42.setOnClickListener {
+            idz = 2
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP4Activity, ZonasActivity::class.java))
+        }
+
+        botonZona43.setOnClickListener {
+            idz = 3
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP4Activity, ZonasActivity::class.java))
+        }
+
+        botonZona44.setOnClickListener {
+            idz = 4
+            id_zonaU1.setValue(idz)
+            startActivity(Intent(this@ZonasP4Activity, ZonasActivity::class.java))
         }
     }
 }

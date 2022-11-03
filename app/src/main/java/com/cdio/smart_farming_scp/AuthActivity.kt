@@ -30,8 +30,7 @@ class AuthActivity : AppCompatActivity() {
         registerButt.setOnClickListener {
             if (editText_correo.text.isNotEmpty() && editText_contraseña.text.isNotEmpty()) {
 
-                FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(
+                FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                         editText_correo.text.toString(),
                         editText_contraseña.text.toString()
 
@@ -49,8 +48,7 @@ class AuthActivity : AppCompatActivity() {
         button_login.setOnClickListener {
             if (editText_correo.text.isNotEmpty() && editText_contraseña.text.isNotEmpty()) {
 
-                    FirebaseAuth.getInstance()
-                    .signInWithEmailAndPassword(
+                    FirebaseAuth.getInstance().signInWithEmailAndPassword(
                         editText_correo.text.toString(),
                         editText_contraseña.text.toString()
                     ).addOnCompleteListener {
