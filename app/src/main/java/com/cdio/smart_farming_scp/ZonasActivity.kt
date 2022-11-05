@@ -131,7 +131,7 @@ class ZonasActivity : AppCompatActivity() {
                     // propiedad 1
                     if(idprop==1){
                         if(idzona==1){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados111.setValue(editTxtEmbolsados.text.toString())
                                 cultivados111.setValue(editTxtCultivados.text.toString())
                                 dia111.setValue(editTxtDia.text.toString())
@@ -140,7 +140,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==2){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados112.setValue(editTxtEmbolsados.text.toString())
                                 cultivados112.setValue(editTxtCultivados.text.toString())
                                 dia112.setValue(editTxtDia.text.toString())
@@ -149,7 +149,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==3){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados113.setValue(editTxtEmbolsados.text.toString())
                                 cultivados113.setValue(editTxtCultivados.text.toString())
                                 dia113.setValue(editTxtDia.text.toString())
@@ -158,7 +158,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==4){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados114.setValue(editTxtEmbolsados.text.toString())
                                 cultivados114.setValue(editTxtCultivados.text.toString())
                                 dia114.setValue(editTxtDia.text.toString())
@@ -170,7 +170,7 @@ class ZonasActivity : AppCompatActivity() {
                     // propiedad 2
                     if(idprop==2){
                         if(idzona==1){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados121.setValue(editTxtEmbolsados.text.toString())
                                 cultivados121.setValue(editTxtCultivados.text.toString())
                                 dia121.setValue(editTxtDia.text.toString())
@@ -179,7 +179,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==2){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados122.setValue(editTxtEmbolsados.text.toString())
                                 cultivados122.setValue(editTxtCultivados.text.toString())
                                 dia122.setValue(editTxtDia.text.toString())
@@ -188,7 +188,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==3){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados123.setValue(editTxtEmbolsados.text.toString())
                                 cultivados123.setValue(editTxtCultivados.text.toString())
                                 dia123.setValue(editTxtDia.text.toString())
@@ -197,7 +197,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==4){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados124.setValue(editTxtEmbolsados.text.toString())
                                 cultivados124.setValue(editTxtCultivados.text.toString())
                                 dia124.setValue(editTxtDia.text.toString())
@@ -209,7 +209,7 @@ class ZonasActivity : AppCompatActivity() {
                     //propiedad 3
                     if(idprop==3){
                         if(idzona==1){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados131.setValue(editTxtEmbolsados.text.toString())
                                 cultivados131.setValue(editTxtCultivados.text.toString())
                                 dia131.setValue(editTxtDia.text.toString())
@@ -218,7 +218,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==2){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados132.setValue(editTxtEmbolsados.text.toString())
                                 cultivados132.setValue(editTxtCultivados.text.toString())
                                 dia132.setValue(editTxtDia.text.toString())
@@ -227,7 +227,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==3){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados133.setValue(editTxtEmbolsados.text.toString())
                                 cultivados133.setValue(editTxtCultivados.text.toString())
                                 dia133.setValue(editTxtDia.text.toString())
@@ -236,7 +236,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==4){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados134.setValue(editTxtEmbolsados.text.toString())
                                 cultivados134.setValue(editTxtCultivados.text.toString())
                                 dia134.setValue(editTxtDia.text.toString())
@@ -248,7 +248,7 @@ class ZonasActivity : AppCompatActivity() {
                     // propiedad 4
                     if(idprop==4){
                         if(idzona==1){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados141.setValue(editTxtEmbolsados.text.toString())
                                 cultivados141.setValue(editTxtCultivados.text.toString())
                                 dia141.setValue(editTxtDia.text.toString())
@@ -257,7 +257,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==2){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados142.setValue(editTxtEmbolsados.text.toString())
                                 cultivados142.setValue(editTxtCultivados.text.toString())
                                 dia142.setValue(editTxtDia.text.toString())
@@ -266,7 +266,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==3){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados143.setValue(editTxtEmbolsados.text.toString())
                                 cultivados143.setValue(editTxtCultivados.text.toString())
                                 dia143.setValue(editTxtDia.text.toString())
@@ -275,7 +275,7 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                         if(idzona==4){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty()) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                 embolsados144.setValue(editTxtEmbolsados.text.toString())
                                 cultivados144.setValue(editTxtCultivados.text.toString())
                                 dia144.setValue(editTxtDia.text.toString())
