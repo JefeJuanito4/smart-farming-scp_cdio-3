@@ -1,5 +1,6 @@
 package com.cdio.smart_farming_scp
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.database.ktx.database
@@ -13,6 +14,7 @@ import kotlinx.coroutines.tasks.await
 import android.widget.EditText
 import android.widget.Toast
 import android.view.View
+import kotlinx.android.synthetic.main.activity_propiedades.*
 
 class ZonasActivity : AppCompatActivity() {
 
@@ -28,156 +30,235 @@ class ZonasActivity : AppCompatActivity() {
                     // propiedad 1
 
     // CONTADORES FECHAS
-    private var contfecha111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/CONTFECHA111")
-    private var contfecha112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/CONTFECHA112")
-    private var contfecha113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/CONTFECHA113")
-    private var contfecha114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/CONTFECHA114")
+    private var contcultivados111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/CONTCULTIVADOS111")
+    private var contembolsados111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/CONTEMBOLSADOS111")
+    private var contcultivados112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/CONTCULTIVADOS112")
+    private var contembolsados112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/CONTEMBOLSADOS112")
+    private var contcultivados113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/CONTCULTIVADOS113")
+    private var contembolsados113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/CONTEMBOLSADOS113")
+    private var contcultivados114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/CONTCULTIVADOS114")
+    private var contembolsados114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/CONTEMBOLSADOS114")
     // FECHA 1
     private var cultivados1111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/CULTIVADOS1111")
+    private var dia1111cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/dia1111cult")
+    private var mes1111cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/mes1111cult")
+    private var año1111cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/año1111cult")
     private var embolsados1111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/EMBOLSADOS1111")
     private var dia1111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/dia1111")
     private var mes1111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/mes1111")
     private var año1111 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/año1111")
 
     private var cultivados1121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/CULTIVADOS1121")
+    private var dia1121cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/dia1121cult")
+    private var mes1121cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/mes1121cult")
+    private var año1121cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/año1121cult")
     private var embolsados1121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/EMBOLSADOS1121")
     private var dia1121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/dia1121")
     private var mes1121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/mes1121")
     private var año1121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1121/año1121")
 
     private var cultivados1131 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/CULTIVADOS1131")
+    private var dia1131cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/dia1131cult")
+    private var mes1131cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/mes1131cult")
+    private var año1131cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/año1131cult")
     private var embolsados1131 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/EMBOLSADOS1131")
     private var dia1131 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/dia1131")
     private var mes1131 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/mes1131")
     private var año1131 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1131/año1131")
 
     private var cultivados1141 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/CULTIVADOS1141")
+    private var dia1141cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/dia1141cult")
+    private var mes1141cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/mes1141cult")
+    private var año1141cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/año1141cult")
     private var embolsados1141 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/EMBOLSADOS1141")
     private var dia1141 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/dia1141")
     private var mes1141 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/mes1141")
     private var año1141 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1141/año1141")
     // FECHA 2
     private var cultivados1112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/CULTIVADOS1112")
+    private var dia1112cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/dia1112cult")
+    private var mes1112cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/mes1112cult")
+    private var año1112cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/año1112cult")
     private var embolsados1112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/EMBOLSADOS1112")
     private var dia1112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/dia1112")
     private var mes1112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/mes1112")
     private var año1112 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1112/año1112")
 
     private var cultivados1122 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/CULTIVADOS1122")
+    private var dia1122cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/dia1122cult")
+    private var mes1122cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/mes1122cult")
+    private var año1122cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/año1122cult")
     private var embolsados1122 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/EMBOLSADOS1122")
     private var dia1122 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/dia1122")
     private var mes1122 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/mes1122")
     private var año1122 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1122/año1122")
 
     private var cultivados1132 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/CULTIVADOS1132")
+    private var dia1132cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/dia1132cult")
+    private var mes1132cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/mes1132cult")
+    private var año1132cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/año1132cult")
     private var embolsados1132 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/EMBOLSADOS1132")
     private var dia1132 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/dia1132")
     private var mes1132 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/mes1132")
     private var año1132 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1132/año1132")
 
     private var cultivados1142 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/CULTIVADOS1142")
+    private var dia1142cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/dia1142cult")
+    private var mes1142cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/mes1142cult")
+    private var año1142cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/año1142cult")
     private var embolsados1142 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/EMBOLSADOS1142")
     private var dia1142 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/dia1142")
     private var mes1142 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/mes1142")
     private var año1142 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1142/año1142")
     // FECHA 3
     private var cultivados1113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/CULTIVADOS1113")
+    private var dia1113cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/dia1113cult")
+    private var mes1113cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/mes1113cult")
+    private var año1113cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/año1113cult")
     private var embolsados1113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/EMBOLSADOS1113")
     private var dia1113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/dia1113")
     private var mes1113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/mes1113")
     private var año1113 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1113/año1113")
 
     private var cultivados1123 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/CULTIVADOS1123")
+    private var dia1123cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/dia1123cult")
+    private var mes1123cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/mes1123cult")
+    private var año1123cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/año1123cult")
     private var embolsados1123 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/EMBOLSADOS1123")
     private var dia1123 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/dia1123")
     private var mes1123 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/mes1123")
     private var año1123 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1123/año1123")
 
     private var cultivados1133 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/CULTIVADOS1133")
+    private var dia1133cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/dia1133cult")
+    private var mes1133cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/mes1133cult")
+    private var año1133cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/año1133cult")
     private var embolsados1133 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/EMBOLSADOS1133")
     private var dia1133 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/dia1133")
     private var mes1133 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/mes1133")
     private var año1133 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1133/año1133")
 
     private var cultivados1143 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/CULTIVADOS1143")
+    private var dia1143cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/dia1143cult")
+    private var mes1143cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/mes1143cult")
+    private var año1143cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/año1143cult")
     private var embolsados1143 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/EMBOLSADOS1143")
     private var dia1143 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/dia1143")
     private var mes1143 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/mes1143")
     private var año1143 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1143/año1143")
     // FECHA 4
     private var cultivados1114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/CULTIVADOS1114")
+    private var dia1114cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/dia1114cult")
+    private var mes1114cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/mes1114cult")
+    private var año1114cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/año1114cult")
     private var embolsados1114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/EMBOLSADOS1114")
     private var dia1114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/dia1114")
     private var mes1114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/mes1114")
     private var año1114 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1114/año1114")
 
     private var cultivados1124 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/CULTIVADOS1124")
+    private var dia1124cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/dia1124cult")
+    private var mes1124cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/mes1124cult")
+    private var año1124cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/año1124cult")
     private var embolsados1124 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/EMBOLSADOS1124")
     private var dia1124 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/dia1124")
     private var mes1124 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/mes1124")
     private var año1124 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1124/año1124")
 
     private var cultivados1134 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/CULTIVADOS1134")
+    private var dia1134cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/dia1134cult")
+    private var mes1134cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/mes1134cult")
+    private var año1134cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/año1134cult")
     private var embolsados1134 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/EMBOLSADOS1134")
     private var dia1134 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/dia1134")
     private var mes1134 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/mes1134")
     private var año1134 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/año1134")
 
     private var cultivados1144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/CULTIVADOS1144")
+    private var dia1144cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/dia1144cult")
+    private var mes1144cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/mes1144cult")
+    private var año1144cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/año1144cult")
     private var embolsados1144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/EMBOLSADOS1144")
     private var dia1144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/dia1144")
     private var mes1144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/mes1144")
     private var año1144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1144/año1144")
     // FECHA 5
     private var cultivados1115 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/CULTIVADOS1115")
+    private var dia1115cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/dia1115cult")
+    private var mes1115cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/mes1115cult")
+    private var año1115cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/año1115cult")
     private var embolsados1115 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/EMBOLSADOS1115")
     private var dia1115 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/dia1115")
     private var mes1115 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/mes1115")
     private var año1115 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1115/año1115")
 
     private var cultivados1125 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/CULTIVADOS1125")
+    private var dia1125cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/dia1125cult")
+    private var mes1125cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/mes1125cult")
+    private var año1125cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/año1125cult")
     private var embolsados1125 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/EMBOLSADOS1125")
     private var dia1125 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/dia1125")
     private var mes1125 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/mes1125")
     private var año1125 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/año1125")
 
     private var cultivados1135 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/CULTIVADOS1135")
+    private var dia1135cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/dia1135cult")
+    private var mes1135cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/mes1135cult")
+    private var año1135cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/año1135cult")
     private var embolsados1135 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/EMBOLSADOS1135")
     private var dia1135 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/dia1135")
     private var mes1135 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/mes1135")
     private var año1135 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1135/año1135")
 
     private var cultivados1145 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/CULTIVADOS1145")
+    private var dia1145cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/dia1145cult")
+    private var mes1145cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/mes1145cult")
+    private var año1145cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/año1145cult")
     private var embolsados1145 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/EMBOLSADOS1145")
     private var dia1145 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/dia1145")
     private var mes1145 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/mes1145")
     private var año1145 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1145/año1145")
     // FECHA 6
     private var cultivados1116 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/CULTIVADOS1116")
+    private var dia1116cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/dia1116cult")
+    private var mes1116cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/mes1116cult")
+    private var año1116cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/año1116cult")
     private var embolsados1116 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/EMBOLSADOS1116")
     private var dia1116 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/dia1116")
     private var mes1116 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/mes1116")
     private var año1116 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1116/año1116")
 
     private var cultivados1126 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/CULTIVADOS1126")
+    private var dia1126cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/dia1126cult")
+    private var mes1126cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/mes1126cult")
+    private var año1126cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/año1126cult")
     private var embolsados1126 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/EMBOLSADOS1126")
     private var dia1126 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/dia1126")
     private var mes1126 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/mes1126")
     private var año1126 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1126/año1126")
 
     private var cultivados1136 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/CULTIVADOS1136")
+    private var dia1136cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/dia1136cult")
+    private var mes1136cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/mes1136cult")
+    private var año1136cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/año1136cult")
     private var embolsados1136 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/EMBOLSADOS1136")
     private var dia1136 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/dia1136")
     private var mes1136 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/mes1136")
     private var año1136 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1136/año1136")
 
     private var cultivados1146 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/CULTIVADOS1146")
+    private var dia1146cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/dia1146cult")
+    private var mes1146cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/mes1146cult")
+    private var año1146cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/año1146cult")
     private var embolsados1146 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/EMBOLSADOS1146")
     private var dia1146 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/dia1146")
     private var mes1146 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/mes1146")
     private var año1146 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV1146/año1146")
     // FECHA 7
     private var cultivados1117 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/CULTIVADOS1117")
+    private var dia1117cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/dia1117cult")
+    private var mes1117cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/mes1117cult")
+    private var año1117cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/año1117cult")
     private var embolsados1117 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/EMBOLSADOS1117")
     private var dia1117 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/dia1117")
     private var mes1117 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/mes1117")
@@ -464,6 +545,7 @@ class ZonasActivity : AppCompatActivity() {
     private var mes144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD14/ZONA144/mes144")
     private var año144 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD14/ZONA144/año144")
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zonas)
@@ -471,49 +553,574 @@ class ZonasActivity : AppCompatActivity() {
         GlobalScope.launch {
             var dbIDprop = id_botonprop.get().await().value as Long
             var dbIDzona = id_botonzona.get().await().value as Long
+            var dbcontadorfecha111 = contfecha111.get().await().value as Long
+            var dbcontadorfecha112 = contfecha112.get().await().value as Long
+            var dbcontadorfecha113 = contfecha113.get().await().value as Long
+            var dbcontadorfecha114 = contfecha114.get().await().value as Long
             idprop = dbIDprop.toInt()
             idzona = dbIDzona.toInt()
+            contadorfecha111 = dbcontadorfecha111.toInt()
+            contadorfecha112 = dbcontadorfecha112.toInt()
+            contadorfecha113 = dbcontadorfecha113.toInt()
+            contadorfecha114 = dbcontadorfecha114.toInt()
 
-                botonGuardarZonas.setOnClickListener {
-                    // propiedad 1
-                    if(idprop==1){
-                        if(idzona==1){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                embolsados1111.setValue(editTxtEmbolsados.text.toString())
-                                cultivados1111.setValue(editTxtCultivados.text.toString())
-                                dia1111.setValue(editTxtDia.text.toString())
-                                mes1111.setValue(editTxtMes.text.toString())
-                                año1111.setValue(editTxtAño.text.toString())
+            botonGuardarZonas.visibility = View.VISIBLE
+
+            botonGuardarZonas.setOnClickListener {
+                // propiedad 1
+                if (idprop == 1) {
+                    if (idzona == 1) {
+                        if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                            when(contadorfecha111) {
+                                0 -> {
+                                    embolsados1111.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1111.setValue(editTxtCultivados.text.toString())
+                                    dia1111.setValue(editTxtDia.text.toString())
+                                    mes1111.setValue(editTxtMes.text.toString())
+                                    año1111.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 1
+                                }
+                                1 -> {
+                                    embolsados1112.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1112.setValue(editTxtCultivados.text.toString())
+                                    dia1112.setValue(editTxtDia.text.toString())
+                                    mes1112.setValue(editTxtMes.text.toString())
+                                    año1112.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 2
+                                }
+                                2 -> {
+                                    embolsados1113.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1113.setValue(editTxtCultivados.text.toString())
+                                    dia1113.setValue(editTxtDia.text.toString())
+                                    mes1113.setValue(editTxtMes.text.toString())
+                                    año1113.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 3
+                                }
+                                3 -> {
+                                    embolsados1114.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1114.setValue(editTxtCultivados.text.toString())
+                                    dia1114.setValue(editTxtDia.text.toString())
+                                    mes1114.setValue(editTxtMes.text.toString())
+                                    año1114.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 4
+                                }
+                                4 -> {
+                                    embolsados1115.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1115.setValue(editTxtCultivados.text.toString())
+                                    dia1115.setValue(editTxtDia.text.toString())
+                                    mes1115.setValue(editTxtMes.text.toString())
+                                    año1115.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 5
+                                }
+                                5 -> {
+                                    embolsados1116.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1116.setValue(editTxtCultivados.text.toString())
+                                    dia1116.setValue(editTxtDia.text.toString())
+                                    mes1116.setValue(editTxtMes.text.toString())
+                                    año1116.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 6
+                                }
+                                6 -> {
+                                    embolsados1117.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1117.setValue(editTxtCultivados.text.toString())
+                                    dia1117.setValue(editTxtDia.text.toString())
+                                    mes1117.setValue(editTxtMes.text.toString())
+                                    año1117.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 7
+                                }
+                                7 -> {
+                                    embolsados1118.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1118.setValue(editTxtCultivados.text.toString())
+                                    dia1118.setValue(editTxtDia.text.toString())
+                                    mes1118.setValue(editTxtMes.text.toString())
+                                    año1118.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 8
+                                }
+                                8 -> {
+                                    embolsados1119.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1119.setValue(editTxtCultivados.text.toString())
+                                    dia1119.setValue(editTxtDia.text.toString())
+                                    mes1119.setValue(editTxtMes.text.toString())
+                                    año1119.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 9
+                                }
+                                9 -> {
+                                    embolsados11110.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11110.setValue(editTxtCultivados.text.toString())
+                                    dia11110.setValue(editTxtDia.text.toString())
+                                    mes11110.setValue(editTxtMes.text.toString())
+                                    año11110.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 10
+                                }
+                                10 -> {
+                                    embolsados11111.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11111.setValue(editTxtCultivados.text.toString())
+                                    dia11111.setValue(editTxtDia.text.toString())
+                                    mes11111.setValue(editTxtMes.text.toString())
+                                    año11111.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 11
+                                }
+                                11 -> {
+                                    embolsados11112.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11112.setValue(editTxtCultivados.text.toString())
+                                    dia11112.setValue(editTxtDia.text.toString())
+                                    mes11112.setValue(editTxtMes.text.toString())
+                                    año11112.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 12
+                                }
+                                12 -> {
+                                    embolsados11113.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11113.setValue(editTxtCultivados.text.toString())
+                                    dia11113.setValue(editTxtDia.text.toString())
+                                    mes11113.setValue(editTxtMes.text.toString())
+                                    año11113.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 13
+                                }
+                                13 -> {
+                                    embolsados11114.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11114.setValue(editTxtCultivados.text.toString())
+                                    dia11114.setValue(editTxtDia.text.toString())
+                                    mes11114.setValue(editTxtMes.text.toString())
+                                    año11114.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 14
+                                }
+                                14 -> {
+                                    embolsados11115.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados11115.setValue(editTxtCultivados.text.toString())
+                                    dia11115.setValue(editTxtDia.text.toString())
+                                    mes11115.setValue(editTxtMes.text.toString())
+                                    año11115.setValue(editTxtAño.text.toString())
+                                    contadorfecha111 = 15
+                                }
+                                15 -> {
+                                    botonGuardarZonas.visibility = View.INVISIBLE
+                                    contadorfecha111 = 16
+                                }
                             }
                         }
-                        if(idzona==2){
+                    }else
+                        if (idzona == 2) {
                             if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                embolsados1112.setValue(editTxtEmbolsados.text.toString())
-                                cultivados1112.setValue(editTxtCultivados.text.toString())
-                                dia1121.setValue(editTxtDia.text.toString())
-                                mes1121.setValue(editTxtMes.text.toString())
-                                año1121.setValue(editTxtAño.text.toString())
+                                when(contadorfecha112) {
+                                    0 -> {
+                                        embolsados1121.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1121.setValue(editTxtCultivados.text.toString())
+                                        dia1121.setValue(editTxtDia.text.toString())
+                                        mes1121.setValue(editTxtMes.text.toString())
+                                        año1121.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 1
+                                    }
+                                    1 -> {
+                                        embolsados1122.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1122.setValue(editTxtCultivados.text.toString())
+                                        dia1122.setValue(editTxtDia.text.toString())
+                                        mes1122.setValue(editTxtMes.text.toString())
+                                        año1122.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 2
+                                    }
+                                    2 -> {
+                                        embolsados1123.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1123.setValue(editTxtCultivados.text.toString())
+                                        dia1123.setValue(editTxtDia.text.toString())
+                                        mes1123.setValue(editTxtMes.text.toString())
+                                        año1123.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 3
+                                    }
+                                    3 -> {
+                                        embolsados1124.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1124.setValue(editTxtCultivados.text.toString())
+                                        dia1124.setValue(editTxtDia.text.toString())
+                                        mes1124.setValue(editTxtMes.text.toString())
+                                        año1124.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 4
+                                    }
+                                    4 -> {
+                                        embolsados1125.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1125.setValue(editTxtCultivados.text.toString())
+                                        dia1125.setValue(editTxtDia.text.toString())
+                                        mes1125.setValue(editTxtMes.text.toString())
+                                        año1125.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 5
+                                    }
+                                    5 -> {
+                                        embolsados1126.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1126.setValue(editTxtCultivados.text.toString())
+                                        dia1126.setValue(editTxtDia.text.toString())
+                                        mes1126.setValue(editTxtMes.text.toString())
+                                        año1126.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 6
+                                    }
+                                    6 -> {
+                                        embolsados1127.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1127.setValue(editTxtCultivados.text.toString())
+                                        dia1127.setValue(editTxtDia.text.toString())
+                                        mes1127.setValue(editTxtMes.text.toString())
+                                        año1127.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 7
+                                    }
+                                    7 -> {
+                                        embolsados1128.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1128.setValue(editTxtCultivados.text.toString())
+                                        dia1128.setValue(editTxtDia.text.toString())
+                                        mes1128.setValue(editTxtMes.text.toString())
+                                        año1128.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 8
+                                    }
+                                    8 -> {
+                                        embolsados1129.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados1129.setValue(editTxtCultivados.text.toString())
+                                        dia1129.setValue(editTxtDia.text.toString())
+                                        mes1129.setValue(editTxtMes.text.toString())
+                                        año1129.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 9
+                                    }
+                                    9 -> {
+                                        embolsados11210.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11210.setValue(editTxtCultivados.text.toString())
+                                        dia11210.setValue(editTxtDia.text.toString())
+                                        mes11210.setValue(editTxtMes.text.toString())
+                                        año11210.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 10
+                                    }
+                                    10 -> {
+                                        embolsados11211.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11211.setValue(editTxtCultivados.text.toString())
+                                        dia11211.setValue(editTxtDia.text.toString())
+                                        mes11211.setValue(editTxtMes.text.toString())
+                                        año11211.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 11
+                                    }
+                                    11 -> {
+                                        embolsados11212.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11212.setValue(editTxtCultivados.text.toString())
+                                        dia11212.setValue(editTxtDia.text.toString())
+                                        mes11212.setValue(editTxtMes.text.toString())
+                                        año11212.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 12
+                                    }
+                                    12 -> {
+                                        embolsados11213.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11213.setValue(editTxtCultivados.text.toString())
+                                        dia11213.setValue(editTxtDia.text.toString())
+                                        mes11213.setValue(editTxtMes.text.toString())
+                                        año11213.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 13
+                                    }
+                                    13 -> {
+                                        embolsados11214.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11214.setValue(editTxtCultivados.text.toString())
+                                        dia11214.setValue(editTxtDia.text.toString())
+                                        mes11214.setValue(editTxtMes.text.toString())
+                                        año11214.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 14
+                                    }
+                                    14 -> {
+                                        embolsados11215.setValue(editTxtEmbolsados.text.toString())
+                                        cultivados11215.setValue(editTxtCultivados.text.toString())
+                                        dia11215.setValue(editTxtDia.text.toString())
+                                        mes11215.setValue(editTxtMes.text.toString())
+                                        año11215.setValue(editTxtAño.text.toString())
+                                        contadorfecha112 = 15
+                                    }
+                                    15 -> {
+                                        botonGuardarZonas.visibility = View.INVISIBLE
+                                        contadorfecha112 = 16
+                                    }
+                                }
                             }
-                        }
-                        if(idzona==3){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                embolsados1131.setValue(editTxtEmbolsados.text.toString())
-                                cultivados1131.setValue(editTxtCultivados.text.toString())
-                                dia1131.setValue(editTxtDia.text.toString())
-                                mes1131.setValue(editTxtMes.text.toString())
-                                año1131.setValue(editTxtAño.text.toString())
+                        }else
+                            if (idzona == 3) {
+                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    when(contadorfecha113) {
+                                        0 -> {
+                                            embolsados1121.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1121.setValue(editTxtCultivados.text.toString())
+                                            dia1121.setValue(editTxtDia.text.toString())
+                                            mes1121.setValue(editTxtMes.text.toString())
+                                            año1121.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 1
+                                        }
+                                        1 -> {
+                                            embolsados1122.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1122.setValue(editTxtCultivados.text.toString())
+                                            dia1122.setValue(editTxtDia.text.toString())
+                                            mes1122.setValue(editTxtMes.text.toString())
+                                            año1122.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 2
+                                        }
+                                        2 -> {
+                                            embolsados1123.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1123.setValue(editTxtCultivados.text.toString())
+                                            dia1123.setValue(editTxtDia.text.toString())
+                                            mes1123.setValue(editTxtMes.text.toString())
+                                            año1123.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 3
+                                        }
+                                        3 -> {
+                                            embolsados1124.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1124.setValue(editTxtCultivados.text.toString())
+                                            dia1124.setValue(editTxtDia.text.toString())
+                                            mes1124.setValue(editTxtMes.text.toString())
+                                            año1124.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 4
+                                        }
+                                        4 -> {
+                                            embolsados1125.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1125.setValue(editTxtCultivados.text.toString())
+                                            dia1125.setValue(editTxtDia.text.toString())
+                                            mes1125.setValue(editTxtMes.text.toString())
+                                            año1125.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 5
+                                        }
+                                        5 -> {
+                                            embolsados1126.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1126.setValue(editTxtCultivados.text.toString())
+                                            dia1126.setValue(editTxtDia.text.toString())
+                                            mes1126.setValue(editTxtMes.text.toString())
+                                            año1126.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 6
+                                        }
+                                        6 -> {
+                                            embolsados1127.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1127.setValue(editTxtCultivados.text.toString())
+                                            dia1127.setValue(editTxtDia.text.toString())
+                                            mes1127.setValue(editTxtMes.text.toString())
+                                            año1127.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 7
+                                        }
+                                        7 -> {
+                                            embolsados1128.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1128.setValue(editTxtCultivados.text.toString())
+                                            dia1128.setValue(editTxtDia.text.toString())
+                                            mes1128.setValue(editTxtMes.text.toString())
+                                            año1128.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 8
+                                        }
+                                        8 -> {
+                                            embolsados1129.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados1129.setValue(editTxtCultivados.text.toString())
+                                            dia1129.setValue(editTxtDia.text.toString())
+                                            mes1129.setValue(editTxtMes.text.toString())
+                                            año1129.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 9
+                                        }
+                                        9 -> {
+                                            embolsados11210.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11210.setValue(editTxtCultivados.text.toString())
+                                            dia11210.setValue(editTxtDia.text.toString())
+                                            mes11210.setValue(editTxtMes.text.toString())
+                                            año11210.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 10
+                                        }
+                                        10 -> {
+                                            embolsados11211.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11211.setValue(editTxtCultivados.text.toString())
+                                            dia11211.setValue(editTxtDia.text.toString())
+                                            mes11211.setValue(editTxtMes.text.toString())
+                                            año11211.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 11
+                                        }
+                                        11 -> {
+                                            embolsados11212.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11212.setValue(editTxtCultivados.text.toString())
+                                            dia11212.setValue(editTxtDia.text.toString())
+                                            mes11212.setValue(editTxtMes.text.toString())
+                                            año11212.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 12
+                                        }
+                                        12 -> {
+                                            embolsados11213.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11213.setValue(editTxtCultivados.text.toString())
+                                            dia11213.setValue(editTxtDia.text.toString())
+                                            mes11213.setValue(editTxtMes.text.toString())
+                                            año11213.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 13
+                                        }
+                                        13 -> {
+                                            embolsados11214.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11214.setValue(editTxtCultivados.text.toString())
+                                            dia11214.setValue(editTxtDia.text.toString())
+                                            mes11214.setValue(editTxtMes.text.toString())
+                                            año11214.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 14
+                                        }
+                                        14 -> {
+                                            embolsados11215.setValue(editTxtEmbolsados.text.toString())
+                                            cultivados11215.setValue(editTxtCultivados.text.toString())
+                                            dia11215.setValue(editTxtDia.text.toString())
+                                            mes11215.setValue(editTxtMes.text.toString())
+                                            año11215.setValue(editTxtAño.text.toString())
+                                            contadorfecha112 = 15
+                                        }
+                                        15 -> {
+                                            botonGuardarZonas.visibility = View.INVISIBLE
+                                            contadorfecha113 = 16
+                                        }
+                                    }
+                                }
+                            }else
+                                if (idzona == 4) {
+                                    if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                        when(contadorfecha112) {
+                                            0 -> {
+                                                embolsados1121.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1121.setValue(editTxtCultivados.text.toString())
+                                                dia1121.setValue(editTxtDia.text.toString())
+                                                mes1121.setValue(editTxtMes.text.toString())
+                                                año1121.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 1
+                                            }
+                                            1 -> {
+                                                embolsados1122.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1122.setValue(editTxtCultivados.text.toString())
+                                                dia1122.setValue(editTxtDia.text.toString())
+                                                mes1122.setValue(editTxtMes.text.toString())
+                                                año1122.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 2
+                                            }
+                                            2 -> {
+                                                embolsados1123.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1123.setValue(editTxtCultivados.text.toString())
+                                                dia1123.setValue(editTxtDia.text.toString())
+                                                mes1123.setValue(editTxtMes.text.toString())
+                                                año1123.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 3
+                                            }
+                                            3 -> {
+                                                embolsados1124.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1124.setValue(editTxtCultivados.text.toString())
+                                                dia1124.setValue(editTxtDia.text.toString())
+                                                mes1124.setValue(editTxtMes.text.toString())
+                                                año1124.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 4
+                                            }
+                                            4 -> {
+                                                embolsados1125.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1125.setValue(editTxtCultivados.text.toString())
+                                                dia1125.setValue(editTxtDia.text.toString())
+                                                mes1125.setValue(editTxtMes.text.toString())
+                                                año1125.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 5
+                                            }
+                                            5 -> {
+                                                embolsados1126.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1126.setValue(editTxtCultivados.text.toString())
+                                                dia1126.setValue(editTxtDia.text.toString())
+                                                mes1126.setValue(editTxtMes.text.toString())
+                                                año1126.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 6
+                                            }
+                                            6 -> {
+                                                embolsados1127.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1127.setValue(editTxtCultivados.text.toString())
+                                                dia1127.setValue(editTxtDia.text.toString())
+                                                mes1127.setValue(editTxtMes.text.toString())
+                                                año1127.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 7
+                                            }
+                                            7 -> {
+                                                embolsados1128.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1128.setValue(editTxtCultivados.text.toString())
+                                                dia1128.setValue(editTxtDia.text.toString())
+                                                mes1128.setValue(editTxtMes.text.toString())
+                                                año1128.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 8
+                                            }
+                                            8 -> {
+                                                embolsados1129.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados1129.setValue(editTxtCultivados.text.toString())
+                                                dia1129.setValue(editTxtDia.text.toString())
+                                                mes1129.setValue(editTxtMes.text.toString())
+                                                año1129.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 9
+                                            }
+                                            9 -> {
+                                                embolsados11210.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11210.setValue(editTxtCultivados.text.toString())
+                                                dia11210.setValue(editTxtDia.text.toString())
+                                                mes11210.setValue(editTxtMes.text.toString())
+                                                año11210.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 10
+                                            }
+                                            10 -> {
+                                                embolsados11211.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11211.setValue(editTxtCultivados.text.toString())
+                                                dia11211.setValue(editTxtDia.text.toString())
+                                                mes11211.setValue(editTxtMes.text.toString())
+                                                año11211.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 11
+                                            }
+                                            11 -> {
+                                                embolsados11212.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11212.setValue(editTxtCultivados.text.toString())
+                                                dia11212.setValue(editTxtDia.text.toString())
+                                                mes11212.setValue(editTxtMes.text.toString())
+                                                año11212.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 12
+                                            }
+                                            12 -> {
+                                                embolsados11213.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11213.setValue(editTxtCultivados.text.toString())
+                                                dia11213.setValue(editTxtDia.text.toString())
+                                                mes11213.setValue(editTxtMes.text.toString())
+                                                año11213.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 13
+                                            }
+                                            13 -> {
+                                                embolsados11214.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11214.setValue(editTxtCultivados.text.toString())
+                                                dia11214.setValue(editTxtDia.text.toString())
+                                                mes11214.setValue(editTxtMes.text.toString())
+                                                año11214.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 14
+                                            }
+                                            14 -> {
+                                                embolsados11215.setValue(editTxtEmbolsados.text.toString())
+                                                cultivados11215.setValue(editTxtCultivados.text.toString())
+                                                dia11215.setValue(editTxtDia.text.toString())
+                                                mes11215.setValue(editTxtMes.text.toString())
+                                                año11215.setValue(editTxtAño.text.toString())
+                                                contadorfecha112 = 15
+                                            }
+                                            15 -> {
+                                                botonGuardarZonas.visibility = View.INVISIBLE
+                                                contadorfecha114 = 16
+                                            }
+                                        }
+                                    }
+                                }
+                } //propiedad
+            } // setonclick
+        } // global launcher
+                            if (idzona == 2) {
+                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    embolsados1112.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1112.setValue(editTxtCultivados.text.toString())
+                                    dia1121.setValue(editTxtDia.text.toString())
+                                    mes1121.setValue(editTxtMes.text.toString())
+                                    año1121.setValue(editTxtAño.text.toString())
+                                }
                             }
-                        }
-                        if(idzona==4){
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                embolsados1141.setValue(editTxtEmbolsados.text.toString())
-                                cultivados1141.setValue(editTxtCultivados.text.toString())
-                                dia1141.setValue(editTxtDia.text.toString())
-                                mes1141.setValue(editTxtMes.text.toString())
-                                año1141.setValue(editTxtAño.text.toString())
+                            if (idzona == 3) {
+                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    embolsados1131.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1131.setValue(editTxtCultivados.text.toString())
+                                    dia1131.setValue(editTxtDia.text.toString())
+                                    mes1131.setValue(editTxtMes.text.toString())
+                                    año1131.setValue(editTxtAño.text.toString())
+                                }
                             }
-                        }
-                    }
+                            if (idzona == 4) {
+                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    embolsados1141.setValue(editTxtEmbolsados.text.toString())
+                                    cultivados1141.setValue(editTxtCultivados.text.toString())
+                                    dia1141.setValue(editTxtDia.text.toString())
+                                    mes1141.setValue(editTxtMes.text.toString())
+                                    año1141.setValue(editTxtAño.text.toString())
+                                }
+                            }
+    }
+}
                     /** propiedad 2
                     if(idprop==2){
                         if(idzona==1){
@@ -631,7 +1238,3 @@ class ZonasActivity : AppCompatActivity() {
                             }
                         }
                     }**/
-                }
-        }
-    }
-}
