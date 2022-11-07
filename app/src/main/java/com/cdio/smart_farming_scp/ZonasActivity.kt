@@ -265,6 +265,9 @@ class ZonasActivity : AppCompatActivity() {
     private var año1117 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1117/año1117")
 
     private var cultivados1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/CULTIVADOS1127")
+    private var dia1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/dia1127")
+    private var mes1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/mes1127")
+    private var año1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/año1127")
     private var embolsados1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/EMBOLSADOS1127")
     private var dia1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/dia1127")
     private var mes1127 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1127/mes1127")
@@ -553,16 +556,25 @@ class ZonasActivity : AppCompatActivity() {
         GlobalScope.launch {
             var dbIDprop = id_botonprop.get().await().value as Long
             var dbIDzona = id_botonzona.get().await().value as Long
-            var dbcontadorfecha111 = contfecha111.get().await().value as Long
-            var dbcontadorfecha112 = contfecha112.get().await().value as Long
-            var dbcontadorfecha113 = contfecha113.get().await().value as Long
-            var dbcontadorfecha114 = contfecha114.get().await().value as Long
+            var dbcontcult111 = contcultivados111.get().await().value as Long
+            var dbcontemb111 = contembolsados111.get().await().value as Long
+            var dbcontcult112 = contcultivados112.get().await().value as Long
+            var dbcontemb112 = contembolsados112.get().await().value as Long
+            var dbcontcult113 = contcultivados113.get().await().value as Long
+            var dbcontemb113 = contembolsados113.get().await().value as Long
+            var dbcontcult114 = contcultivados114.get().await().value as Long
+            var dbcontemb114 = contembolsados114.get().await().value as Long
+
             idprop = dbIDprop.toInt()
             idzona = dbIDzona.toInt()
-            contadorfecha111 = dbcontadorfecha111.toInt()
-            contadorfecha112 = dbcontadorfecha112.toInt()
-            contadorfecha113 = dbcontadorfecha113.toInt()
-            contadorfecha114 = dbcontadorfecha114.toInt()
+            var contadorcultivados111 = dbcontcult111.toInt()
+            var contadorembolsados111 = dbcontemb111.toInt()
+            var contadorcultivados112 = dbcontcult112.toInt()
+            var contadorembolsados112 = dbcontemb112.toInt()
+            var contadorcultivados113 = dbcontcult113.toInt()
+            var contadorembolsados113 = dbcontemb113.toInt()
+            var contadorcultivados114 = dbcontcult114.toInt()
+            var contadorembolsados114 = dbcontemb114.toInt()
 
             botonGuardarZonas.visibility = View.VISIBLE
 
