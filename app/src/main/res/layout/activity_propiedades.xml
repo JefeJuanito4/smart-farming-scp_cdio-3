@@ -61,7 +61,7 @@
         android:layout_width="231dp"
         android:layout_height="41dp"
         android:background="@drawable/button_rounded"
-        android:backgroundTint="#30AA35"
+        android:backgroundTint="#34A515"
         android:text=" DATOS DEL USUARIO"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
