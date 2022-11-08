@@ -579,7 +579,6 @@ class ZonasActivity : AppCompatActivity() {
     private var mes11415 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV11415/mes11415")
     private var año11415 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA114/FECHAINV11415/año11415")
 
-
     // propiedad 2
     private var cultivados121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/CULTIVADOS121")
     private var embolsados121 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/EMBOLSADOS121")
@@ -684,524 +683,919 @@ class ZonasActivity : AppCompatActivity() {
                 // propiedad 1
                 if (idprop == 1) {
                     if (idzona == 1) {
-                        if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                            when(contadorfecha111) {
+                        if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                            when(contadorembolsados111) {
                                 0 -> {
                                     embolsados1111.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1111.setValue(editTxtCultivados.text.toString())
                                     dia1111.setValue(editTxtDia.text.toString())
                                     mes1111.setValue(editTxtMes.text.toString())
                                     año1111.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 1
+                                    contadorembolsados111 = 1
                                 }
                                 1 -> {
                                     embolsados1112.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1112.setValue(editTxtCultivados.text.toString())
                                     dia1112.setValue(editTxtDia.text.toString())
                                     mes1112.setValue(editTxtMes.text.toString())
                                     año1112.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 2
+                                    contadorembolsados111 = 2
                                 }
                                 2 -> {
                                     embolsados1113.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1113.setValue(editTxtCultivados.text.toString())
                                     dia1113.setValue(editTxtDia.text.toString())
                                     mes1113.setValue(editTxtMes.text.toString())
                                     año1113.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 3
+                                    contadorembolsados111 = 3
                                 }
                                 3 -> {
                                     embolsados1114.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1114.setValue(editTxtCultivados.text.toString())
                                     dia1114.setValue(editTxtDia.text.toString())
                                     mes1114.setValue(editTxtMes.text.toString())
                                     año1114.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 4
+                                    contadorembolsados111 = 4
                                 }
                                 4 -> {
                                     embolsados1115.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1115.setValue(editTxtCultivados.text.toString())
                                     dia1115.setValue(editTxtDia.text.toString())
                                     mes1115.setValue(editTxtMes.text.toString())
                                     año1115.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 5
+                                    contadorembolsados111 = 5
                                 }
                                 5 -> {
                                     embolsados1116.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1116.setValue(editTxtCultivados.text.toString())
                                     dia1116.setValue(editTxtDia.text.toString())
                                     mes1116.setValue(editTxtMes.text.toString())
                                     año1116.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 6
+                                    contadorembolsados111 = 6
                                 }
                                 6 -> {
                                     embolsados1117.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1117.setValue(editTxtCultivados.text.toString())
                                     dia1117.setValue(editTxtDia.text.toString())
                                     mes1117.setValue(editTxtMes.text.toString())
                                     año1117.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 7
+                                    contadorembolsados111 = 7
                                 }
                                 7 -> {
                                     embolsados1118.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1118.setValue(editTxtCultivados.text.toString())
                                     dia1118.setValue(editTxtDia.text.toString())
                                     mes1118.setValue(editTxtMes.text.toString())
                                     año1118.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 8
+                                    contadorembolsados111 = 8
                                 }
                                 8 -> {
                                     embolsados1119.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados1119.setValue(editTxtCultivados.text.toString())
                                     dia1119.setValue(editTxtDia.text.toString())
                                     mes1119.setValue(editTxtMes.text.toString())
                                     año1119.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 9
+                                    contadorembolsados111 = 9
                                 }
                                 9 -> {
                                     embolsados11110.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11110.setValue(editTxtCultivados.text.toString())
                                     dia11110.setValue(editTxtDia.text.toString())
                                     mes11110.setValue(editTxtMes.text.toString())
                                     año11110.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 10
+                                    contadorembolsados111 = 10
                                 }
                                 10 -> {
                                     embolsados11111.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11111.setValue(editTxtCultivados.text.toString())
                                     dia11111.setValue(editTxtDia.text.toString())
                                     mes11111.setValue(editTxtMes.text.toString())
                                     año11111.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 11
+                                    contadorembolsados111 = 11
                                 }
                                 11 -> {
                                     embolsados11112.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11112.setValue(editTxtCultivados.text.toString())
                                     dia11112.setValue(editTxtDia.text.toString())
                                     mes11112.setValue(editTxtMes.text.toString())
                                     año11112.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 12
+                                    contadorembolsados111 = 12
                                 }
                                 12 -> {
                                     embolsados11113.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11113.setValue(editTxtCultivados.text.toString())
                                     dia11113.setValue(editTxtDia.text.toString())
                                     mes11113.setValue(editTxtMes.text.toString())
                                     año11113.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 13
+                                    contadorembolsados111 = 13
                                 }
                                 13 -> {
                                     embolsados11114.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11114.setValue(editTxtCultivados.text.toString())
                                     dia11114.setValue(editTxtDia.text.toString())
                                     mes11114.setValue(editTxtMes.text.toString())
                                     año11114.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 14
+                                    contadorembolsados111 = 14
                                 }
                                 14 -> {
                                     embolsados11115.setValue(editTxtEmbolsados.text.toString())
-                                    cultivados11115.setValue(editTxtCultivados.text.toString())
                                     dia11115.setValue(editTxtDia.text.toString())
                                     mes11115.setValue(editTxtMes.text.toString())
                                     año11115.setValue(editTxtAño.text.toString())
-                                    contadorfecha111 = 15
+                                    contadorembolsados111 = 15
                                 }
                                 15 -> {
                                     botonGuardarZonas.visibility = View.INVISIBLE
-                                    contadorfecha111 = 16
-                                }
-                            }
-                        }
-                    }else
-                        if (idzona == 2) {
-                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                when(contadorfecha112) {
-                                    0 -> {
-                                        embolsados1121.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1121.setValue(editTxtCultivados.text.toString())
-                                        dia1121.setValue(editTxtDia.text.toString())
-                                        mes1121.setValue(editTxtMes.text.toString())
-                                        año1121.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 1
-                                    }
-                                    1 -> {
-                                        embolsados1122.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1122.setValue(editTxtCultivados.text.toString())
-                                        dia1122.setValue(editTxtDia.text.toString())
-                                        mes1122.setValue(editTxtMes.text.toString())
-                                        año1122.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 2
-                                    }
-                                    2 -> {
-                                        embolsados1123.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1123.setValue(editTxtCultivados.text.toString())
-                                        dia1123.setValue(editTxtDia.text.toString())
-                                        mes1123.setValue(editTxtMes.text.toString())
-                                        año1123.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 3
-                                    }
-                                    3 -> {
-                                        embolsados1124.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1124.setValue(editTxtCultivados.text.toString())
-                                        dia1124.setValue(editTxtDia.text.toString())
-                                        mes1124.setValue(editTxtMes.text.toString())
-                                        año1124.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 4
-                                    }
-                                    4 -> {
-                                        embolsados1125.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1125.setValue(editTxtCultivados.text.toString())
-                                        dia1125.setValue(editTxtDia.text.toString())
-                                        mes1125.setValue(editTxtMes.text.toString())
-                                        año1125.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 5
-                                    }
-                                    5 -> {
-                                        embolsados1126.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1126.setValue(editTxtCultivados.text.toString())
-                                        dia1126.setValue(editTxtDia.text.toString())
-                                        mes1126.setValue(editTxtMes.text.toString())
-                                        año1126.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 6
-                                    }
-                                    6 -> {
-                                        embolsados1127.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1127.setValue(editTxtCultivados.text.toString())
-                                        dia1127.setValue(editTxtDia.text.toString())
-                                        mes1127.setValue(editTxtMes.text.toString())
-                                        año1127.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 7
-                                    }
-                                    7 -> {
-                                        embolsados1128.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1128.setValue(editTxtCultivados.text.toString())
-                                        dia1128.setValue(editTxtDia.text.toString())
-                                        mes1128.setValue(editTxtMes.text.toString())
-                                        año1128.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 8
-                                    }
-                                    8 -> {
-                                        embolsados1129.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados1129.setValue(editTxtCultivados.text.toString())
-                                        dia1129.setValue(editTxtDia.text.toString())
-                                        mes1129.setValue(editTxtMes.text.toString())
-                                        año1129.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 9
-                                    }
-                                    9 -> {
-                                        embolsados11210.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11210.setValue(editTxtCultivados.text.toString())
-                                        dia11210.setValue(editTxtDia.text.toString())
-                                        mes11210.setValue(editTxtMes.text.toString())
-                                        año11210.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 10
-                                    }
-                                    10 -> {
-                                        embolsados11211.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11211.setValue(editTxtCultivados.text.toString())
-                                        dia11211.setValue(editTxtDia.text.toString())
-                                        mes11211.setValue(editTxtMes.text.toString())
-                                        año11211.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 11
-                                    }
-                                    11 -> {
-                                        embolsados11212.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11212.setValue(editTxtCultivados.text.toString())
-                                        dia11212.setValue(editTxtDia.text.toString())
-                                        mes11212.setValue(editTxtMes.text.toString())
-                                        año11212.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 12
-                                    }
-                                    12 -> {
-                                        embolsados11213.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11213.setValue(editTxtCultivados.text.toString())
-                                        dia11213.setValue(editTxtDia.text.toString())
-                                        mes11213.setValue(editTxtMes.text.toString())
-                                        año11213.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 13
-                                    }
-                                    13 -> {
-                                        embolsados11214.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11214.setValue(editTxtCultivados.text.toString())
-                                        dia11214.setValue(editTxtDia.text.toString())
-                                        mes11214.setValue(editTxtMes.text.toString())
-                                        año11214.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 14
-                                    }
-                                    14 -> {
-                                        embolsados11215.setValue(editTxtEmbolsados.text.toString())
-                                        cultivados11215.setValue(editTxtCultivados.text.toString())
-                                        dia11215.setValue(editTxtDia.text.toString())
-                                        mes11215.setValue(editTxtMes.text.toString())
-                                        año11215.setValue(editTxtAño.text.toString())
-                                        contadorfecha112 = 15
-                                    }
-                                    15 -> {
-                                        botonGuardarZonas.visibility = View.INVISIBLE
-                                        contadorfecha112 = 16
-                                    }
+                                    contadorembolsados111 = 16
                                 }
                             }
                         }else
-                            if (idzona == 3) {
-                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                    when(contadorfecha113) {
-                                        0 -> {
-                                            embolsados1121.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1121.setValue(editTxtCultivados.text.toString())
-                                            dia1121.setValue(editTxtDia.text.toString())
-                                            mes1121.setValue(editTxtMes.text.toString())
-                                            año1121.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 1
-                                        }
-                                        1 -> {
-                                            embolsados1122.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1122.setValue(editTxtCultivados.text.toString())
-                                            dia1122.setValue(editTxtDia.text.toString())
-                                            mes1122.setValue(editTxtMes.text.toString())
-                                            año1122.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 2
-                                        }
-                                        2 -> {
-                                            embolsados1123.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1123.setValue(editTxtCultivados.text.toString())
-                                            dia1123.setValue(editTxtDia.text.toString())
-                                            mes1123.setValue(editTxtMes.text.toString())
-                                            año1123.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 3
-                                        }
-                                        3 -> {
-                                            embolsados1124.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1124.setValue(editTxtCultivados.text.toString())
-                                            dia1124.setValue(editTxtDia.text.toString())
-                                            mes1124.setValue(editTxtMes.text.toString())
-                                            año1124.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 4
-                                        }
-                                        4 -> {
-                                            embolsados1125.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1125.setValue(editTxtCultivados.text.toString())
-                                            dia1125.setValue(editTxtDia.text.toString())
-                                            mes1125.setValue(editTxtMes.text.toString())
-                                            año1125.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 5
-                                        }
-                                        5 -> {
-                                            embolsados1126.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1126.setValue(editTxtCultivados.text.toString())
-                                            dia1126.setValue(editTxtDia.text.toString())
-                                            mes1126.setValue(editTxtMes.text.toString())
-                                            año1126.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 6
-                                        }
-                                        6 -> {
-                                            embolsados1127.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1127.setValue(editTxtCultivados.text.toString())
-                                            dia1127.setValue(editTxtDia.text.toString())
-                                            mes1127.setValue(editTxtMes.text.toString())
-                                            año1127.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 7
-                                        }
-                                        7 -> {
-                                            embolsados1128.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1128.setValue(editTxtCultivados.text.toString())
-                                            dia1128.setValue(editTxtDia.text.toString())
-                                            mes1128.setValue(editTxtMes.text.toString())
-                                            año1128.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 8
-                                        }
-                                        8 -> {
-                                            embolsados1129.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados1129.setValue(editTxtCultivados.text.toString())
-                                            dia1129.setValue(editTxtDia.text.toString())
-                                            mes1129.setValue(editTxtMes.text.toString())
-                                            año1129.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 9
-                                        }
-                                        9 -> {
-                                            embolsados11210.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11210.setValue(editTxtCultivados.text.toString())
-                                            dia11210.setValue(editTxtDia.text.toString())
-                                            mes11210.setValue(editTxtMes.text.toString())
-                                            año11210.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 10
-                                        }
-                                        10 -> {
-                                            embolsados11211.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11211.setValue(editTxtCultivados.text.toString())
-                                            dia11211.setValue(editTxtDia.text.toString())
-                                            mes11211.setValue(editTxtMes.text.toString())
-                                            año11211.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 11
-                                        }
-                                        11 -> {
-                                            embolsados11212.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11212.setValue(editTxtCultivados.text.toString())
-                                            dia11212.setValue(editTxtDia.text.toString())
-                                            mes11212.setValue(editTxtMes.text.toString())
-                                            año11212.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 12
-                                        }
-                                        12 -> {
-                                            embolsados11213.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11213.setValue(editTxtCultivados.text.toString())
-                                            dia11213.setValue(editTxtDia.text.toString())
-                                            mes11213.setValue(editTxtMes.text.toString())
-                                            año11213.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 13
-                                        }
-                                        13 -> {
-                                            embolsados11214.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11214.setValue(editTxtCultivados.text.toString())
-                                            dia11214.setValue(editTxtDia.text.toString())
-                                            mes11214.setValue(editTxtMes.text.toString())
-                                            año11214.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 14
-                                        }
-                                        14 -> {
-                                            embolsados11215.setValue(editTxtEmbolsados.text.toString())
-                                            cultivados11215.setValue(editTxtCultivados.text.toString())
-                                            dia11215.setValue(editTxtDia.text.toString())
-                                            mes11215.setValue(editTxtMes.text.toString())
-                                            año11215.setValue(editTxtAño.text.toString())
-                                            contadorfecha112 = 15
-                                        }
-                                        15 -> {
-                                            botonGuardarZonas.visibility = View.INVISIBLE
-                                            contadorfecha113 = 16
-                                        }
+                            if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                when(contadorcultivados111) {
+                                    0 -> {
+                                        cultivados1111.setValue(editTxtCultivados.text.toString())
+                                        dia1111cult.setValue(editTxtDia.text.toString())
+                                        mes1111cult.setValue(editTxtMes.text.toString())
+                                        año1111cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 1
+                                    }
+                                    1 -> {
+                                        cultivados1112.setValue(editTxtCultivados.text.toString())
+                                        dia1112cult.setValue(editTxtDia.text.toString())
+                                        mes1112cult.setValue(editTxtMes.text.toString())
+                                        año1112cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 2
+                                    }
+                                    2 -> {
+                                        cultivados1113.setValue(editTxtCultivados.text.toString())
+                                        dia1113cult.setValue(editTxtDia.text.toString())
+                                        mes1113cult.setValue(editTxtMes.text.toString())
+                                        año1113cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 3
+                                    }
+                                    3 -> {
+                                        cultivados1114.setValue(editTxtCultivados.text.toString())
+                                        dia1114cult.setValue(editTxtDia.text.toString())
+                                        mes1114cult.setValue(editTxtMes.text.toString())
+                                        año1114cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 4
+                                    }
+                                    4 -> {
+                                        cultivados1115.setValue(editTxtCultivados.text.toString())
+                                        dia1115cult.setValue(editTxtDia.text.toString())
+                                        mes1115cult.setValue(editTxtMes.text.toString())
+                                        año1115cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 5
+                                    }
+                                    5 -> {
+                                        cultivados1116.setValue(editTxtCultivados.text.toString())
+                                        dia1116cult.setValue(editTxtDia.text.toString())
+                                        mes1116cult.setValue(editTxtMes.text.toString())
+                                        año1116cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 6
+                                    }
+                                    6 -> {
+                                        cultivados1117.setValue(editTxtCultivados.text.toString())
+                                        dia1117cult.setValue(editTxtDia.text.toString())
+                                        mes1117cult.setValue(editTxtMes.text.toString())
+                                        año1117cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 7
+                                    }
+                                    7 -> {
+                                        cultivados1118.setValue(editTxtCultivados.text.toString())
+                                        dia1118cult.setValue(editTxtDia.text.toString())
+                                        mes1118cult.setValue(editTxtMes.text.toString())
+                                        año1118cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 8
+                                    }
+                                    8 -> {
+                                        cultivados1119.setValue(editTxtCultivados.text.toString())
+                                        dia1119cult.setValue(editTxtDia.text.toString())
+                                        mes1119cult.setValue(editTxtMes.text.toString())
+                                        año1119cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 9
+                                    }
+                                    9 -> {
+                                        cultivados11110.setValue(editTxtCultivados.text.toString())
+                                        dia11110cult.setValue(editTxtDia.text.toString())
+                                        mes11110cult.setValue(editTxtMes.text.toString())
+                                        año11110cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 10
+                                    }
+                                    10 -> {
+                                        cultivados11111.setValue(editTxtCultivados.text.toString())
+                                        dia11111cult.setValue(editTxtDia.text.toString())
+                                        mes11111cult.setValue(editTxtMes.text.toString())
+                                        año11111cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 11
+                                    }
+                                    11 -> {
+                                        cultivados11112.setValue(editTxtCultivados.text.toString())
+                                        dia11112cult.setValue(editTxtDia.text.toString())
+                                        mes11112cult.setValue(editTxtMes.text.toString())
+                                        año11112cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 12
+                                    }
+                                    12 -> {
+                                        cultivados11113.setValue(editTxtCultivados.text.toString())
+                                        dia11113cult.setValue(editTxtDia.text.toString())
+                                        mes11113cult.setValue(editTxtMes.text.toString())
+                                        año11113cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 13
+                                    }
+                                    13 -> {
+                                        cultivados11114.setValue(editTxtCultivados.text.toString())
+                                        dia11114cult.setValue(editTxtDia.text.toString())
+                                        mes11114cult.setValue(editTxtMes.text.toString())
+                                        año11114cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 14
+                                    }
+                                    14 -> {
+                                        cultivados11115.setValue(editTxtCultivados.text.toString())
+                                        dia11115cult.setValue(editTxtDia.text.toString())
+                                        mes11115cult.setValue(editTxtMes.text.toString())
+                                        año11115cult.setValue(editTxtAño.text.toString())
+                                        contadorcultivados111 = 15
+                                    }
+                                    15 -> {
+                                        botonGuardarZonas.visibility = View.INVISIBLE
+                                        contadorcultivados111 = 16
+                                    }
+                                }
+                            }
+                        //////////////////////////////////
+                    }else
+                        if (idzona == 2) {
+                            if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                when(contadorembolsados112) {
+                                    0 -> {
+                                        embolsados1121.setValue(editTxtEmbolsados.text.toString())
+                                        dia1121.setValue(editTxtDia.text.toString())
+                                        mes1121.setValue(editTxtMes.text.toString())
+                                        año1121.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 1
+                                    }
+                                    1 -> {
+                                        embolsados1122.setValue(editTxtEmbolsados.text.toString())
+                                        dia1122.setValue(editTxtDia.text.toString())
+                                        mes1122.setValue(editTxtMes.text.toString())
+                                        año1122.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 2
+                                    }
+                                    2 -> {
+                                        embolsados1123.setValue(editTxtEmbolsados.text.toString())
+                                        dia1123.setValue(editTxtDia.text.toString())
+                                        mes1123.setValue(editTxtMes.text.toString())
+                                        año1123.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 3
+                                    }
+                                    3 -> {
+                                        embolsados1124.setValue(editTxtEmbolsados.text.toString())
+                                        dia1124.setValue(editTxtDia.text.toString())
+                                        mes1124.setValue(editTxtMes.text.toString())
+                                        año1124.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 4
+                                    }
+                                    4 -> {
+                                        embolsados1125.setValue(editTxtEmbolsados.text.toString())
+                                        dia1125.setValue(editTxtDia.text.toString())
+                                        mes1125.setValue(editTxtMes.text.toString())
+                                        año1125.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 5
+                                    }
+                                    5 -> {
+                                        embolsados1126.setValue(editTxtEmbolsados.text.toString())
+                                        dia1126.setValue(editTxtDia.text.toString())
+                                        mes1126.setValue(editTxtMes.text.toString())
+                                        año1126.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 6
+                                    }
+                                    6 -> {
+                                        embolsados1127.setValue(editTxtEmbolsados.text.toString())
+                                        dia1127.setValue(editTxtDia.text.toString())
+                                        mes1127.setValue(editTxtMes.text.toString())
+                                        año1127.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 7
+                                    }
+                                    7 -> {
+                                        embolsados1128.setValue(editTxtEmbolsados.text.toString())
+                                        dia1128.setValue(editTxtDia.text.toString())
+                                        mes1128.setValue(editTxtMes.text.toString())
+                                        año1128.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 8
+                                    }
+                                    8 -> {
+                                        embolsados1129.setValue(editTxtEmbolsados.text.toString())
+                                        dia1129.setValue(editTxtDia.text.toString())
+                                        mes1129.setValue(editTxtMes.text.toString())
+                                        año1129.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 9
+                                    }
+                                    9 -> {
+                                        embolsados11210.setValue(editTxtEmbolsados.text.toString())
+                                        dia11210.setValue(editTxtDia.text.toString())
+                                        mes11210.setValue(editTxtMes.text.toString())
+                                        año11210.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 10
+                                    }
+                                    10 -> {
+                                        embolsados11211.setValue(editTxtEmbolsados.text.toString())
+                                        dia11211.setValue(editTxtDia.text.toString())
+                                        mes11211.setValue(editTxtMes.text.toString())
+                                        año11211.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 11
+                                    }
+                                    11 -> {
+                                        embolsados11212.setValue(editTxtEmbolsados.text.toString())
+                                        dia11212.setValue(editTxtDia.text.toString())
+                                        mes11212.setValue(editTxtMes.text.toString())
+                                        año11212.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 12
+                                    }
+                                    12 -> {
+                                        embolsados11213.setValue(editTxtEmbolsados.text.toString())
+                                        dia11213.setValue(editTxtDia.text.toString())
+                                        mes11213.setValue(editTxtMes.text.toString())
+                                        año11213.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 13
+                                    }
+                                    13 -> {
+                                        embolsados11214.setValue(editTxtEmbolsados.text.toString())
+                                        dia11214.setValue(editTxtDia.text.toString())
+                                        mes11214.setValue(editTxtMes.text.toString())
+                                        año11214.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 14
+                                    }
+                                    14 -> {
+                                        embolsados11215.setValue(editTxtEmbolsados.text.toString())
+                                        dia11215.setValue(editTxtDia.text.toString())
+                                        mes11215.setValue(editTxtMes.text.toString())
+                                        año11215.setValue(editTxtAño.text.toString())
+                                        contadorembolsados112 = 15
+                                    }
+                                    15 -> {
+                                        botonGuardarZonas.visibility = View.INVISIBLE
+                                        contadorembolsados112 = 16
                                     }
                                 }
                             }else
-                                if (idzona == 4) {
-                                    if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                        when(contadorfecha112) {
+                                if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    when(contadorcultivados112) {
+                                        0 -> {
+                                            cultivados1121.setValue(editTxtCultivados.text.toString())
+                                            dia1121cult.setValue(editTxtDia.text.toString())
+                                            mes1121cult.setValue(editTxtMes.text.toString())
+                                            año1121cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 1
+                                        }
+                                        1 -> {
+                                            cultivados1122.setValue(editTxtCultivados.text.toString())
+                                            dia1122cult.setValue(editTxtDia.text.toString())
+                                            mes1122cult.setValue(editTxtMes.text.toString())
+                                            año1122cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 2
+                                        }
+                                        2 -> {
+                                            cultivados1123.setValue(editTxtCultivados.text.toString())
+                                            dia1123cult.setValue(editTxtDia.text.toString())
+                                            mes1123cult.setValue(editTxtMes.text.toString())
+                                            año1123cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 3
+                                        }
+                                        3 -> {
+                                            cultivados1124.setValue(editTxtCultivados.text.toString())
+                                            dia1124cult.setValue(editTxtDia.text.toString())
+                                            mes1124cult.setValue(editTxtMes.text.toString())
+                                            año1124cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 4
+                                        }
+                                        4 -> {
+                                            cultivados1125.setValue(editTxtCultivados.text.toString())
+                                            dia1125cult.setValue(editTxtDia.text.toString())
+                                            mes1125cult.setValue(editTxtMes.text.toString())
+                                            año1125cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 5
+                                        }
+                                        5 -> {
+                                            cultivados1126.setValue(editTxtCultivados.text.toString())
+                                            dia1126cult.setValue(editTxtDia.text.toString())
+                                            mes1126cult.setValue(editTxtMes.text.toString())
+                                            año1126cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 6
+                                        }
+                                        6 -> {
+                                            cultivados1127.setValue(editTxtCultivados.text.toString())
+                                            dia1127cult.setValue(editTxtDia.text.toString())
+                                            mes1127cult.setValue(editTxtMes.text.toString())
+                                            año1127cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 7
+                                        }
+                                        7 -> {
+                                            cultivados1128.setValue(editTxtCultivados.text.toString())
+                                            dia1128cult.setValue(editTxtDia.text.toString())
+                                            mes1128cult.setValue(editTxtMes.text.toString())
+                                            año1128cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 8
+                                        }
+                                        8 -> {
+                                            cultivados1129.setValue(editTxtCultivados.text.toString())
+                                            dia1129cult.setValue(editTxtDia.text.toString())
+                                            mes1129cult.setValue(editTxtMes.text.toString())
+                                            año1129cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 9
+                                        }
+                                        9 -> {
+                                            cultivados11210.setValue(editTxtCultivados.text.toString())
+                                            dia11210cult.setValue(editTxtDia.text.toString())
+                                            mes11210cult.setValue(editTxtMes.text.toString())
+                                            año11210cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 10
+                                        }
+                                        10 -> {
+                                            cultivados11211.setValue(editTxtCultivados.text.toString())
+                                            dia11211cult.setValue(editTxtDia.text.toString())
+                                            mes11211cult.setValue(editTxtMes.text.toString())
+                                            año11211cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 11
+                                        }
+                                        11 -> {
+                                            cultivados11212.setValue(editTxtCultivados.text.toString())
+                                            dia11212cult.setValue(editTxtDia.text.toString())
+                                            mes11212cult.setValue(editTxtMes.text.toString())
+                                            año11212cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 12
+                                        }
+                                        12 -> {
+                                            cultivados11213.setValue(editTxtCultivados.text.toString())
+                                            dia11213cult.setValue(editTxtDia.text.toString())
+                                            mes11213cult.setValue(editTxtMes.text.toString())
+                                            año11213cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 13
+                                        }
+                                        13 -> {
+                                            cultivados11214.setValue(editTxtCultivados.text.toString())
+                                            dia11214cult.setValue(editTxtDia.text.toString())
+                                            mes11214cult.setValue(editTxtMes.text.toString())
+                                            año11214cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 14
+                                        }
+                                        14 -> {
+                                            cultivados11215.setValue(editTxtCultivados.text.toString())
+                                            dia11215cult.setValue(editTxtDia.text.toString())
+                                            mes11215cult.setValue(editTxtMes.text.toString())
+                                            año11215cult.setValue(editTxtAño.text.toString())
+                                            contadorcultivados112 = 15
+                                        }
+                                        15 -> {
+                                            botonGuardarZonas.visibility = View.INVISIBLE
+                                            contadorcultivados112 = 16
+                                        }
+                                    }
+                                }
+                            ////////////////////////////////////
+                        }else
+                            if (idzona == 3) {
+                                if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                    when(contadorembolsados113) {
+                                        0 -> {
+                                            embolsados1131.setValue(editTxtEmbolsados.text.toString())
+                                            dia1131.setValue(editTxtDia.text.toString())
+                                            mes1131.setValue(editTxtMes.text.toString())
+                                            año1131.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 1
+                                        }
+                                        1 -> {
+                                            embolsados1132.setValue(editTxtEmbolsados.text.toString())
+                                            dia1132.setValue(editTxtDia.text.toString())
+                                            mes1132.setValue(editTxtMes.text.toString())
+                                            año1132.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 2
+                                        }
+                                        2 -> {
+                                            embolsados1133.setValue(editTxtEmbolsados.text.toString())
+                                            dia1133.setValue(editTxtDia.text.toString())
+                                            mes1133.setValue(editTxtMes.text.toString())
+                                            año1133.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 3
+                                        }
+                                        3 -> {
+                                            embolsados1134.setValue(editTxtEmbolsados.text.toString())
+                                            dia1134.setValue(editTxtDia.text.toString())
+                                            mes1134.setValue(editTxtMes.text.toString())
+                                            año1134.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 4
+                                        }
+                                        4 -> {
+                                            embolsados1135.setValue(editTxtEmbolsados.text.toString())
+                                            dia1135.setValue(editTxtDia.text.toString())
+                                            mes1135.setValue(editTxtMes.text.toString())
+                                            año1135.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 5
+                                        }
+                                        5 -> {
+                                            embolsados1136.setValue(editTxtEmbolsados.text.toString())
+                                            dia1136.setValue(editTxtDia.text.toString())
+                                            mes1136.setValue(editTxtMes.text.toString())
+                                            año1136.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 6
+                                        }
+                                        6 -> {
+                                            embolsados1137.setValue(editTxtEmbolsados.text.toString())
+                                            dia1137.setValue(editTxtDia.text.toString())
+                                            mes1137.setValue(editTxtMes.text.toString())
+                                            año1137.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 7
+                                        }
+                                        7 -> {
+                                            embolsados1138.setValue(editTxtEmbolsados.text.toString())
+                                            dia1138.setValue(editTxtDia.text.toString())
+                                            mes1138.setValue(editTxtMes.text.toString())
+                                            año1138.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 8
+                                        }
+                                        8 -> {
+                                            embolsados1139.setValue(editTxtEmbolsados.text.toString())
+                                            dia1139.setValue(editTxtDia.text.toString())
+                                            mes1139.setValue(editTxtMes.text.toString())
+                                            año1139.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 9
+                                        }
+                                        9 -> {
+                                            embolsados11310.setValue(editTxtEmbolsados.text.toString())
+                                            dia11310.setValue(editTxtDia.text.toString())
+                                            mes11310.setValue(editTxtMes.text.toString())
+                                            año11310.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 10
+                                        }
+                                        10 -> {
+                                            embolsados11311.setValue(editTxtEmbolsados.text.toString())
+                                            dia11311.setValue(editTxtDia.text.toString())
+                                            mes11311.setValue(editTxtMes.text.toString())
+                                            año11311.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 11
+                                        }
+                                        11 -> {
+                                            embolsados11312.setValue(editTxtEmbolsados.text.toString())
+                                            dia11312.setValue(editTxtDia.text.toString())
+                                            mes11312.setValue(editTxtMes.text.toString())
+                                            año11312.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 12
+                                        }
+                                        12 -> {
+                                            embolsados11313.setValue(editTxtEmbolsados.text.toString())
+                                            dia11313.setValue(editTxtDia.text.toString())
+                                            mes11313.setValue(editTxtMes.text.toString())
+                                            año11313.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 13
+                                        }
+                                        13 -> {
+                                            embolsados11314.setValue(editTxtEmbolsados.text.toString())
+                                            dia11314.setValue(editTxtDia.text.toString())
+                                            mes11314.setValue(editTxtMes.text.toString())
+                                            año11314.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 14
+                                        }
+                                        14 -> {
+                                            embolsados11315.setValue(editTxtEmbolsados.text.toString())
+                                            dia11315.setValue(editTxtDia.text.toString())
+                                            mes11315.setValue(editTxtMes.text.toString())
+                                            año11315.setValue(editTxtAño.text.toString())
+                                            contadorembolsados113 = 15
+                                        }
+                                        15 -> {
+                                            botonGuardarZonas.visibility = View.INVISIBLE
+                                            contadorembolsados113 = 16
+                                        }
+                                    }
+                                }else
+                                    if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                        when(contadorcultivados113) {
                                             0 -> {
-                                                embolsados1121.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1121.setValue(editTxtCultivados.text.toString())
-                                                dia1121.setValue(editTxtDia.text.toString())
-                                                mes1121.setValue(editTxtMes.text.toString())
-                                                año1121.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 1
+                                                cultivados1131.setValue(editTxtCultivados.text.toString())
+                                                dia1131cult.setValue(editTxtDia.text.toString())
+                                                mes1131cult.setValue(editTxtMes.text.toString())
+                                                año1131cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 1
                                             }
                                             1 -> {
-                                                embolsados1122.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1122.setValue(editTxtCultivados.text.toString())
-                                                dia1122.setValue(editTxtDia.text.toString())
-                                                mes1122.setValue(editTxtMes.text.toString())
-                                                año1122.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 2
+                                                cultivados1132.setValue(editTxtCultivados.text.toString())
+                                                dia1132cult.setValue(editTxtDia.text.toString())
+                                                mes1132cult.setValue(editTxtMes.text.toString())
+                                                año1132cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 2
                                             }
                                             2 -> {
-                                                embolsados1123.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1123.setValue(editTxtCultivados.text.toString())
-                                                dia1123.setValue(editTxtDia.text.toString())
-                                                mes1123.setValue(editTxtMes.text.toString())
-                                                año1123.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 3
+                                                cultivados1133.setValue(editTxtCultivados.text.toString())
+                                                dia1133cult.setValue(editTxtDia.text.toString())
+                                                mes1133cult.setValue(editTxtMes.text.toString())
+                                                año1133cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 3
                                             }
                                             3 -> {
-                                                embolsados1124.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1124.setValue(editTxtCultivados.text.toString())
-                                                dia1124.setValue(editTxtDia.text.toString())
-                                                mes1124.setValue(editTxtMes.text.toString())
-                                                año1124.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 4
+                                                cultivados1134.setValue(editTxtCultivados.text.toString())
+                                                dia1134cult.setValue(editTxtDia.text.toString())
+                                                mes1134cult.setValue(editTxtMes.text.toString())
+                                                año1134cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 4
                                             }
                                             4 -> {
-                                                embolsados1125.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1125.setValue(editTxtCultivados.text.toString())
-                                                dia1125.setValue(editTxtDia.text.toString())
-                                                mes1125.setValue(editTxtMes.text.toString())
-                                                año1125.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 5
+                                                cultivados1135.setValue(editTxtCultivados.text.toString())
+                                                dia1135cult.setValue(editTxtDia.text.toString())
+                                                mes1135cult.setValue(editTxtMes.text.toString())
+                                                año1135cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 5
                                             }
                                             5 -> {
-                                                embolsados1126.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1126.setValue(editTxtCultivados.text.toString())
-                                                dia1126.setValue(editTxtDia.text.toString())
-                                                mes1126.setValue(editTxtMes.text.toString())
-                                                año1126.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 6
+                                                cultivados1136.setValue(editTxtCultivados.text.toString())
+                                                dia1136cult.setValue(editTxtDia.text.toString())
+                                                mes1136cult.setValue(editTxtMes.text.toString())
+                                                año1136cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 6
                                             }
                                             6 -> {
-                                                embolsados1127.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1127.setValue(editTxtCultivados.text.toString())
-                                                dia1127.setValue(editTxtDia.text.toString())
-                                                mes1127.setValue(editTxtMes.text.toString())
-                                                año1127.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 7
+                                                cultivados1137.setValue(editTxtCultivados.text.toString())
+                                                dia1137cult.setValue(editTxtDia.text.toString())
+                                                mes1137cult.setValue(editTxtMes.text.toString())
+                                                año1137cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 7
                                             }
                                             7 -> {
-                                                embolsados1128.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1128.setValue(editTxtCultivados.text.toString())
-                                                dia1128.setValue(editTxtDia.text.toString())
-                                                mes1128.setValue(editTxtMes.text.toString())
-                                                año1128.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 8
+                                                cultivados1138.setValue(editTxtCultivados.text.toString())
+                                                dia1138cult.setValue(editTxtDia.text.toString())
+                                                mes1138cult.setValue(editTxtMes.text.toString())
+                                                año1138cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 8
                                             }
                                             8 -> {
-                                                embolsados1129.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados1129.setValue(editTxtCultivados.text.toString())
-                                                dia1129.setValue(editTxtDia.text.toString())
-                                                mes1129.setValue(editTxtMes.text.toString())
-                                                año1129.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 9
+                                                cultivados1139.setValue(editTxtCultivados.text.toString())
+                                                dia1139cult.setValue(editTxtDia.text.toString())
+                                                mes1139cult.setValue(editTxtMes.text.toString())
+                                                año1139cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 9
                                             }
                                             9 -> {
-                                                embolsados11210.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11210.setValue(editTxtCultivados.text.toString())
-                                                dia11210.setValue(editTxtDia.text.toString())
-                                                mes11210.setValue(editTxtMes.text.toString())
-                                                año11210.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 10
+                                                cultivados11310.setValue(editTxtCultivados.text.toString())
+                                                dia11310cult.setValue(editTxtDia.text.toString())
+                                                mes11310cult.setValue(editTxtMes.text.toString())
+                                                año11310cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 10
                                             }
                                             10 -> {
-                                                embolsados11211.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11211.setValue(editTxtCultivados.text.toString())
-                                                dia11211.setValue(editTxtDia.text.toString())
-                                                mes11211.setValue(editTxtMes.text.toString())
-                                                año11211.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 11
+                                                cultivados11311.setValue(editTxtCultivados.text.toString())
+                                                dia11311cult.setValue(editTxtDia.text.toString())
+                                                mes11311cult.setValue(editTxtMes.text.toString())
+                                                año11311cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 11
                                             }
                                             11 -> {
-                                                embolsados11212.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11212.setValue(editTxtCultivados.text.toString())
-                                                dia11212.setValue(editTxtDia.text.toString())
-                                                mes11212.setValue(editTxtMes.text.toString())
-                                                año11212.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 12
+                                                cultivados11312.setValue(editTxtCultivados.text.toString())
+                                                dia11312cult.setValue(editTxtDia.text.toString())
+                                                mes11312cult.setValue(editTxtMes.text.toString())
+                                                año11312cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 12
                                             }
                                             12 -> {
-                                                embolsados11213.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11213.setValue(editTxtCultivados.text.toString())
-                                                dia11213.setValue(editTxtDia.text.toString())
-                                                mes11213.setValue(editTxtMes.text.toString())
-                                                año11213.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 13
+                                                cultivados11313.setValue(editTxtCultivados.text.toString())
+                                                dia11313cult.setValue(editTxtDia.text.toString())
+                                                mes11313cult.setValue(editTxtMes.text.toString())
+                                                año11313cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 13
                                             }
                                             13 -> {
-                                                embolsados11214.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11214.setValue(editTxtCultivados.text.toString())
-                                                dia11214.setValue(editTxtDia.text.toString())
-                                                mes11214.setValue(editTxtMes.text.toString())
-                                                año11214.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 14
+                                                cultivados11314.setValue(editTxtCultivados.text.toString())
+                                                dia11314cult.setValue(editTxtDia.text.toString())
+                                                mes11314cult.setValue(editTxtMes.text.toString())
+                                                año11314cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 14
                                             }
                                             14 -> {
-                                                embolsados11215.setValue(editTxtEmbolsados.text.toString())
-                                                cultivados11215.setValue(editTxtCultivados.text.toString())
-                                                dia11215.setValue(editTxtDia.text.toString())
-                                                mes11215.setValue(editTxtMes.text.toString())
-                                                año11215.setValue(editTxtAño.text.toString())
-                                                contadorfecha112 = 15
+                                                cultivados11315.setValue(editTxtCultivados.text.toString())
+                                                dia11315cult.setValue(editTxtDia.text.toString())
+                                                mes11315cult.setValue(editTxtMes.text.toString())
+                                                año11315cult.setValue(editTxtAño.text.toString())
+                                                contadorcultivados113 = 15
                                             }
                                             15 -> {
                                                 botonGuardarZonas.visibility = View.INVISIBLE
-                                                contadorfecha114 = 16
+                                                contadorcultivados113 = 16
                                             }
                                         }
                                     }
+                                ////////////////////////////////
+                            }else
+                                if (idzona == 4) {
+                                    if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                        when(contadorembolsados114) {
+                                            0 -> {
+                                                embolsados1121.setValue(editTxtEmbolsados.text.toString())
+                                                dia1121.setValue(editTxtDia.text.toString())
+                                                mes1121.setValue(editTxtMes.text.toString())
+                                                año1121.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 1
+                                            }
+                                            1 -> {
+                                                embolsados1122.setValue(editTxtEmbolsados.text.toString())
+                                                dia1122.setValue(editTxtDia.text.toString())
+                                                mes1122.setValue(editTxtMes.text.toString())
+                                                año1122.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 2
+                                            }
+                                            2 -> {
+                                                embolsados1123.setValue(editTxtEmbolsados.text.toString())
+                                                dia1123.setValue(editTxtDia.text.toString())
+                                                mes1123.setValue(editTxtMes.text.toString())
+                                                año1123.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 3
+                                            }
+                                            3 -> {
+                                                embolsados1124.setValue(editTxtEmbolsados.text.toString())
+                                                dia1124.setValue(editTxtDia.text.toString())
+                                                mes1124.setValue(editTxtMes.text.toString())
+                                                año1124.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 4
+                                            }
+                                            4 -> {
+                                                embolsados1125.setValue(editTxtEmbolsados.text.toString())
+                                                dia1125.setValue(editTxtDia.text.toString())
+                                                mes1125.setValue(editTxtMes.text.toString())
+                                                año1125.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 5
+                                            }
+                                            5 -> {
+                                                embolsados1126.setValue(editTxtEmbolsados.text.toString())
+                                                dia1126.setValue(editTxtDia.text.toString())
+                                                mes1126.setValue(editTxtMes.text.toString())
+                                                año1126.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 6
+                                            }
+                                            6 -> {
+                                                embolsados1127.setValue(editTxtEmbolsados.text.toString())
+                                                dia1127.setValue(editTxtDia.text.toString())
+                                                mes1127.setValue(editTxtMes.text.toString())
+                                                año1127.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 7
+                                            }
+                                            7 -> {
+                                                embolsados1128.setValue(editTxtEmbolsados.text.toString())
+                                                dia1128.setValue(editTxtDia.text.toString())
+                                                mes1128.setValue(editTxtMes.text.toString())
+                                                año1128.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 8
+                                            }
+                                            8 -> {
+                                                embolsados1129.setValue(editTxtEmbolsados.text.toString())
+                                                dia1129.setValue(editTxtDia.text.toString())
+                                                mes1129.setValue(editTxtMes.text.toString())
+                                                año1129.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 9
+                                            }
+                                            9 -> {
+                                                embolsados11210.setValue(editTxtEmbolsados.text.toString())
+                                                dia11210.setValue(editTxtDia.text.toString())
+                                                mes11210.setValue(editTxtMes.text.toString())
+                                                año11210.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 10
+                                            }
+                                            10 -> {
+                                                embolsados11211.setValue(editTxtEmbolsados.text.toString())
+                                                dia11211.setValue(editTxtDia.text.toString())
+                                                mes11211.setValue(editTxtMes.text.toString())
+                                                año11211.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 11
+                                            }
+                                            11 -> {
+                                                embolsados11212.setValue(editTxtEmbolsados.text.toString())
+                                                dia11212.setValue(editTxtDia.text.toString())
+                                                mes11212.setValue(editTxtMes.text.toString())
+                                                año11212.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 12
+                                            }
+                                            12 -> {
+                                                embolsados11213.setValue(editTxtEmbolsados.text.toString())
+                                                dia11213.setValue(editTxtDia.text.toString())
+                                                mes11213.setValue(editTxtMes.text.toString())
+                                                año11213.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 13
+                                            }
+                                            13 -> {
+                                                embolsados11214.setValue(editTxtEmbolsados.text.toString())
+                                                dia11214.setValue(editTxtDia.text.toString())
+                                                mes11214.setValue(editTxtMes.text.toString())
+                                                año11214.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 14
+                                            }
+                                            14 -> {
+                                                embolsados11215.setValue(editTxtEmbolsados.text.toString())
+                                                dia11215.setValue(editTxtDia.text.toString())
+                                                mes11215.setValue(editTxtMes.text.toString())
+                                                año11215.setValue(editTxtAño.text.toString())
+                                                contadorembolsados114 = 15
+                                            }
+                                            15 -> {
+                                                botonGuardarZonas.visibility = View.INVISIBLE
+                                                contadorembolsados114 = 16
+                                            }
+                                        }
+                                    }else
+                                        if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
+                                            when(contadorcultivados114) {
+                                                0 -> {
+                                                    cultivados1121.setValue(editTxtCultivados.text.toString())
+                                                    dia1121cult.setValue(editTxtDia.text.toString())
+                                                    mes1121cult.setValue(editTxtMes.text.toString())
+                                                    año1121cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 1
+                                                }
+                                                1 -> {
+                                                    cultivados1122.setValue(editTxtCultivados.text.toString())
+                                                    dia1122cult.setValue(editTxtDia.text.toString())
+                                                    mes1122cult.setValue(editTxtMes.text.toString())
+                                                    año1122cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 2
+                                                }
+                                                2 -> {
+                                                    cultivados1123.setValue(editTxtCultivados.text.toString())
+                                                    dia1123cult.setValue(editTxtDia.text.toString())
+                                                    mes1123cult.setValue(editTxtMes.text.toString())
+                                                    año1123cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 3
+                                                }
+                                                3 -> {
+                                                    cultivados1124.setValue(editTxtCultivados.text.toString())
+                                                    dia1124cult.setValue(editTxtDia.text.toString())
+                                                    mes1124cult.setValue(editTxtMes.text.toString())
+                                                    año1124cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 4
+                                                }
+                                                4 -> {
+                                                    cultivados1125.setValue(editTxtCultivados.text.toString())
+                                                    dia1125cult.setValue(editTxtDia.text.toString())
+                                                    mes1125cult.setValue(editTxtMes.text.toString())
+                                                    año1125cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 5
+                                                }
+                                                5 -> {
+                                                    cultivados1126.setValue(editTxtCultivados.text.toString())
+                                                    dia1126cult.setValue(editTxtDia.text.toString())
+                                                    mes1126cult.setValue(editTxtMes.text.toString())
+                                                    año1126cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 6
+                                                }
+                                                6 -> {
+                                                    cultivados1127.setValue(editTxtCultivados.text.toString())
+                                                    dia1127cult.setValue(editTxtDia.text.toString())
+                                                    mes1127cult.setValue(editTxtMes.text.toString())
+                                                    año1127cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 7
+                                                }
+                                                7 -> {
+                                                    cultivados1128.setValue(editTxtCultivados.text.toString())
+                                                    dia1128cult.setValue(editTxtDia.text.toString())
+                                                    mes1128cult.setValue(editTxtMes.text.toString())
+                                                    año1128cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 8
+                                                }
+                                                8 -> {
+                                                    cultivados1129.setValue(editTxtCultivados.text.toString())
+                                                    dia1129cult.setValue(editTxtDia.text.toString())
+                                                    mes1129cult.setValue(editTxtMes.text.toString())
+                                                    año1129cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 9
+                                                }
+                                                9 -> {
+                                                    cultivados11210.setValue(editTxtCultivados.text.toString())
+                                                    dia11210cult.setValue(editTxtDia.text.toString())
+                                                    mes11210cult.setValue(editTxtMes.text.toString())
+                                                    año11210cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 10
+                                                }
+                                                10 -> {
+                                                    cultivados11211.setValue(editTxtCultivados.text.toString())
+                                                    dia11211cult.setValue(editTxtDia.text.toString())
+                                                    mes11211cult.setValue(editTxtMes.text.toString())
+                                                    año11211cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 11
+                                                }
+                                                11 -> {
+                                                    cultivados11212.setValue(editTxtCultivados.text.toString())
+                                                    dia11212cult.setValue(editTxtDia.text.toString())
+                                                    mes11212cult.setValue(editTxtMes.text.toString())
+                                                    año11212cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 12
+                                                }
+                                                12 -> {
+                                                    cultivados11213.setValue(editTxtCultivados.text.toString())
+                                                    dia11213cult.setValue(editTxtDia.text.toString())
+                                                    mes11213cult.setValue(editTxtMes.text.toString())
+                                                    año11213cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 13
+                                                }
+                                                13 -> {
+                                                    cultivados11214.setValue(editTxtCultivados.text.toString())
+                                                    dia11214cult.setValue(editTxtDia.text.toString())
+                                                    mes11214cult.setValue(editTxtMes.text.toString())
+                                                    año11214cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 14
+                                                }
+                                                14 -> {
+                                                    cultivados11215.setValue(editTxtCultivados.text.toString())
+                                                    dia11215cult.setValue(editTxtDia.text.toString())
+                                                    mes11215cult.setValue(editTxtMes.text.toString())
+                                                    año11215cult.setValue(editTxtAño.text.toString())
+                                                    contadorcultivados114 = 15
+                                                }
+                                                15 -> {
+                                                    botonGuardarZonas.visibility = View.INVISIBLE
+                                                    contadorcultivados114 = 16
+                                                }
+                                            }
+                                        }
                                 }
                 } //propiedad
             } // setonclick
