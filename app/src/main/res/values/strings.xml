@@ -58,5 +58,6 @@
     <string name="ingrese_la_fecha_de_ingreso_de_datos_con_formato_dd_mm_aaaa">Ingrese la fecha de ingreso de datos con formato dd mm aaaa</string>
     <string name="informacion_zona">INFORMACION ZONA</string>
     <string name="llena_los_campos_vacios_con_0_si_no_hay_informacion_para_actualizar">Llena los campos vacios con \'0\' si no hay informacion para actualizar</string>
+    <string name="CANTIDAD_EMBOLSADOS">CANTIDAD EMBOLSADOS</string>
 
 </resources>
