@@ -59,5 +59,6 @@
     <string name="informacion_zona">INFORMACION ZONA</string>
     <string name="llena_los_campos_vacios_con_0_si_no_hay_informacion_para_actualizar">Llena los campos vacios con \'0\' si no hay informacion para actualizar</string>
     <string name="CANTIDAD_EMBOLSADOS">CANTIDAD EMBOLSADOS</string>
+    <string name="llena_los_campos_vacios_con_0_si_no_hay_">Deja los campos vacios si no hay información por actualizar</string>
 
 </resources>

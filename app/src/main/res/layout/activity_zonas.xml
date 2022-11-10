@@ -151,12 +151,12 @@
         android:id="@+id/txtInfo"
         android:layout_width="292dp"
         android:layout_height="43dp"
-        android:text="@string/llena_los_campos_vacios_con_0_si_no_hay_informacion_para_actualizar"
+        android:text="@string/llena_los_campos_vacios_con_0_si_no_hay_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.316" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
