@@ -4,6 +4,8 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.cdio.smart_farming_scp.databinding.ActivityPropiedadesBinding
+import com.cdio.smart_farming_scp.databinding.ActivityZonasBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_propiedades.*
@@ -12,6 +14,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
 class PropiedadesActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityPropiedadesBinding
 
     var id= 0
     var idp=0
@@ -22,7 +26,9 @@ class PropiedadesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_propiedades)
+        binding = ActivityPropiedadesBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         GlobalScope.launch {
             var myID = id_propiedad1.get().await().value as Long
