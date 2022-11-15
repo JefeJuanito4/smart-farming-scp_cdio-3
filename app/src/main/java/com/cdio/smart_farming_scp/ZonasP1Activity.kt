@@ -3,6 +3,8 @@ package com.cdio.smart_farming_scp
 import android.content.Intent;
 import android.os.Bundle
 import android.view.View
+import com.cdio.smart_farming_scp.databinding.ActivityPropiedadesBinding
+import com.cdio.smart_farming_scp.databinding.ActivityZonasP1Binding
 import kotlinx.android.synthetic.main.activity_propiedades.*
 import kotlinx.android.synthetic.main.activity_zonas_p1.*
 import androidx.appcompat.app.AppCompatActivity as AppCompatActivity1
@@ -15,6 +17,8 @@ import kotlinx.coroutines.tasks.await
 
 class ZonasP1Activity: AppCompatActivity1() {
 
+    private lateinit var binding: ActivityZonasP1Binding
+
     var p1=0
     var idz=0
 
@@ -24,7 +28,9 @@ class ZonasP1Activity: AppCompatActivity1() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_zonas_p1)
+        binding = ActivityZonasP1Binding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         GlobalScope.launch {
             var myID = id_zona11.get().await().value as Long
@@ -58,7 +64,7 @@ class ZonasP1Activity: AppCompatActivity1() {
                     }
                 }
 
-                botonmasP1.setOnClickListener{
+                binding.botonmasP1.setOnClickListener{
                     when (p1){
                         0 -> botonZona12.visibility = View.VISIBLE
                         1 -> botonZona13.visibility = View.VISIBLE
@@ -78,25 +84,25 @@ class ZonasP1Activity: AppCompatActivity1() {
             }
         }
 
-        botonZona11.setOnClickListener {
+        binding.botonZona11.setOnClickListener {
             idz = 1;
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
         }
 
-        botonZona12.setOnClickListener {
+        binding.botonZona12.setOnClickListener {
             idz = 2
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
         }
 
-        botonZona13.setOnClickListener {
+        binding.botonZona13.setOnClickListener {
             idz = 3
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
         }
 
-        botonZona14.setOnClickListener {
+        binding.botonZona14.setOnClickListener {
             idz = 4
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
