@@ -7,16 +7,19 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
 import androidx.drawerlayout.widget.DrawerLayout
+
+import com.cdio.smart_farming_scp.databinding.ActivityHomeBinding
+
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.encabezado_menulateral.*
+
 
 enum class ProviderType{
     BASIC
 }
 
 class HomeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHomeBinding
     // se crea la variable con el tipo de objeto que representa
     //vamo a llorar
     //este es el ultimo commit del dia
@@ -28,9 +31,11 @@ class HomeActivity : AppCompatActivity() {
     lateinit var  actividad_calendario: MenuItem
 
     @SuppressLint("ResourceType")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
 
 

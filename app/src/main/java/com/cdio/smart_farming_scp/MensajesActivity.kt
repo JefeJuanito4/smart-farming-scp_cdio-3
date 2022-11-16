@@ -2,10 +2,17 @@ package com.cdio.smart_farming_scp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cdio.smart_farming_scp.databinding.ActivityMensajesBinding
+
 
 class MensajesActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+    private lateinit var binding: ActivityMensajesBinding
+
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mensajes)
+        binding = ActivityMensajesBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
     }
 }

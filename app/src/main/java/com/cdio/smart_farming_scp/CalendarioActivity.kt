@@ -1,15 +1,12 @@
 package com.cdio.smart_farming_scp
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
-import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_auth.*
-
 import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import android.widget.TextView
+import com.cdio.smart_farming_scp.databinding.ActivityCalendarioBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.GlobalScope
@@ -18,6 +15,7 @@ import kotlinx.coroutines.tasks.await
 
 
 class CalendarioActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCalendarioBinding
     // on below line we are creating
     // variables for text view and calendar view
 
@@ -29,9 +27,11 @@ class CalendarioActivity : AppCompatActivity() {
     private var plaemb = 0
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calendario)
+        binding = ActivityCalendarioBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         // initializing variables of
         // list view with their ids.
@@ -62,7 +62,6 @@ class CalendarioActivity : AppCompatActivity() {
                     dateTV.setText(Date)
                 })
 
-        sumar4meses( )
 
 
 
