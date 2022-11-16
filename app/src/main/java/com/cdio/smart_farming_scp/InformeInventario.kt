@@ -1,18 +1,17 @@
 package com.cdio.smart_farming_scp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import com.cdio.smart_farming_scp.databinding.FragmentInformeInventarioBinding
 
-class InformeInventario : Fragment() {
+class InformeInventario : AppCompatActivity() {
+    private lateinit var binding: FragmentInformeInventarioBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_informe_inventario, container, false)
+    override fun onCreate(savedInstanceState: Bundle?){
+        super.onCreate(savedInstanceState)
+        binding = FragmentInformeInventarioBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
     }
 }
