@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_auth.*
 import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import android.widget.TextView
+import com.google.android.gms.safetynet.SafetyNetApi.VerifyAppsUserResponse
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.GlobalScope
@@ -26,6 +27,8 @@ class CalendarioActivity : AppCompatActivity() {
     lateinit var calendarView: CalendarView
     private var id_propiedad1 = db.getReference("USUARIO1/IDU1/IDPROPIEDADU1")
     private var id_plaemb = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/CONTCULTIVADOS111")
+    private var id_CULT = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/CULTIVADOS1111")
+
     private var plaemb = 0
 
 
@@ -40,10 +43,10 @@ class CalendarioActivity : AppCompatActivity() {
 
 
         GlobalScope.launch {
-            var myID = id_propiedad1.get().await().value as Long
+            var myID = id_CULT.get().await().value as String
             var plaemb = id_plaemb.get().await().value as Long
-            println("HOLAaaaaaaaaaaaaaaa ${myID}myID")
-            println(myID)
+            println("HOLAaaaaaaaaaaaaaaa ${myID}  myID")
+            println(plaemb)
 
         }
         // on below line we are adding set on
@@ -60,16 +63,43 @@ class CalendarioActivity : AppCompatActivity() {
 
                     // set this date in TextView for Display
                     dateTV.setText(Date)
+                    llamarinfoDb()
                 })
 
-        sumar4meses( )
+        //sumar4meses( )
 
 
 
     }
 
+    private fun llamarinfoDb(){
+
+        var usu = "USUARIO"
+        var numusu = 1//2 //numero usuario
+        var pro = "PROPIEDADES"
+        var numpro = 1//2 //numero propiedades
+        var zon = "ZONA"
+        var numzon = 111//3 //numero usuario
+        var fech = "FECHAINV"
+        var numfech = 1111 //numero FECHAINV
+        var cult = "CULTIVADOS"
+        var embol = "EMBOLSADOS"
+
+        var ruta = usu + numusu + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + "/" + embol + numfech
+        println("resultado cadenas ${ruta} gggggggggggggg")
+       // var ruta = "USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111/EMBOLSADOS1111"
+
+        var id_CULT = db.getReference(ruta as String)
+
+        GlobalScope.launch {
+            var myID = id_CULT.get().await().value as String
+            println("BLAVLAVLALVLALALLALALAL ${myID}  KFASEFSJ")
+
+        }
+    }
     private fun sumar4meses(dia: String, mes: String, annio: String){
-     var totaldias = dia.toInt() + (mes.toInt()*30) + (annio.toInt()*365)
+
+        var totaldias = dia.toInt() + (mes.toInt()*30) + (annio.toInt()*365)
         var aRecol = totaldias
     }
 }
