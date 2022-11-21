@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".AuthActivity">
 
@@ -17,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ico_login" />
+        app:srcCompat="@drawable/ico_login"
+        android:contentDescription="@string/logodellogin" />
 
     <EditText
         android:id="@+id/editText_correo"
@@ -31,6 +33,7 @@
         android:hint="@string/correo"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -48,6 +51,7 @@
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_correo" />
@@ -74,6 +78,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_border"
         android:text="@string/Registrarse"
+        android:textColor="@color/verdeoscuro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_login" />

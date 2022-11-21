@@ -7,8 +7,12 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
 import androidx.drawerlayout.widget.DrawerLayout
+
+import com.cdio.smart_farming_scp.databinding.ActivityHomeBinding
+
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_home.*
@@ -18,6 +22,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import java.util.ArrayList
 
+
 enum class ProviderType{
     BASIC
 }
@@ -26,6 +31,9 @@ class HomeActivity : AppCompatActivity() {
 
 
     private val db = Firebase.database//.reference
+
+    private lateinit var binding: ActivityHomeBinding
+
     // se crea la variable con el tipo de objeto que representa
     //vamo a llorar
     //este es el ultimo commit del dia
@@ -61,9 +69,11 @@ class HomeActivity : AppCompatActivity() {
     var info = true // esta ---------------------> debo verificar si se han subido datos para llamar la info nueva.
 
     @SuppressLint("ResourceType")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         while (info){
             llamarinfoDb()

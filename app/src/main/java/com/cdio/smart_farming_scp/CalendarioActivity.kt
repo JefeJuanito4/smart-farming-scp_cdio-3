@@ -1,13 +1,22 @@
 package com.cdio.smart_farming_scp
 
+
 import android.os.Build
+
+
+import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
 import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import android.widget.TextView
+
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase.*
+
+import com.cdio.smart_farming_scp.databinding.ActivityCalendarioBinding
+
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_auth.*
@@ -19,6 +28,7 @@ import java.util.*
 
 
 class CalendarioActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCalendarioBinding
     // on below line we are creating
     // variables for text view and calendar view
 
@@ -46,14 +56,18 @@ class CalendarioActivity : AppCompatActivity() {
     var numfech = 111 //numero FECHAINV
     var numerofechas = 2 // variable que itera en los for
 
+
     //Variables auxiliares
     var info = true // esta ---------------------> debo verificar si se han subido datos para llamar la info nueva.
 
 
-    @RequiresApi(Build.VERSION_CODES.O)
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calendario)
+        binding = ActivityCalendarioBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         // initializing variables of
         // list view with their ids.
@@ -98,7 +112,9 @@ class CalendarioActivity : AppCompatActivity() {
 
                 })
 
+
         //sumar4meses( )
+
 
 
 
