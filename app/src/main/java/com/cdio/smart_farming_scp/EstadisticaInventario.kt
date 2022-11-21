@@ -3,19 +3,18 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.cdio.smart_farming_scp.databinding.FragmentDemandaInventarioBinding
-import com.cdio.smart_farming_scp.databinding.FragmentDemandaInventarioBinding.inflate
+import com.cdio.smart_farming_scp.databinding.EstadisticasInventarioBinding
 import com.echo.holographlibrary.Bar
 import com.echo.holographlibrary.BarGraph
 import kotlin.math.roundToInt
 
 
-class DemandaInventario : AppCompatActivity() {
-    private lateinit var binding: FragmentDemandaInventarioBinding
+class EstadisticaInventario : AppCompatActivity() {
+    private lateinit var binding: EstadisticasInventarioBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = inflate(layoutInflater)
+        binding = EstadisticasInventarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val puntos= ArrayList<Bar>()
