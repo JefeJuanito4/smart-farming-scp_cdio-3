@@ -633,16 +633,16 @@ class ZonasActivity : AppCompatActivity() {
                 setContentView(view)
 
                 GlobalScope.launch {
-                var dbIDprop = id_botonprop.get().await().value as Long
-                var dbIDzona = id_botonzona.get().await().value as Long
+                var dbIDprop = id_botonprop.get().await().value as Int
+                var dbIDzona = id_botonzona.get().await().value as Int
                 // usuario 1
                         // propiedad 1
-                        var dbcontcult111 = contcultivados111.get().await().value as Long
-                        var dbcontemb111 = contembolsados111.get().await().value as Long
-                        var dbcontcult112 = contcultivados112.get().await().value as Long
-                        var dbcontemb112 = contembolsados112.get().await().value as Long
-                        var dbcontcult113 = contcultivados113.get().await().value as Long
-                        var dbcontemb113 = contembolsados113.get().await().value as Long
+                        var dbcontcult111 = contcultivados111.get().await().value as Int
+                        var dbcontemb111 = contembolsados111.get().await().value as Int
+                        var dbcontcult112 = contcultivados112.get().await().value as Int
+                        var dbcontemb112 = contembolsados112.get().await().value as Int
+                        var dbcontcult113 = contcultivados113.get().await().value as Int
+                        var dbcontemb113 = contembolsados113.get().await().value as Int
                         // propiedad 2
                         var dbcontcult121 = contcultivados121.get().await().value as Long
                         var dbcontemb121 = contembolsados121.get().await().value as Long
@@ -678,82 +678,122 @@ class ZonasActivity : AppCompatActivity() {
                                                 if(editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()){
                                                         when(contadorembolsados111) {
                                                                 0 -> {
-                                                                        embolsados1111.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1111.setValue(editTxtDia.text.toString())
-                                                                        mes1111.setValue(editTxtMes.text.toString())
-                                                                        año1111.setValue(editTxtAño.text.toString())
+                                                                        var emb1111=editTxtEmbolsados.text.toString()
+                                                                        var d1111=editTxtDia.text.toString()
+                                                                        var m1111=editTxtMes.text.toString()
+                                                                        var a1111=editTxtAño.text.toString()
+                                                                        embolsados1111.setValue(emb1111.toInt())
+                                                                        dia1111.setValue(d1111.toInt())
+                                                                        mes1111.setValue(m1111.toInt())
+                                                                        año1111.setValue(a1111.toInt())
                                                                         contadorembolsados111=1
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 1 -> {
-                                                                        embolsados1112.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1112.setValue(editTxtDia.text.toString())
-                                                                        mes1112.setValue(editTxtMes.text.toString())
-                                                                        año1112.setValue(editTxtAño.text.toString())
+                                                                        var emb1112=editTxtEmbolsados.text.toString()
+                                                                        var d1112=editTxtDia.text.toString()
+                                                                        var m1112=editTxtMes.text.toString()
+                                                                        var a1112=editTxtAño.text.toString()
+                                                                        embolsados1112.setValue(emb1112.toInt())
+                                                                        dia1112.setValue(d1112.toInt())
+                                                                        mes1112.setValue(m1112.toInt())
+                                                                        año1112.setValue(a1112.toInt())
                                                                         contadorembolsados111=2
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 2 -> {
-                                                                        embolsados1113.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1113.setValue(editTxtDia.text.toString())
-                                                                        mes1113.setValue(editTxtMes.text.toString())
-                                                                        año1113.setValue(editTxtAño.text.toString())
+                                                                        var emb1113=editTxtEmbolsados.text.toString()
+                                                                        var d1113=editTxtDia.text.toString()
+                                                                        var m1113=editTxtMes.text.toString()
+                                                                        var a1113=editTxtAño.text.toString()
+                                                                        embolsados1113.setValue(emb1113.toInt())
+                                                                        dia1113.setValue(d1113.toInt())
+                                                                        mes1113.setValue(m1113.toInt())
+                                                                        año1113.setValue(a1113.toInt())
                                                                         contadorembolsados111=3
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 3 -> {
-                                                                        embolsados1114.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1114.setValue(editTxtDia.text.toString())
-                                                                        mes1114.setValue(editTxtMes.text.toString())
-                                                                        año1114.setValue(editTxtAño.text.toString())
+                                                                        var emb1114=editTxtEmbolsados.text.toString()
+                                                                        var d1114=editTxtDia.text.toString()
+                                                                        var m1114=editTxtMes.text.toString()
+                                                                        var a1114=editTxtAño.text.toString()
+                                                                        embolsados1114.setValue(emb1114.toInt())
+                                                                        dia1114.setValue(d1114.toInt())
+                                                                        mes1114.setValue(m1114.toInt())
+                                                                        año1114.setValue(a1114.toInt())
                                                                         contadorembolsados111=4
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 4 -> {
-                                                                        embolsados1115.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1115.setValue(editTxtDia.text.toString())
-                                                                        mes1115.setValue(editTxtMes.text.toString())
-                                                                        año1115.setValue(editTxtAño.text.toString())
+                                                                        var emb1115=editTxtEmbolsados.text.toString()
+                                                                        var d1115=editTxtDia.text.toString()
+                                                                        var m1115=editTxtMes.text.toString()
+                                                                        var a1115=editTxtAño.text.toString()
+                                                                        embolsados1115.setValue(emb1115.toInt())
+                                                                        dia1115.setValue(d1115.toInt())
+                                                                        mes1115.setValue(m1115.toInt())
+                                                                        año1115.setValue(a1115.toInt())
                                                                         contadorembolsados111=5
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 5 -> {
-                                                                        embolsados1116.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1116.setValue(editTxtDia.text.toString())
-                                                                        mes1116.setValue(editTxtMes.text.toString())
-                                                                        año1116.setValue(editTxtAño.text.toString())
+                                                                        var emb1116=editTxtEmbolsados.text.toString()
+                                                                        var d1116=editTxtDia.text.toString()
+                                                                        var m1116=editTxtMes.text.toString()
+                                                                        var a1116=editTxtAño.text.toString()
+                                                                        embolsados1116.setValue(emb1116.toInt())
+                                                                        dia1116.setValue(d1116.toInt())
+                                                                        mes1116.setValue(m1116.toInt())
+                                                                        año1116.setValue(a1116.toInt())
                                                                         contadorembolsados111=6
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 6 -> {
-                                                                        embolsados1117.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1117.setValue(editTxtDia.text.toString())
-                                                                        mes1117.setValue(editTxtMes.text.toString())
-                                                                        año1117.setValue(editTxtAño.text.toString())
+                                                                        var emb1117=editTxtEmbolsados.text.toString()
+                                                                        var d1117=editTxtDia.text.toString()
+                                                                        var m1117=editTxtMes.text.toString()
+                                                                        var a1117=editTxtAño.text.toString()
+                                                                        embolsados1117.setValue(emb1117.toInt())
+                                                                        dia1117.setValue(d1117.toInt())
+                                                                        mes1117.setValue(m1117.toInt())
+                                                                        año1117.setValue(a1117.toInt())
                                                                         contadorembolsados111=7
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 7 -> {
-                                                                        embolsados1118.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1118.setValue(editTxtDia.text.toString())
-                                                                        mes1118.setValue(editTxtMes.text.toString())
-                                                                        año1118.setValue(editTxtAño.text.toString())
+                                                                        var emb1118=editTxtEmbolsados.text.toString()
+                                                                        var d1118=editTxtDia.text.toString()
+                                                                        var m1118=editTxtMes.text.toString()
+                                                                        var a1118=editTxtAño.text.toString()
+                                                                        embolsados1118.setValue(emb1118.toInt())
+                                                                        dia1118.setValue(d1118.toInt())
+                                                                        mes1118.setValue(m1118.toInt())
+                                                                        año1118.setValue(a1118.toInt())
                                                                         contadorembolsados111=8
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 8 -> {
-                                                                        embolsados1119.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia1119.setValue(editTxtDia.text.toString())
-                                                                        mes1119.setValue(editTxtMes.text.toString())
-                                                                        año1119.setValue(editTxtAño.text.toString())
+                                                                        var emb1119=editTxtEmbolsados.text.toString()
+                                                                        var d1119=editTxtDia.text.toString()
+                                                                        var m1119=editTxtMes.text.toString()
+                                                                        var a1119=editTxtAño.text.toString()
+                                                                        embolsados1119.setValue(emb1119.toInt())
+                                                                        dia1119.setValue(d1119.toInt())
+                                                                        mes1119.setValue(m1119.toInt())
+                                                                        año1119.setValue(a1119.toInt())
                                                                         contadorembolsados111=9
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
                                                                 9 -> {
-                                                                        embolsados11110.setValue(editTxtEmbolsados.text.toString())
-                                                                        dia11110.setValue(editTxtDia.text.toString())
-                                                                        mes11110.setValue(editTxtMes.text.toString())
-                                                                        año11110.setValue(editTxtAño.text.toString())
+                                                                        var emb11110=editTxtEmbolsados.text.toString()
+                                                                        var d11110=editTxtDia.text.toString()
+                                                                        var m11110=editTxtMes.text.toString()
+                                                                        var a11110=editTxtAño.text.toString()
+                                                                        embolsados11110.setValue(emb11110.toInt())
+                                                                        dia11110.setValue(d11110.toInt())
+                                                                        mes11110.setValue(m11110.toInt())
+                                                                        año11110.setValue(a11110.toInt())
                                                                         contadorembolsados111=10
                                                                         contembolsados111.setValue(contadorembolsados111)
                                                                 }
