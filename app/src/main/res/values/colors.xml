@@ -12,6 +12,13 @@
     <color name="red">#F44336</color>
     <color name="gray">#DCDBD9</color>
     <color name="verde">#4AEF1D</color>
-    <color name="verdeclaro">#4FFF7B</color>
+    <color name="orange">#FF5722</color>
+    <color name="verdeoscuro">#0B6E24</color>
+    <color name="azulverdesco">#478C70</color>
+    <color name="amarillo">#FFF283</color>
+    <color name="verdeclaro">#ABD080</color>
+    <color name="azul">#88DCE7</color>
+    <color name="lila">#D192DB</color>
+
 
 </resources>

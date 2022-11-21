@@ -1,35 +1,35 @@
 package com.cdio.smart_farming_scp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_inventario.*
+import com.cdio.smart_farming_scp.databinding.ActivityInventarioBinding
+
 
 
 class InventarioActivity : AppCompatActivity(){
 
-        private lateinit var tabLayout: TabLayout
-        private lateinit var viewPager: ViewPager
+    private lateinit var binding: ActivityInventarioBinding
 
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?){
+        super.onCreate(savedInstanceState)
+        binding = ActivityInventarioBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_inventario)
+        binding.ButtonPropInv.setOnClickListener{
+            startActivity (Intent( this@InventarioActivity, PropiedadesInventario ::class.java))
+        }
 
-            tabLayout = findViewById(R.id.tablayout)
-            viewPager = findViewById(R.id.viewpager)
+        binding.ButtonInfInv.setOnClickListener{
+            startActivity (Intent ( this@InventarioActivity, InformeInventario::class.java))
 
-            //tabLayout.setupWithViewPager(viewPager)
+        }
 
-            val adaptador1 = Adaptador1(
-                supportFragmentManager
-            )
-            adaptador1.addFragment(PropiedadesInventario(), "Propiedades")
-            adaptador1.addFragment(DemandaInventario(), "Demanda")
-            adaptador1.addFragment(InformeInventario(), "Informe")
-            viewPager.adapter = adaptador1
+        binding.ButtonEstaInv.setOnClickListener{
+            startActivity(Intent ( this@InventarioActivity, EstadisticaInventario::class.java))
+
+        }
 
         }
     }
