@@ -1,28 +1,20 @@
 package com.cdio.smart_farming_scp
 
-import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
-import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_auth.*
-
 import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import com.google.android.gms.safetynet.SafetyNetApi.VerifyAppsUserResponse
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_auth.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import java.text.SimpleDateFormat
-import java.time.LocalDateTime
 import java.util.*
 
 
@@ -35,8 +27,11 @@ class CalendarioActivity : AppCompatActivity() {
     lateinit var calendarView: CalendarView
     lateinit var calendar: Calendar
     var myID= ArrayList<String>()
-    val rows = 10
-    val cols = 4
+    var racimosEMBOLSADOS = ArrayList<String>()
+    var racimosCULTIVADOS = ArrayList<String>()
+    var fechas=ArrayList<String>()
+
+
 
     //variables categoicas
     var usu = "USUARIO"
@@ -51,16 +46,8 @@ class CalendarioActivity : AppCompatActivity() {
     var numfech = 111 //numero FECHAINV
     var numerofechas = 2 // variable que itera en los for
 
-    val arr = Array(rows) { IntArray(cols) }
-
-    private lateinit var database: FirebaseDatabase
-
-    private var databaseReference: DatabaseReference? = null
-    private var firebaseDatabase: FirebaseDatabase? = null
-
-
-
-    private var plaemb = 0
+    //Variables auxiliares
+    var info = true // esta ---------------------> debo verificar si se han subido datos para llamar la info nueva.
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -73,18 +60,22 @@ class CalendarioActivity : AppCompatActivity() {
         dateTV = findViewById(R.id.idTVDate)
         calendarView = findViewById(R.id.calendarView)
 
-        var asf = calendarView.setDate(2333-22-22)
+        calendarView.setDate(1669397846 )//1668965846
 
         val formatter2 = SimpleDateFormat("yyyy-MM-dd")
         val date = Date()
         val fechaactual = formatter2.format(date)
         dateTV.setText(fechaactual)//muestro la fecha actual
         val mesActual = SimpleDateFormat("MM",Locale.getDefault()).format(Date())
-
+        //calendar.set(2022,11,22)
 
         println(mesActual)
         println("   ")
-        llamarinfoDb() // traigo la info de la bd
+
+        while (info){
+            llamarinfoDb()
+            info = !info
+        } // traigo la info de la bd
         estableccerFechas()
 
         // on below line we are adding set on
@@ -114,9 +105,18 @@ class CalendarioActivity : AppCompatActivity() {
     }
 
     private fun estableccerFechas() {
-        for(g in 1..numerofechas){
+        var i=0
+        for(g in myID.indices){
+            if (i == 0) racimosEMBOLSADOS.add(myID[g])
+            else if (i in 1..3)  fechas.add(myID[g])
+            else if (i == 4) racimosCULTIVADOS.add(myID[g])
+            else if (i in 5..7) fechas.add(myID[g])
+            i++
+            if(i==8)i=0
+
 
         }
+        //calendar.set(2022,11,22)
     }
 
     private fun llamarinfoDb(){
@@ -125,11 +125,8 @@ class CalendarioActivity : AppCompatActivity() {
 
         val Varint = arrayOf("EMBOLSADOS", "año",  "mes",  "dia", "CULTIVADOS","año","mes", "dia")//variablesInternas
         var i = 0
+
         var ruta: String
-
-        var cantidades = arrayOf(0)
-        val info = ArrayList<String>()
-
 
         //for para traer fechas del mes actual
 //for (i in 1..10 step 3)
@@ -163,31 +160,28 @@ class CalendarioActivity : AppCompatActivity() {
                 } else {
                     ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + x + numfech + j + "cult"
                 }
-                println(ruta)
-                var id_CULT = db.getReference(ruta)
+                //println(ruta)
 
+                var id_CULT = db.getReference(ruta)
                 GlobalScope.launch {
                     myID.add(id_CULT.get().await().value as String)
-                    println(myID)
                 }
                 i++
                 if(i==8)i=0
             }
             println("   ")
         }
-        println("jueputaaaaaaaaaaaaaaaaaaaaaaa")
         for (i in myID.indices) {
-            print("sdddddddddddddddddd: ")
+            print("sdddddddddDDFFFGGGGdddd: ")
             println(myID[i])
 
         }
-
 
     }
     private fun sumar4meses(dia: String, mes: String, annio: String){
 
         var totaldias = dia.toInt() + (mes.toInt()*30) + (annio.toInt()*365)
-        var aRecol = totaldias
+
     }
 
     private fun traerInfo(){
@@ -198,12 +192,34 @@ class CalendarioActivity : AppCompatActivity() {
         val child = databaseReference?.child("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111")?.get()?.addOnSuccessListener {
 
         }*/
-
-        println("jueputaaaaaaaaaaaaaaaaaaaaaaa")
+        estableccerFechas()
+        println("Racimos toda la info")
         for (i in myID.indices) {
             print("sdddddddddddddddddd: ")
             println(myID[i])
 
+        }
+        println()
+        println("Racimos embolsados")
+        for (i in racimosEMBOLSADOS.indices) {
+            print("sdddddddddddddddddd: ")
+            println(racimosEMBOLSADOS[i])
+
+        }
+        println()
+        println("Racimos cultivados")
+        for (i in racimosCULTIVADOS.indices) {
+            print("sdddddddddddddddddd: ")
+            println(racimosCULTIVADOS[i])
+
+        }
+        println()
+        println("FEchass")
+        for (array in fechas) {
+            for (value in array) {
+                print(value)
+            }
+            println()
         }
     }
 
