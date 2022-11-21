@@ -33,7 +33,7 @@
     <string name="contactanos">contactanos</string>
     <string name="perfil">perfil</string>
     <string name="inventario">Inventario</string>
-    <string name="datos_usuario">Datos Usuario</string>
+    <string name="datos_usuario">Datos de Usuarios</string>
     <string name="smart_farming_s_c_p_p">Smart Farming - S.C.P.P</string>
     <string name="by_scp">By SCP</string>
     <string name="by_scp2">By SCP</string>
@@ -75,5 +75,28 @@
     <string name="Concepto">Concepto</string>
     <string name="ventas">Ventas</string>
     <string name="Cosecha">cosecha</string>
+    <string name="prop_inv">PROPIEDADES</string>
+    <string name="informe_inv">INFORME</string>
+    <string name="estadisticas">ESTADISTICAS</string>
+    <string name="propiedadesdeinventario">propiedadesdeinventario</string>
+    <string name="informeinventario">informeinventario</string>
+    <string name="estadisticapropiedades">estadisticapropiedades</string>
+    <string name="genera_tu_pdf">Genera tu PDF!</string>
+    <string name="botonparagenerarelpdf">botonparagenerarelpdf</string>
+    <string name="revisa_el_total_de_tus_propiedades">REVISA EL TOTAL DE TUS PROPIEDADES</string>
+    <string name="genera_tu_informe">Genera tu informe</string>
+    <string name="pdf_descargable">PDF descargable</string>
+    <string name="logodellogin">logodellogin</string>
+    <string name="logodedescarga">logodedescarga</string>
+    <string name="datos_del_usuario">DATOS DEL USUARIO</string>
+    <string name="propiedad_1">PROPIEDAD 1</string>
+    <string name="propietario">Propietario</string>
+    <string name="propiedad_2">PROPIEDAD 2</string>
+    <string name="esta_aplicaci_n_es_creada_por_smart_farming_con_el_fin_de_facilitar_y_dinamizar_los_procesos_de_la_producci_n_platanera">Esta aplicación es creada por Smart Farming con el fin de facilitar y dinamizar los procesos de la producción platanera</string>
+    <string name="bienvenido_a_a_tu_sistema_de_control_de_producci_n_de_platano">BIENVENIDO/A A TU SISTEMA DE CONTROL DE PRODUCCIÓN DE PLATANO</string>
+    <string name="imagendehome">imagendehome</string>
+    <string name="_20_racimos_400_kg_martes_11">20 racimos (400 kg) Martes 11</string>
+    <string name="calendarioTitulo">Calendario</string>
+    <string name="_50_racimos_1000_kg_miercoles_12">50 racimos (1000 kg) Miercoles 12</string>
 
 </resources>

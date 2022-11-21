@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
 tools:context=".HomeActivity">
 
 <!--text view for displaying the selected date-->
@@ -11,14 +11,19 @@ tools:context=".HomeActivity">
     <!-- Add CalendarView to display the Calendar -->
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="311dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_rounded"
         android:gravity="center"
+        android:text="@string/calendarioTitulo"
+        android:textColor="@color/black"
         android:textSize="40sp"
-        android:text="Calendario"
-        android:textColor="@color/red"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/idTVDate"
@@ -32,7 +37,7 @@ tools:context=".HomeActivity">
         android:padding="8dp"
         android:text="dd-mm--aa"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/verde"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -50,13 +55,13 @@ tools:context=".HomeActivity">
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="20 racimos (400 kg) Martes 11"
+        android:text="@string/_20_racimos_400_kg_martes_11"
         android:layout_below="@id/calendarView"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:gravity="center"
-        android:background="@color/verdeclaro"
+        android:background="@color/amarillo"
         android:padding="20dp"
         android:textSize="20dp"
         android:textColor="@color/black"
@@ -67,13 +72,13 @@ tools:context=".HomeActivity">
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="50 racimos (1000 kg) Miercoles 12"
+        android:text="@string/_50_racimos_1000_kg_miercoles_12"
         android:layout_below="@id/editTextverde"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:gravity="center"
-        android:background="@color/underLine"
+        android:background="@color/verdeclaro"
         android:padding="20dp"
         android:textSize="20dp"
         android:textColor="@color/black"
@@ -90,26 +95,28 @@ tools:context=".HomeActivity">
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:gravity="center"
-        android:background="@color/orange"
+        android:background="@color/azul"
         android:padding="20dp"
         android:textSize="20dp"
         android:textColor="@color/black"/>
+
     <TextView
         android:id="@+id/editTexblanco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="78 racimos (1500 kg) Jueves 13"
         android:layout_below="@id/editTextrojo"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:background="@color/lila"
+        android:ems="10"
         android:gravity="center"
-        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:minHeight="32dp"
         android:padding="20dp"
-        android:textSize="20dp"
+        android:text="78 racimos (1500 kg) Jueves 13"
         android:textColor="@color/black"
-        />
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </RelativeLayout>
