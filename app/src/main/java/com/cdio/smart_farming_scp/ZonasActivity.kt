@@ -806,122 +806,122 @@ class ZonasActivity : AppCompatActivity() {
                                                         }
                                                         when(contadorcultivados111) {
                                                                 0 -> {
-                                                                        var emb1111=editTxtCultivados.text.toString()
-                                                                        var d1111=editTxtDia.text.toString()
-                                                                        var m1111=editTxtMes.text.toString()
-                                                                        var a1111=editTxtAño.text.toString()
-                                                                        cultivados1111.setValue(emb1111.toInt())
-                                                                        dia1111cult.setValue(d1111.toInt())
-                                                                        mes1111cult.setValue(m1111.toInt())
-                                                                        año1111cult.setValue(a1111.toInt())
+                                                                        var cos1111=editTxtCultivados.text.toString()
+                                                                        var d1111cos=editTxtDia.text.toString()
+                                                                        var m1111cos=editTxtMes.text.toString()
+                                                                        var a1111cos=editTxtAño.text.toString()
+                                                                        cultivados1111.setValue(cos1111.toInt())
+                                                                        dia1111cult.setValue(d1111cos.toInt())
+                                                                        mes1111cult.setValue(m1111cos.toInt())
+                                                                        año1111cult.setValue(a1111cos.toInt())
                                                                         contadorcultivados111=1
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 1 -> {
-                                                                        var emb1112=editTxtCultivados.text.toString()
-                                                                        var d1112=editTxtDia.text.toString()
-                                                                        var m1112=editTxtMes.text.toString()
-                                                                        var a1112=editTxtAño.text.toString()
-                                                                        cultivados1112.setValue(emb1112.toInt())
-                                                                        dia1112cult.setValue(d1112.toInt())
-                                                                        mes1112cult.setValue(m1112.toInt())
-                                                                        año1112cult.setValue(a1112.toInt())
+                                                                        var cos1112=editTxtCultivados.text.toString()
+                                                                        var d1112cos=editTxtDia.text.toString()
+                                                                        var m1112cos=editTxtMes.text.toString()
+                                                                        var a1112cos=editTxtAño.text.toString()
+                                                                        cultivados1112.setValue(cos1112.toInt())
+                                                                        dia1112cult.setValue(d1112cos.toInt())
+                                                                        mes1112cult.setValue(m1112cos.toInt())
+                                                                        año1112cult.setValue(a1112cos.toInt())
                                                                         contadorcultivados111=2
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 2 -> {
-                                                                        var emb1113=editTxtCultivados.text.toString()
-                                                                        var d1113=editTxtDia.text.toString()
-                                                                        var m1113=editTxtMes.text.toString()
-                                                                        var a1113=editTxtAño.text.toString()
-                                                                        cultivados1113.setValue(emb1113.toInt())
-                                                                        dia1113cult.setValue(d1113.toInt())
-                                                                        mes1113cult.setValue(m1113.toInt())
-                                                                        año1113cult.setValue(a1113.toInt())
+                                                                        var cos1113=editTxtCultivados.text.toString()
+                                                                        var d1113cos=editTxtDia.text.toString()
+                                                                        var m1113cos=editTxtMes.text.toString()
+                                                                        var a1113cos=editTxtAño.text.toString()
+                                                                        cultivados1113.setValue(cos1113.toInt())
+                                                                        dia1113cult.setValue(d1113cos.toInt())
+                                                                        mes1113cult.setValue(m1113cos.toInt())
+                                                                        año1113cult.setValue(a1113cos.toInt())
                                                                         contadorcultivados111=3
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 3 -> {
-                                                                        var emb1114=editTxtCultivados.text.toString()
-                                                                        var d1114=editTxtDia.text.toString()
-                                                                        var m1114=editTxtMes.text.toString()
-                                                                        var a1114=editTxtAño.text.toString()
-                                                                        cultivados1114.setValue(emb1114.toInt())
-                                                                        dia1114cult.setValue(d1114.toInt())
-                                                                        mes1114cult.setValue(m1114.toInt())
-                                                                        año1114cult.setValue(a1114.toInt())
+                                                                        var cos1114=editTxtCultivados.text.toString()
+                                                                        var d1114cos=editTxtDia.text.toString()
+                                                                        var m1114cos=editTxtMes.text.toString()
+                                                                        var a1114cos=editTxtAño.text.toString()
+                                                                        cultivados1114.setValue(cos1114.toInt())
+                                                                        dia1114cult.setValue(d1114cos.toInt())
+                                                                        mes1114cult.setValue(m1114cos.toInt())
+                                                                        año1114cult.setValue(a1114cos.toInt())
                                                                         contadorcultivados111=4
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 4 -> {
-                                                                        var emb1115=editTxtCultivados.text.toString()
-                                                                        var d1115=editTxtDia.text.toString()
-                                                                        var m1115=editTxtMes.text.toString()
-                                                                        var a1115=editTxtAño.text.toString()
-                                                                        cultivados1115.setValue(emb1115.toInt())
-                                                                        dia1115cult.setValue(d1115.toInt())
-                                                                        mes1115cult.setValue(m1115.toInt())
-                                                                        año1115cult.setValue(a1115.toInt())
+                                                                        var cos1115=editTxtCultivados.text.toString()
+                                                                        var d1115cos=editTxtDia.text.toString()
+                                                                        var m1115cos=editTxtMes.text.toString()
+                                                                        var a1115cos=editTxtAño.text.toString()
+                                                                        cultivados1115.setValue(cos1115.toInt())
+                                                                        dia1115cult.setValue(d1115cos.toInt())
+                                                                        mes1115cult.setValue(m1115cos.toInt())
+                                                                        año1115cult.setValue(a1115cos.toInt())
                                                                         contadorcultivados111=5
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 5 -> {
-                                                                        var emb1116=editTxtCultivados.text.toString()
-                                                                        var d1116=editTxtDia.text.toString()
-                                                                        var m1116=editTxtMes.text.toString()
-                                                                        var a1116=editTxtAño.text.toString()
-                                                                        cultivados1116.setValue(emb1116.toInt())
-                                                                        dia1116cult.setValue(d1116.toInt())
-                                                                        mes1116cult.setValue(m1116.toInt())
-                                                                        año1116cult.setValue(a1116.toInt())
+                                                                        var cos1116=editTxtCultivados.text.toString()
+                                                                        var d1116cos=editTxtDia.text.toString()
+                                                                        var m1116cos=editTxtMes.text.toString()
+                                                                        var a1116cos=editTxtAño.text.toString()
+                                                                        cultivados1116.setValue(cos1116.toInt())
+                                                                        dia1116cult.setValue(d1116cos.toInt())
+                                                                        mes1116cult.setValue(m1116cos.toInt())
+                                                                        año1116cult.setValue(a1116cos.toInt())
                                                                         contadorcultivados111=6
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 6 -> {
-                                                                        var emb1117=editTxtCultivados.text.toString()
-                                                                        var d1117=editTxtDia.text.toString()
-                                                                        var m1117=editTxtMes.text.toString()
-                                                                        var a1117=editTxtAño.text.toString()
-                                                                        cultivados1117.setValue(emb1117.toInt())
-                                                                        dia1117cult.setValue(d1117.toInt())
-                                                                        mes1117cult.setValue(m1117.toInt())
-                                                                        año1117cult.setValue(a1117.toInt())
+                                                                        var cos1117=editTxtCultivados.text.toString()
+                                                                        var d1117cos=editTxtDia.text.toString()
+                                                                        var m1117cos=editTxtMes.text.toString()
+                                                                        var a1117cos=editTxtAño.text.toString()
+                                                                        cultivados1117.setValue(cos1117.toInt())
+                                                                        dia1117cult.setValue(d1117cos.toInt())
+                                                                        mes1117cult.setValue(m1117cos.toInt())
+                                                                        año1117cult.setValue(a1117cos.toInt())
                                                                         contadorcultivados111=7
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 7 -> {
-                                                                        var emb1118=editTxtCultivados.text.toString()
-                                                                        var d1118=editTxtDia.text.toString()
-                                                                        var m1118=editTxtMes.text.toString()
-                                                                        var a1118=editTxtAño.text.toString()
-                                                                        cultivados1118.setValue(emb1118.toInt())
-                                                                        dia1118cult.setValue(d1118.toInt())
-                                                                        mes1118cult.setValue(m1118.toInt())
-                                                                        año1118cult.setValue(a1118.toInt())
+                                                                        var cos1118=editTxtCultivados.text.toString()
+                                                                        var d1118cos=editTxtDia.text.toString()
+                                                                        var m1118cos=editTxtMes.text.toString()
+                                                                        var a1118cos=editTxtAño.text.toString()
+                                                                        cultivados1118.setValue(cos1118.toInt())
+                                                                        dia1118cult.setValue(d1118cos.toInt())
+                                                                        mes1118cult.setValue(m1118cos.toInt())
+                                                                        año1118cult.setValue(a1118cos.toInt())
                                                                         contadorcultivados111=8
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 8 -> {
-                                                                        var emb1119=editTxtCultivados.text.toString()
-                                                                        var d1119=editTxtDia.text.toString()
-                                                                        var m1119=editTxtMes.text.toString()
-                                                                        var a1119=editTxtAño.text.toString()
-                                                                        cultivados1119.setValue(emb1119.toInt())
-                                                                        dia1119cult.setValue(d1119.toInt())
-                                                                        mes1119cult.setValue(m1119.toInt())
-                                                                        año1119cult.setValue(a1119.toInt())
+                                                                        var cos1119=editTxtCultivados.text.toString()
+                                                                        var d1119cos=editTxtDia.text.toString()
+                                                                        var m1119cos=editTxtMes.text.toString()
+                                                                        var a1119cos=editTxtAño.text.toString()
+                                                                        cultivados1119.setValue(cos1119.toInt())
+                                                                        dia1119cult.setValue(d1119cos.toInt())
+                                                                        mes1119cult.setValue(m1119cos.toInt())
+                                                                        año1119cult.setValue(a1119cos.toInt())
                                                                         contadorcultivados111=9
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
                                                                 9 -> {
-                                                                        var emb11110=editTxtCultivados.text.toString()
-                                                                        var d11110=editTxtDia.text.toString()
-                                                                        var m11110=editTxtMes.text.toString()
-                                                                        var a11110=editTxtAño.text.toString()
-                                                                        cultivados11110.setValue(emb11110.toInt())
-                                                                        dia11110cult.setValue(d11110.toInt())
-                                                                        mes11110cult.setValue(d11110.toInt())
-                                                                        año11110cult.setValue(d11110.toInt())
+                                                                        var cos11110=editTxtCultivados.text.toString()
+                                                                        var d11110cos=editTxtDia.text.toString()
+                                                                        var m11110cos=editTxtMes.text.toString()
+                                                                        var a11110cos=editTxtAño.text.toString()
+                                                                        cultivados11110.setValue(cos11110.toInt())
+                                                                        dia11110cult.setValue(d11110cos.toInt())
+                                                                        mes11110cult.setValue(m11110cos.toInt())
+                                                                        año11110cult.setValue(a11110cos.toInt())
                                                                         contadorcultivados111=10
                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                 }
@@ -1066,122 +1066,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                 if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                                                         when(contadorcultivados111) {
                                                                                 0 -> {
-                                                                                        var emb1111=editTxtCultivados.text.toString()
-                                                                                        var d1111=editTxtDia.text.toString()
-                                                                                        var m1111=editTxtMes.text.toString()
-                                                                                        var a1111=editTxtAño.text.toString()
-                                                                                        cultivados1111.setValue(emb1111.toInt())
-                                                                                        dia1111cult.setValue(d1111.toInt())
-                                                                                        mes1111cult.setValue(m1111.toInt())
-                                                                                        año1111cult.setValue(a1111.toInt())
+                                                                                        var cos1111=editTxtCultivados.text.toString()
+                                                                                        var d1111cos=editTxtDia.text.toString()
+                                                                                        var m1111cos=editTxtMes.text.toString()
+                                                                                        var a1111cos=editTxtAño.text.toString()
+                                                                                        cultivados1111.setValue(cos1111.toInt())
+                                                                                        dia1111cult.setValue(d1111cos.toInt())
+                                                                                        mes1111cult.setValue(m1111cos.toInt())
+                                                                                        año1111cult.setValue(a1111cos.toInt())
                                                                                         contadorcultivados111=1
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 1 -> {
-                                                                                        var emb1112=editTxtCultivados.text.toString()
-                                                                                        var d1112=editTxtDia.text.toString()
-                                                                                        var m1112=editTxtMes.text.toString()
-                                                                                        var a1112=editTxtAño.text.toString()
-                                                                                        cultivados1112.setValue(emb1112.toInt())
-                                                                                        dia1112cult.setValue(d1112.toInt())
-                                                                                        mes1112cult.setValue(m1112.toInt())
-                                                                                        año1112cult.setValue(a1112.toInt())
+                                                                                        var cos1112=editTxtCultivados.text.toString()
+                                                                                        var d1112cos=editTxtDia.text.toString()
+                                                                                        var m1112cos=editTxtMes.text.toString()
+                                                                                        var a1112cos=editTxtAño.text.toString()
+                                                                                        cultivados1112.setValue(cos1112.toInt())
+                                                                                        dia1112cult.setValue(d1112cos.toInt())
+                                                                                        mes1112cult.setValue(m1112cos.toInt())
+                                                                                        año1112cult.setValue(a1112cos.toInt())
                                                                                         contadorcultivados111=2
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 2 -> {
-                                                                                        var emb1113=editTxtCultivados.text.toString()
-                                                                                        var d1113=editTxtDia.text.toString()
-                                                                                        var m1113=editTxtMes.text.toString()
-                                                                                        var a1113=editTxtAño.text.toString()
-                                                                                        cultivados1113.setValue(emb1113.toInt())
-                                                                                        dia1113cult.setValue(d1113.toInt())
-                                                                                        mes1113cult.setValue(m1113.toInt())
-                                                                                        año1113cult.setValue(a1113.toInt())
+                                                                                        var cos1113=editTxtCultivados.text.toString()
+                                                                                        var d1113cos=editTxtDia.text.toString()
+                                                                                        var m1113cos=editTxtMes.text.toString()
+                                                                                        var a1113cos=editTxtAño.text.toString()
+                                                                                        cultivados1113.setValue(cos1113.toInt())
+                                                                                        dia1113cult.setValue(d1113cos.toInt())
+                                                                                        mes1113cult.setValue(m1113cos.toInt())
+                                                                                        año1113cult.setValue(a1113cos.toInt())
                                                                                         contadorcultivados111=3
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 3 -> {
-                                                                                        var emb1114=editTxtCultivados.text.toString()
-                                                                                        var d1114=editTxtDia.text.toString()
-                                                                                        var m1114=editTxtMes.text.toString()
-                                                                                        var a1114=editTxtAño.text.toString()
-                                                                                        cultivados1114.setValue(emb1114.toInt())
-                                                                                        dia1114cult.setValue(d1114.toInt())
-                                                                                        mes1114cult.setValue(m1114.toInt())
-                                                                                        año1114cult.setValue(a1114.toInt())
+                                                                                        var cos1114=editTxtCultivados.text.toString()
+                                                                                        var d1114cos=editTxtDia.text.toString()
+                                                                                        var m1114cos=editTxtMes.text.toString()
+                                                                                        var a1114cos=editTxtAño.text.toString()
+                                                                                        cultivados1114.setValue(cos1114.toInt())
+                                                                                        dia1114cult.setValue(d1114cos.toInt())
+                                                                                        mes1114cult.setValue(m1114cos.toInt())
+                                                                                        año1114cult.setValue(a1114cos.toInt())
                                                                                         contadorcultivados111=4
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 4 -> {
-                                                                                        var emb1115=editTxtCultivados.text.toString()
-                                                                                        var d1115=editTxtDia.text.toString()
-                                                                                        var m1115=editTxtMes.text.toString()
-                                                                                        var a1115=editTxtAño.text.toString()
-                                                                                        cultivados1115.setValue(emb1115.toInt())
-                                                                                        dia1115cult.setValue(d1115.toInt())
-                                                                                        mes1115cult.setValue(m1115.toInt())
-                                                                                        año1115cult.setValue(a1115.toInt())
+                                                                                        var cos1115=editTxtCultivados.text.toString()
+                                                                                        var d1115cos=editTxtDia.text.toString()
+                                                                                        var m1115cos=editTxtMes.text.toString()
+                                                                                        var a1115cos=editTxtAño.text.toString()
+                                                                                        cultivados1115.setValue(cos1115.toInt())
+                                                                                        dia1115cult.setValue(d1115cos.toInt())
+                                                                                        mes1115cult.setValue(m1115cos.toInt())
+                                                                                        año1115cult.setValue(a1115cos.toInt())
                                                                                         contadorcultivados111=5
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 5 -> {
-                                                                                        var emb1116=editTxtCultivados.text.toString()
-                                                                                        var d1116=editTxtDia.text.toString()
-                                                                                        var m1116=editTxtMes.text.toString()
-                                                                                        var a1116=editTxtAño.text.toString()
-                                                                                        cultivados1116.setValue(emb1116.toInt())
-                                                                                        dia1116cult.setValue(d1116.toInt())
-                                                                                        mes1116cult.setValue(m1116.toInt())
-                                                                                        año1116cult.setValue(a1116.toInt())
+                                                                                        var cos1116=editTxtCultivados.text.toString()
+                                                                                        var d1116cos=editTxtDia.text.toString()
+                                                                                        var m1116cos=editTxtMes.text.toString()
+                                                                                        var a1116cos=editTxtAño.text.toString()
+                                                                                        cultivados1116.setValue(cos1116.toInt())
+                                                                                        dia1116cult.setValue(d1116cos.toInt())
+                                                                                        mes1116cult.setValue(m1116cos.toInt())
+                                                                                        año1116cult.setValue(a1116cos.toInt())
                                                                                         contadorcultivados111=6
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 6 -> {
-                                                                                        var emb1117=editTxtCultivados.text.toString()
-                                                                                        var d1117=editTxtDia.text.toString()
-                                                                                        var m1117=editTxtMes.text.toString()
-                                                                                        var a1117=editTxtAño.text.toString()
-                                                                                        cultivados1117.setValue(emb1117.toInt())
-                                                                                        dia1117cult.setValue(d1117.toInt())
-                                                                                        mes1117cult.setValue(m1117.toInt())
-                                                                                        año1117cult.setValue(a1117.toInt())
+                                                                                        var cos1117=editTxtCultivados.text.toString()
+                                                                                        var d1117cos=editTxtDia.text.toString()
+                                                                                        var m1117cos=editTxtMes.text.toString()
+                                                                                        var a1117cos=editTxtAño.text.toString()
+                                                                                        cultivados1117.setValue(cos1117.toInt())
+                                                                                        dia1117cult.setValue(d1117cos.toInt())
+                                                                                        mes1117cult.setValue(m1117cos.toInt())
+                                                                                        año1117cult.setValue(a1117cos.toInt())
                                                                                         contadorcultivados111=7
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 7 -> {
-                                                                                        var emb1118=editTxtCultivados.text.toString()
-                                                                                        var d1118=editTxtDia.text.toString()
-                                                                                        var m1118=editTxtMes.text.toString()
-                                                                                        var a1118=editTxtAño.text.toString()
-                                                                                        cultivados1118.setValue(emb1118.toInt())
-                                                                                        dia1118cult.setValue(d1118.toInt())
-                                                                                        mes1118cult.setValue(m1118.toInt())
-                                                                                        año1118cult.setValue(a1118.toInt())
+                                                                                        var cos1118=editTxtCultivados.text.toString()
+                                                                                        var d1118cos=editTxtDia.text.toString()
+                                                                                        var m1118cos=editTxtMes.text.toString()
+                                                                                        var a1118cos=editTxtAño.text.toString()
+                                                                                        cultivados1118.setValue(cos1118.toInt())
+                                                                                        dia1118cult.setValue(d1118cos.toInt())
+                                                                                        mes1118cult.setValue(m1118cos.toInt())
+                                                                                        año1118cult.setValue(a1118cos.toInt())
                                                                                         contadorcultivados111=8
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 8 -> {
-                                                                                        var emb1119=editTxtCultivados.text.toString()
-                                                                                        var d1119=editTxtDia.text.toString()
-                                                                                        var m1119=editTxtMes.text.toString()
-                                                                                        var a1119=editTxtAño.text.toString()
-                                                                                        cultivados1119.setValue(emb1119.toInt())
-                                                                                        dia1119cult.setValue(d1119.toInt())
-                                                                                        mes1119cult.setValue(m1119.toInt())
-                                                                                        año1119cult.setValue(a1119.toInt())
+                                                                                        var cos1119=editTxtCultivados.text.toString()
+                                                                                        var d1119cos=editTxtDia.text.toString()
+                                                                                        var m1119cos=editTxtMes.text.toString()
+                                                                                        var a1119cos=editTxtAño.text.toString()
+                                                                                        cultivados1119.setValue(cos1119.toInt())
+                                                                                        dia1119cult.setValue(d1119cos.toInt())
+                                                                                        mes1119cult.setValue(m1119cos.toInt())
+                                                                                        año1119cult.setValue(a1119cos.toInt())
                                                                                         contadorcultivados111=9
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
                                                                                 9 -> {
-                                                                                        var emb11110=editTxtCultivados.text.toString()
-                                                                                        var d11110=editTxtDia.text.toString()
-                                                                                        var m11110=editTxtMes.text.toString()
-                                                                                        var a11110=editTxtAño.text.toString()
-                                                                                        cultivados11110.setValue(emb11110.toInt())
-                                                                                        dia11110cult.setValue(d11110.toInt())
-                                                                                        mes11110cult.setValue(d11110.toInt())
-                                                                                        año11110cult.setValue(d11110.toInt())
+                                                                                        var cos11110=editTxtCultivados.text.toString()
+                                                                                        var d11110cos=editTxtDia.text.toString()
+                                                                                        var m11110cos=editTxtMes.text.toString()
+                                                                                        var a11110cos=editTxtAño.text.toString()
+                                                                                        cultivados11110.setValue(cos11110.toInt())
+                                                                                        dia11110cult.setValue(d11110cos.toInt())
+                                                                                        mes11110cult.setValue(m11110cos.toInt())
+                                                                                        año11110cult.setValue(a11110cos.toInt())
                                                                                         contadorcultivados111=10
                                                                                         contcultivados111.setValue(contadorcultivados111)
                                                                                 }
@@ -1327,106 +1327,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                 }
                                                                 when(contadorcultivados112) {
                                                                         0 -> {
-                                                                                var emb1121=editTxtCultivados.text.toString()
-                                                                                var d1121=editTxtDia.text.toString()
-                                                                                var m1121=editTxtMes.text.toString()
-                                                                                var a1121=editTxtAño.text.toString()
-                                                                                cultivados1121.setValue(emb1121.toInt())
-                                                                                dia1121cult.setValue(d1121.toInt())
-                                                                                mes1121cult.setValue(d1121.toInt())
-                                                                                año1121cult.setValue(d1121.toInt())
+                                                                                var cos1121=editTxtCultivados.text.toString()
+                                                                                var d1121cos=editTxtDia.text.toString()
+                                                                                var m1121cos=editTxtMes.text.toString()
+                                                                                var a1121cos=editTxtAño.text.toString()
+                                                                                cultivados1121.setValue(cos1121.toInt())
+                                                                                dia1121cult.setValue(d1121cos.toInt())
+                                                                                mes1121cult.setValue(m1121cos.toInt())
+                                                                                año1121cult.setValue(a1121cos.toInt())
                                                                                 contadorcultivados112 = 1
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         1 -> {
-                                                                                var emb1122=editTxtCultivados.text.toString()
-                                                                                var d1122=editTxtDia.text.toString()
-                                                                                var m1122=editTxtMes.text.toString()
-                                                                                var a1122=editTxtAño.text.toString()
-                                                                                cultivados1122.setValue(emb1122.toInt())
-                                                                                dia1122cult.setValue(d1122.toInt())
-                                                                                mes1122cult.setValue(d1122.toInt())
-                                                                                año1122cult.setValue(d1122.toInt())
+                                                                                var cos1122=editTxtCultivados.text.toString()
+                                                                                var d1122cos=editTxtDia.text.toString()
+                                                                                var m1122cos=editTxtMes.text.toString()
+                                                                                var a1122cos=editTxtAño.text.toString()
+                                                                                cultivados1122.setValue(cos1122.toInt())
+                                                                                dia1122cult.setValue(d1122cos.toInt())
+                                                                                mes1122cult.setValue(m1122cos.toInt())
+                                                                                año1122cult.setValue(a1122cos.toInt())
                                                                                 contadorcultivados112 = 2
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         2 -> {
-                                                                                var emb1123=editTxtCultivados.text.toString()
-                                                                                var d1123=editTxtDia.text.toString()
-                                                                                var m1123=editTxtMes.text.toString()
-                                                                                var a1123=editTxtAño.text.toString()
-                                                                                cultivados1123.setValue(emb1123.toInt())
-                                                                                dia1123cult.setValue(d1123.toInt())
-                                                                                mes1123cult.setValue(d1123.toInt())
-                                                                                año1123cult.setValue(d1123.toInt())
+                                                                                var cos1123=editTxtCultivados.text.toString()
+                                                                                var d1123cos=editTxtDia.text.toString()
+                                                                                var m1123cos=editTxtMes.text.toString()
+                                                                                var a1123cos=editTxtAño.text.toString()
+                                                                                cultivados1123.setValue(cos1123.toInt())
+                                                                                dia1123cult.setValue(d1123cos.toInt())
+                                                                                mes1123cult.setValue(m1123cos.toInt())
+                                                                                año1123cult.setValue(a1123cos.toInt())
                                                                                 contadorcultivados112 = 3
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         3 -> {
-                                                                                var emb1124=editTxtCultivados.text.toString()
-                                                                                var d1124=editTxtDia.text.toString()
-                                                                                var m1124=editTxtMes.text.toString()
-                                                                                var a1124=editTxtAño.text.toString()
-                                                                                cultivados1124.setValue(emb1124.toInt())
-                                                                                dia1124cult.setValue(d1124.toInt())
-                                                                                mes1124cult.setValue(d1124.toInt())
-                                                                                año1124cult.setValue(d1124.toInt())
+                                                                                var cos1124=editTxtCultivados.text.toString()
+                                                                                var d1124cos=editTxtDia.text.toString()
+                                                                                var m1124cos=editTxtMes.text.toString()
+                                                                                var a1124cos=editTxtAño.text.toString()
+                                                                                cultivados1124.setValue(cos1124.toInt())
+                                                                                dia1124cult.setValue(d1124cos.toInt())
+                                                                                mes1124cult.setValue(m1124cos.toInt())
+                                                                                año1124cult.setValue(a1124cos.toInt())
                                                                                 contadorcultivados112 = 4
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         4 -> {
-                                                                                var emb1125=editTxtCultivados.text.toString()
-                                                                                var d1125=editTxtDia.text.toString()
-                                                                                var m1125=editTxtMes.text.toString()
-                                                                                var a1125=editTxtAño.text.toString()
-                                                                                cultivados1125.setValue(emb1125.toInt())
-                                                                                dia1125cult.setValue(d1125.toInt())
-                                                                                mes1125cult.setValue(d1125.toInt())
-                                                                                año1125cult.setValue(d1125.toInt())
+                                                                                var cos1125=editTxtCultivados.text.toString()
+                                                                                var d1125cos=editTxtDia.text.toString()
+                                                                                var m1125cos=editTxtMes.text.toString()
+                                                                                var a1125cos=editTxtAño.text.toString()
+                                                                                cultivados1125.setValue(cos1125.toInt())
+                                                                                dia1125cult.setValue(d1125cos.toInt())
+                                                                                mes1125cult.setValue(m1125cos.toInt())
+                                                                                año1125cult.setValue(a1125cos.toInt())
                                                                                 contadorcultivados112 = 5
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         5 -> {
-                                                                                var emb1126=editTxtCultivados.text.toString()
-                                                                                var d1126=editTxtDia.text.toString()
-                                                                                var m1126=editTxtMes.text.toString()
-                                                                                var a1126=editTxtAño.text.toString()
-                                                                                cultivados1126.setValue(emb1126.toInt())
-                                                                                dia1126cult.setValue(d1126.toInt())
-                                                                                mes1126cult.setValue(d1126.toInt())
-                                                                                año1126cult.setValue(d1126.toInt())
+                                                                                var cos1126=editTxtCultivados.text.toString()
+                                                                                var d1126cos=editTxtDia.text.toString()
+                                                                                var m1126cos=editTxtMes.text.toString()
+                                                                                var a1126cos=editTxtAño.text.toString()
+                                                                                cultivados1126.setValue(cos1126.toInt())
+                                                                                dia1126cult.setValue(d1126cos.toInt())
+                                                                                mes1126cult.setValue(m1126cos.toInt())
+                                                                                año1126cult.setValue(a1126cos.toInt())
                                                                                 contadorcultivados112 = 6
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         6 -> {
-                                                                                cultivados1127.setValue(editTxtCultivados.text.toString())
-                                                                                dia1127cult.setValue(editTxtDia.text.toString())
-                                                                                mes1127cult.setValue(editTxtMes.text.toString())
-                                                                                año1127cult.setValue(editTxtAño.text.toString())
+                                                                                var cos1127=editTxtCultivados.text.toString()
+                                                                                var d1127cos=editTxtDia.text.toString()
+                                                                                var m1127cos=editTxtMes.text.toString()
+                                                                                var a1127cos=editTxtAño.text.toString()
+                                                                                cultivados1127.setValue(cos1127.toInt())
+                                                                                dia1127cult.setValue(d1127cos.toInt())
+                                                                                mes1127cult.setValue(m1127cos.toInt())
+                                                                                año1127cult.setValue(a1127cos.toInt())
                                                                                 contadorcultivados112 = 7
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         7 -> {
-                                                                                cultivados1128.setValue(editTxtCultivados.text.toString())
-                                                                                dia1128cult.setValue(editTxtDia.text.toString())
-                                                                                mes1128cult.setValue(editTxtMes.text.toString())
-                                                                                año1128cult.setValue(editTxtAño.text.toString())
+                                                                                var cos1128=editTxtCultivados.text.toString()
+                                                                                var d1128cos=editTxtDia.text.toString()
+                                                                                var m1128cos=editTxtMes.text.toString()
+                                                                                var a1128cos=editTxtAño.text.toString()
+                                                                                cultivados1128.setValue(cos1128.toInt())
+                                                                                dia1128cult.setValue(d1128cos.toInt())
+                                                                                mes1128cult.setValue(m1128cos.toInt())
+                                                                                año1128cult.setValue(a1128cos.toInt())
                                                                                 contadorcultivados112 = 8
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         8 -> {
-                                                                                cultivados1129.setValue(editTxtCultivados.text.toString())
-                                                                                dia1129cult.setValue(editTxtDia.text.toString())
-                                                                                mes1129cult.setValue(editTxtMes.text.toString())
-                                                                                año1129cult.setValue(editTxtAño.text.toString())
+                                                                                var cos1129=editTxtCultivados.text.toString()
+                                                                                var d1129cos=editTxtDia.text.toString()
+                                                                                var m1129cos=editTxtMes.text.toString()
+                                                                                var a1129cos=editTxtAño.text.toString()
+                                                                                cultivados1129.setValue(cos1129.toInt())
+                                                                                dia1129cult.setValue(d1129cos.toInt())
+                                                                                mes1129cult.setValue(m1129cos.toInt())
+                                                                                año1129cult.setValue(a1129cos.toInt())
                                                                                 contadorcultivados112 = 9
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
                                                                         9 -> {
-                                                                                cultivados11210.setValue(editTxtCultivados.text.toString())
-                                                                                dia11210cult.setValue(editTxtDia.text.toString())
-                                                                                mes11210cult.setValue(editTxtMes.text.toString())
-                                                                                año11210cult.setValue(editTxtAño.text.toString())
+                                                                                var cos11210=editTxtCultivados.text.toString()
+                                                                                var d11210cos=editTxtDia.text.toString()
+                                                                                var m11210cos=editTxtMes.text.toString()
+                                                                                var a11210cos=editTxtAño.text.toString()
+                                                                                cultivados11210.setValue(cos11210.toInt())
+                                                                                dia11210cult.setValue(d11210cos.toInt())
+                                                                                mes11210cult.setValue(m11210cos.toInt())
+                                                                                año11210cult.setValue(a11210cos.toInt())
                                                                                 contadorcultivados112 = 10
                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                         }
@@ -1441,82 +1457,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                 if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                                                         when(contadorembolsados112) {
                                                                                 0 -> {
-                                                                                        embolsados1121.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1121.setValue(editTxtDia.text.toString())
-                                                                                        mes1121.setValue(editTxtMes.text.toString())
-                                                                                        año1121.setValue(editTxtAño.text.toString())
+                                                                                        var emb1121=editTxtEmbolsados.text.toString()
+                                                                                        var d1121=editTxtDia.text.toString()
+                                                                                        var m1121=editTxtMes.text.toString()
+                                                                                        var a1121=editTxtAño.text.toString()
+                                                                                        embolsados1121.setValue(emb1121.toInt())
+                                                                                        dia1121.setValue(d1121.toInt())
+                                                                                        mes1121.setValue(m1121.toInt())
+                                                                                        año1121.setValue(a1121.toInt())
                                                                                         contadorembolsados112=1
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 1 -> {
-                                                                                        embolsados1122.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1122.setValue(editTxtDia.text.toString())
-                                                                                        mes1122.setValue(editTxtMes.text.toString())
-                                                                                        año1122.setValue(editTxtAño.text.toString())
+                                                                                        var emb1122=editTxtEmbolsados.text.toString()
+                                                                                        var d1122=editTxtDia.text.toString()
+                                                                                        var m1122=editTxtMes.text.toString()
+                                                                                        var a1122=editTxtAño.text.toString()
+                                                                                        embolsados1122.setValue(emb1122.toInt())
+                                                                                        dia1122.setValue(d1122.toInt())
+                                                                                        mes1122.setValue(m1122.toInt())
+                                                                                        año1122.setValue(a1122.toInt())
                                                                                         contadorembolsados112=2
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 2 -> {
-                                                                                        embolsados1123.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1123.setValue(editTxtDia.text.toString())
-                                                                                        mes1123.setValue(editTxtMes.text.toString())
-                                                                                        año1123.setValue(editTxtAño.text.toString())
+                                                                                        var emb1123=editTxtEmbolsados.text.toString()
+                                                                                        var d1123=editTxtDia.text.toString()
+                                                                                        var m1123=editTxtMes.text.toString()
+                                                                                        var a1123=editTxtAño.text.toString()
+                                                                                        embolsados1123.setValue(emb1123.toInt())
+                                                                                        dia1123.setValue(d1123.toInt())
+                                                                                        mes1123.setValue(m1123.toInt())
+                                                                                        año1123.setValue(a1123.toInt())
                                                                                         contadorembolsados112=3
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 3 -> {
-                                                                                        embolsados1124.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1124.setValue(editTxtDia.text.toString())
-                                                                                        mes1124.setValue(editTxtMes.text.toString())
-                                                                                        año1124.setValue(editTxtAño.text.toString())
+                                                                                        var emb1124=editTxtEmbolsados.text.toString()
+                                                                                        var d1124=editTxtDia.text.toString()
+                                                                                        var m1124=editTxtMes.text.toString()
+                                                                                        var a1124=editTxtAño.text.toString()
+                                                                                        embolsados1124.setValue(emb1124.toInt())
+                                                                                        dia1124.setValue(d1124.toInt())
+                                                                                        mes1124.setValue(m1124.toInt())
+                                                                                        año1124.setValue(a1124.toInt())
                                                                                         contadorembolsados112=4
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 4 -> {
-                                                                                        embolsados1125.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1125.setValue(editTxtDia.text.toString())
-                                                                                        mes1125.setValue(editTxtMes.text.toString())
-                                                                                        año1125.setValue(editTxtAño.text.toString())
+                                                                                        var emb1125=editTxtEmbolsados.text.toString()
+                                                                                        var d1125=editTxtDia.text.toString()
+                                                                                        var m1125=editTxtMes.text.toString()
+                                                                                        var a1125=editTxtAño.text.toString()
+                                                                                        embolsados1125.setValue(emb1125.toInt())
+                                                                                        dia1125.setValue(d1125.toInt())
+                                                                                        mes1125.setValue(m1125.toInt())
+                                                                                        año1125.setValue(a1125.toInt())
                                                                                         contadorembolsados112=5
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 5 -> {
-                                                                                        embolsados1126.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1126.setValue(editTxtDia.text.toString())
-                                                                                        mes1126.setValue(editTxtMes.text.toString())
-                                                                                        año1126.setValue(editTxtAño.text.toString())
+                                                                                        var emb1126=editTxtEmbolsados.text.toString()
+                                                                                        var d1126=editTxtDia.text.toString()
+                                                                                        var m1126=editTxtMes.text.toString()
+                                                                                        var a1126=editTxtAño.text.toString()
+                                                                                        embolsados1126.setValue(emb1126.toInt())
+                                                                                        dia1126.setValue(d1126.toInt())
+                                                                                        mes1126.setValue(m1126.toInt())
+                                                                                        año1126.setValue(a1126.toInt())
                                                                                         contadorembolsados112=6
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 6 -> {
-                                                                                        embolsados1127.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1127.setValue(editTxtDia.text.toString())
-                                                                                        mes1127.setValue(editTxtMes.text.toString())
-                                                                                        año1127.setValue(editTxtAño.text.toString())
+                                                                                        var emb1127=editTxtEmbolsados.text.toString()
+                                                                                        var d1127=editTxtDia.text.toString()
+                                                                                        var m1127=editTxtMes.text.toString()
+                                                                                        var a1127=editTxtAño.text.toString()
+                                                                                        embolsados1127.setValue(emb1127.toInt())
+                                                                                        dia1127.setValue(d1127.toInt())
+                                                                                        mes1127.setValue(m1127.toInt())
+                                                                                        año1127.setValue(a1127.toInt())
                                                                                         contadorembolsados112=7
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 7 -> {
-                                                                                        embolsados1128.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1128.setValue(editTxtDia.text.toString())
-                                                                                        mes1128.setValue(editTxtMes.text.toString())
-                                                                                        año1128.setValue(editTxtAño.text.toString())
+                                                                                        var emb1128=editTxtEmbolsados.text.toString()
+                                                                                        var d1128=editTxtDia.text.toString()
+                                                                                        var m1128=editTxtMes.text.toString()
+                                                                                        var a1128=editTxtAño.text.toString()
+                                                                                        embolsados1128.setValue(emb1128.toInt())
+                                                                                        dia1128.setValue(d1128.toInt())
+                                                                                        mes1128.setValue(m1128.toInt())
+                                                                                        año1128.setValue(a1128.toInt())
                                                                                         contadorembolsados112=8
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 8 -> {
-                                                                                        embolsados1129.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1129.setValue(editTxtDia.text.toString())
-                                                                                        mes1129.setValue(editTxtMes.text.toString())
-                                                                                        año1129.setValue(editTxtAño.text.toString())
+                                                                                        var emb1129=editTxtEmbolsados.text.toString()
+                                                                                        var d1129=editTxtDia.text.toString()
+                                                                                        var m1129=editTxtMes.text.toString()
+                                                                                        var a1129=editTxtAño.text.toString()
+                                                                                        embolsados1129.setValue(emb1129.toInt())
+                                                                                        dia1129.setValue(d1129.toInt())
+                                                                                        mes1129.setValue(m1129.toInt())
+                                                                                        año1129.setValue(a1129.toInt())
                                                                                         contadorembolsados112=9
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
                                                                                 9 -> {
-                                                                                        embolsados11210.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia11210.setValue(editTxtDia.text.toString())
-                                                                                        mes11210.setValue(editTxtMes.text.toString())
-                                                                                        año11210.setValue(editTxtAño.text.toString())
+                                                                                        var emb11210=editTxtEmbolsados.text.toString()
+                                                                                        var d11210=editTxtDia.text.toString()
+                                                                                        var m11210=editTxtMes.text.toString()
+                                                                                        var a11210=editTxtAño.text.toString()
+                                                                                        embolsados11210.setValue(emb11210.toInt())
+                                                                                        dia11210.setValue(d11210.toInt())
+                                                                                        mes11210.setValue(m11210.toInt())
+                                                                                        año11210.setValue(a11210.toInt())
                                                                                         contadorembolsados112=10
                                                                                         contembolsados112.setValue(contadorembolsados112)
                                                                                 }
@@ -1531,82 +1587,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                         if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                                                                 when(contadorcultivados112) {
                                                                                         0 -> {
-                                                                                                cultivados1121.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1121cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1121cult.setValue(editTxtMes.text.toString())
-                                                                                                año1121cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1121=editTxtCultivados.text.toString()
+                                                                                                var d1121cos=editTxtDia.text.toString()
+                                                                                                var m1121cos=editTxtMes.text.toString()
+                                                                                                var a1121cos=editTxtAño.text.toString()
+                                                                                                cultivados1121.setValue(cos1121.toInt())
+                                                                                                dia1121cult.setValue(d1121cos.toInt())
+                                                                                                mes1121cult.setValue(m1121cos.toInt())
+                                                                                                año1121cult.setValue(a1121cos.toInt())
                                                                                                 contadorcultivados112 = 1
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         1 -> {
-                                                                                                cultivados1122.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1122cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1122cult.setValue(editTxtMes.text.toString())
-                                                                                                año1122cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1122=editTxtCultivados.text.toString()
+                                                                                                var d1122cos=editTxtDia.text.toString()
+                                                                                                var m1122cos=editTxtMes.text.toString()
+                                                                                                var a1122cos=editTxtAño.text.toString()
+                                                                                                cultivados1122.setValue(cos1122.toInt())
+                                                                                                dia1122cult.setValue(d1122cos.toInt())
+                                                                                                mes1122cult.setValue(m1122cos.toInt())
+                                                                                                año1122cult.setValue(a1122cos.toInt())
                                                                                                 contadorcultivados112 = 2
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         2 -> {
-                                                                                                cultivados1123.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1123cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1123cult.setValue(editTxtMes.text.toString())
-                                                                                                año1123cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1123=editTxtCultivados.text.toString()
+                                                                                                var d1123cos=editTxtDia.text.toString()
+                                                                                                var m1123cos=editTxtMes.text.toString()
+                                                                                                var a1123cos=editTxtAño.text.toString()
+                                                                                                cultivados1123.setValue(cos1123.toInt())
+                                                                                                dia1123cult.setValue(d1123cos.toInt())
+                                                                                                mes1123cult.setValue(m1123cos.toInt())
+                                                                                                año1123cult.setValue(a1123cos.toInt())
                                                                                                 contadorcultivados112 = 3
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         3 -> {
-                                                                                                cultivados1124.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1124cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1124cult.setValue(editTxtMes.text.toString())
-                                                                                                año1124cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1124=editTxtCultivados.text.toString()
+                                                                                                var d1124cos=editTxtDia.text.toString()
+                                                                                                var m1124cos=editTxtMes.text.toString()
+                                                                                                var a1124cos=editTxtAño.text.toString()
+                                                                                                cultivados1124.setValue(cos1124.toInt())
+                                                                                                dia1124cult.setValue(d1124cos.toInt())
+                                                                                                mes1124cult.setValue(m1124cos.toInt())
+                                                                                                año1124cult.setValue(a1124cos.toInt())
                                                                                                 contadorcultivados112 = 4
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         4 -> {
-                                                                                                cultivados1125.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1125cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1125cult.setValue(editTxtMes.text.toString())
-                                                                                                año1125cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1125=editTxtCultivados.text.toString()
+                                                                                                var d1125cos=editTxtDia.text.toString()
+                                                                                                var m1125cos=editTxtMes.text.toString()
+                                                                                                var a1125cos=editTxtAño.text.toString()
+                                                                                                cultivados1125.setValue(cos1125.toInt())
+                                                                                                dia1125cult.setValue(d1125cos.toInt())
+                                                                                                mes1125cult.setValue(m1125cos.toInt())
+                                                                                                año1125cult.setValue(a1125cos.toInt())
                                                                                                 contadorcultivados112 = 5
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         5 -> {
-                                                                                                cultivados1126.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1126cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1126cult.setValue(editTxtMes.text.toString())
-                                                                                                año1126cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1126=editTxtCultivados.text.toString()
+                                                                                                var d1126cos=editTxtDia.text.toString()
+                                                                                                var m1126cos=editTxtMes.text.toString()
+                                                                                                var a1126cos=editTxtAño.text.toString()
+                                                                                                cultivados1126.setValue(cos1126.toInt())
+                                                                                                dia1126cult.setValue(d1126cos.toInt())
+                                                                                                mes1126cult.setValue(m1126cos.toInt())
+                                                                                                año1126cult.setValue(a1126cos.toInt())
                                                                                                 contadorcultivados112 = 6
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         6 -> {
-                                                                                                cultivados1127.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1127cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1127cult.setValue(editTxtMes.text.toString())
-                                                                                                año1127cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1127=editTxtCultivados.text.toString()
+                                                                                                var d1127cos=editTxtDia.text.toString()
+                                                                                                var m1127cos=editTxtMes.text.toString()
+                                                                                                var a1127cos=editTxtAño.text.toString()
+                                                                                                cultivados1127.setValue(cos1127.toInt())
+                                                                                                dia1127cult.setValue(d1127cos.toInt())
+                                                                                                mes1127cult.setValue(m1127cos.toInt())
+                                                                                                año1127cult.setValue(a1127cos.toInt())
                                                                                                 contadorcultivados112 = 7
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         7 -> {
-                                                                                                cultivados1128.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1128cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1128cult.setValue(editTxtMes.text.toString())
-                                                                                                año1128cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1128=editTxtCultivados.text.toString()
+                                                                                                var d1128cos=editTxtDia.text.toString()
+                                                                                                var m1128cos=editTxtMes.text.toString()
+                                                                                                var a1128cos=editTxtAño.text.toString()
+                                                                                                cultivados1128.setValue(cos1128.toInt())
+                                                                                                dia1128cult.setValue(d1128cos.toInt())
+                                                                                                mes1128cult.setValue(m1128cos.toInt())
+                                                                                                año1128cult.setValue(a1128cos.toInt())
                                                                                                 contadorcultivados112 = 8
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         8 -> {
-                                                                                                cultivados1129.setValue(editTxtCultivados.text.toString())
-                                                                                                dia1129cult.setValue(editTxtDia.text.toString())
-                                                                                                mes1129cult.setValue(editTxtMes.text.toString())
-                                                                                                año1129cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos1129=editTxtCultivados.text.toString()
+                                                                                                var d1129cos=editTxtDia.text.toString()
+                                                                                                var m1129cos=editTxtMes.text.toString()
+                                                                                                var a1129cos=editTxtAño.text.toString()
+                                                                                                cultivados1129.setValue(cos1129.toInt())
+                                                                                                dia1129cult.setValue(d1129cos.toInt())
+                                                                                                mes1129cult.setValue(m1129cos.toInt())
+                                                                                                año1129cult.setValue(a1129cos.toInt())
                                                                                                 contadorcultivados112 = 9
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         9 -> {
-                                                                                                cultivados11210.setValue(editTxtCultivados.text.toString())
-                                                                                                dia11210cult.setValue(editTxtDia.text.toString())
-                                                                                                mes11210cult.setValue(editTxtMes.text.toString())
-                                                                                                año11210cult.setValue(editTxtAño.text.toString())
+                                                                                                var cos11210=editTxtCultivados.text.toString()
+                                                                                                var d11210cos=editTxtDia.text.toString()
+                                                                                                var m11210cos=editTxtMes.text.toString()
+                                                                                                var a11210cos=editTxtAño.text.toString()
+                                                                                                cultivados11210.setValue(cos11210.toInt())
+                                                                                                dia11210cult.setValue(d11210cos.toInt())
+                                                                                                mes11210cult.setValue(m11210cos.toInt())
+                                                                                                año11210cult.setValue(a11210cos.toInt())
                                                                                                 contadorcultivados112 = 10
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
@@ -1624,82 +1720,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                 if (editTxtEmbolsados.text.isNotEmpty() && editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                                                         when (contadorembolsados113) {
                                                                                 0 -> {
-                                                                                        embolsados1131.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1131.setValue(editTxtDia.text.toString())
-                                                                                        mes1131.setValue(editTxtMes.text.toString())
-                                                                                        año1131.setValue(editTxtAño.text.toString())
+                                                                                        var emb1131=editTxtEmbolsados.text.toString()
+                                                                                        var d1131=editTxtDia.text.toString()
+                                                                                        var m1131=editTxtMes.text.toString()
+                                                                                        var a1131=editTxtAño.text.toString()
+                                                                                        embolsados1131.setValue(emb1131.toInt())
+                                                                                        dia1131.setValue(d1131.toInt())
+                                                                                        mes1131.setValue(m1131.toInt())
+                                                                                        año1131.setValue(a1131.toInt())
                                                                                         contadorembolsados113 = 1
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 1 -> {
-                                                                                        embolsados1132.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1132.setValue(editTxtDia.text.toString())
-                                                                                        mes1132.setValue(editTxtMes.text.toString())
-                                                                                        año1132.setValue(editTxtAño.text.toString())
+                                                                                        var emb1132=editTxtEmbolsados.text.toString()
+                                                                                        var d1132=editTxtDia.text.toString()
+                                                                                        var m1132=editTxtMes.text.toString()
+                                                                                        var a1132=editTxtAño.text.toString()
+                                                                                        embolsados1132.setValue(emb1132.toInt())
+                                                                                        dia1132.setValue(d1132.toInt())
+                                                                                        mes1132.setValue(m1132.toInt())
+                                                                                        año1132.setValue(a1132.toInt())
                                                                                         contadorembolsados113 = 2
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 2 -> {
-                                                                                        embolsados1133.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1133.setValue(editTxtDia.text.toString())
-                                                                                        mes1133.setValue(editTxtMes.text.toString())
-                                                                                        año1133.setValue(editTxtAño.text.toString())
+                                                                                        var emb1133=editTxtEmbolsados.text.toString()
+                                                                                        var d1133=editTxtDia.text.toString()
+                                                                                        var m1133=editTxtMes.text.toString()
+                                                                                        var a1133=editTxtAño.text.toString()
+                                                                                        embolsados1133.setValue(emb1133.toInt())
+                                                                                        dia1133.setValue(d1133.toInt())
+                                                                                        mes1133.setValue(m1133.toInt())
+                                                                                        año1133.setValue(a1133.toInt())
                                                                                         contadorembolsados113 = 3
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 3 -> {
-                                                                                        embolsados1134.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1134.setValue(editTxtDia.text.toString())
-                                                                                        mes1134.setValue(editTxtMes.text.toString())
-                                                                                        año1134.setValue(editTxtAño.text.toString())
+                                                                                        var emb1134=editTxtEmbolsados.text.toString()
+                                                                                        var d1134=editTxtDia.text.toString()
+                                                                                        var m1134=editTxtMes.text.toString()
+                                                                                        var a1134=editTxtAño.text.toString()
+                                                                                        embolsados1134.setValue(emb1134.toInt())
+                                                                                        dia1134.setValue(d1134.toInt())
+                                                                                        mes1134.setValue(m1134.toInt())
+                                                                                        año1134.setValue(a1134.toInt())
                                                                                         contadorembolsados113 = 4
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 4 -> {
-                                                                                        embolsados1135.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1135.setValue(editTxtDia.text.toString())
-                                                                                        mes1135.setValue(editTxtMes.text.toString())
-                                                                                        año1135.setValue(editTxtAño.text.toString())
+                                                                                        var emb1135=editTxtEmbolsados.text.toString()
+                                                                                        var d1135=editTxtDia.text.toString()
+                                                                                        var m1135=editTxtMes.text.toString()
+                                                                                        var a1135=editTxtAño.text.toString()
+                                                                                        embolsados1135.setValue(emb1135.toInt())
+                                                                                        dia1135.setValue(d1135.toInt())
+                                                                                        mes1135.setValue(m1135.toInt())
+                                                                                        año1135.setValue(a1135.toInt())
                                                                                         contadorembolsados113 = 5
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 5 -> {
-                                                                                        embolsados1136.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1136.setValue(editTxtDia.text.toString())
-                                                                                        mes1136.setValue(editTxtMes.text.toString())
-                                                                                        año1136.setValue(editTxtAño.text.toString())
+                                                                                        var emb1136=editTxtEmbolsados.text.toString()
+                                                                                        var d1136=editTxtDia.text.toString()
+                                                                                        var m1136=editTxtMes.text.toString()
+                                                                                        var a1136=editTxtAño.text.toString()
+                                                                                        embolsados1136.setValue(emb1136.toInt())
+                                                                                        dia1136.setValue(d1136.toInt())
+                                                                                        mes1136.setValue(m1136.toInt())
+                                                                                        año1136.setValue(a1136.toInt())
                                                                                         contadorembolsados113 = 6
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 6 -> {
-                                                                                        embolsados1137.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1137.setValue(editTxtDia.text.toString())
-                                                                                        mes1137.setValue(editTxtMes.text.toString())
-                                                                                        año1137.setValue(editTxtAño.text.toString())
+                                                                                        var emb1137=editTxtEmbolsados.text.toString()
+                                                                                        var d1137=editTxtDia.text.toString()
+                                                                                        var m1137=editTxtMes.text.toString()
+                                                                                        var a1137=editTxtAño.text.toString()
+                                                                                        embolsados1137.setValue(emb1137.toInt())
+                                                                                        dia1137.setValue(d1137.toInt())
+                                                                                        mes1137.setValue(m1137.toInt())
+                                                                                        año1137.setValue(a1137.toInt())
                                                                                         contadorembolsados113 = 7
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 7 -> {
-                                                                                        embolsados1138.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1138.setValue(editTxtDia.text.toString())
-                                                                                        mes1138.setValue(editTxtMes.text.toString())
-                                                                                        año1138.setValue(editTxtAño.text.toString())
+                                                                                        var emb1138=editTxtEmbolsados.text.toString()
+                                                                                        var d1138=editTxtDia.text.toString()
+                                                                                        var m1138=editTxtMes.text.toString()
+                                                                                        var a1138=editTxtAño.text.toString()
+                                                                                        embolsados1138.setValue(emb1138.toInt())
+                                                                                        dia1138.setValue(d1138.toInt())
+                                                                                        mes1138.setValue(m1138.toInt())
+                                                                                        año1138.setValue(a1138.toInt())
                                                                                         contadorembolsados113 = 8
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 8 -> {
-                                                                                        embolsados1139.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia1139.setValue(editTxtDia.text.toString())
-                                                                                        mes1139.setValue(editTxtMes.text.toString())
-                                                                                        año1139.setValue(editTxtAño.text.toString())
+                                                                                        var emb1139=editTxtEmbolsados.text.toString()
+                                                                                        var d1139=editTxtDia.text.toString()
+                                                                                        var m1139=editTxtMes.text.toString()
+                                                                                        var a1139=editTxtAño.text.toString()
+                                                                                        embolsados1139.setValue(emb1139.toInt())
+                                                                                        dia1139.setValue(d1139.toInt())
+                                                                                        mes1139.setValue(m1139.toInt())
+                                                                                        año1139.setValue(a1139.toInt())
                                                                                         contadorembolsados113 = 9
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
                                                                                 9 -> {
-                                                                                        embolsados11310.setValue(editTxtEmbolsados.text.toString())
-                                                                                        dia11310.setValue(editTxtDia.text.toString())
-                                                                                        mes11310.setValue(editTxtMes.text.toString())
-                                                                                        año11310.setValue(editTxtAño.text.toString())
+                                                                                        var emb11310=editTxtEmbolsados.text.toString()
+                                                                                        var d11310=editTxtDia.text.toString()
+                                                                                        var m11310=editTxtMes.text.toString()
+                                                                                        var a11310=editTxtAño.text.toString()
+                                                                                        embolsados11310.setValue(emb11310.toInt())
+                                                                                        dia11310.setValue(d11310.toInt())
+                                                                                        mes11310.setValue(m11310.toInt())
+                                                                                        año11310.setValue(a11310.toInt())
                                                                                         contadorembolsados113 = 10
                                                                                         contembolsados113.setValue(contadorembolsados113)
                                                                                 }
@@ -1712,82 +1848,122 @@ class ZonasActivity : AppCompatActivity() {
                                                                         }
                                                                         when (contadorcultivados113) {
                                                                                 0 -> {
-                                                                                        cultivados1131.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1131cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1131cult.setValue(editTxtMes.text.toString())
-                                                                                        año1131cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1131=editTxtCultivados.text.toString()
+                                                                                        var d1131cos=editTxtDia.text.toString()
+                                                                                        var m1131cos=editTxtMes.text.toString()
+                                                                                        var a1131cos=editTxtAño.text.toString()
+                                                                                        cultivados1131.setValue(cos1131.toInt())
+                                                                                        dia1131cult.setValue(d1131cos.toInt())
+                                                                                        mes1131cult.setValue(m1131cos.toInt())
+                                                                                        año1131cult.setValue(a1131cos)
                                                                                         contadorcultivados113 = 1
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 1 -> {
-                                                                                        cultivados1132.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1132cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1132cult.setValue(editTxtMes.text.toString())
-                                                                                        año1132cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1132=editTxtCultivados.text.toString()
+                                                                                        var d1132cos=editTxtDia.text.toString()
+                                                                                        var m1132cos=editTxtMes.text.toString()
+                                                                                        var a1132cos=editTxtAño.text.toString()
+                                                                                        cultivados1132.setValue(cos1132.toInt())
+                                                                                        dia1132cult.setValue(d1132cos.toInt())
+                                                                                        mes1132cult.setValue(m1132cos.toInt())
+                                                                                        año1132cult.setValue(a1132cos.toInt())
                                                                                         contadorcultivados113 = 2
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 2 -> {
-                                                                                        cultivados1133.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1133cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1133cult.setValue(editTxtMes.text.toString())
-                                                                                        año1133cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1133=editTxtCultivados.text.toString()
+                                                                                        var d1133cos=editTxtDia.text.toString()
+                                                                                        var m1133cos=editTxtMes.text.toString()
+                                                                                        var a1133cos=editTxtAño.text.toString()
+                                                                                        cultivados1133.setValue(cos1133.toInt())
+                                                                                        dia1133cult.setValue(d1133cos.toInt())
+                                                                                        mes1133cult.setValue(m1133cos.toInt())
+                                                                                        año1133cult.setValue(a1133cos.toInt())
                                                                                         contadorcultivados113 = 3
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 3 -> {
-                                                                                        cultivados1134.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1134cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1134cult.setValue(editTxtMes.text.toString())
-                                                                                        año1134cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1134=editTxtCultivados.text.toString()
+                                                                                        var d1134cos=editTxtDia.text.toString()
+                                                                                        var m1134cos=editTxtMes.text.toString()
+                                                                                        var a1134cos=editTxtAño.text.toString()
+                                                                                        cultivados1134.setValue(cos1134.toInt())
+                                                                                        dia1134cult.setValue(d1134cos.toInt())
+                                                                                        mes1134cult.setValue(m1134cos.toInt())
+                                                                                        año1134cult.setValue(a1134cos.toInt())
                                                                                         contadorcultivados113 = 4
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 4 -> {
-                                                                                        cultivados1135.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1135cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1135cult.setValue(editTxtMes.text.toString())
-                                                                                        año1135cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1135=editTxtCultivados.text.toString()
+                                                                                        var d1135cos=editTxtDia.text.toString()
+                                                                                        var m1135cos=editTxtMes.text.toString()
+                                                                                        var a1135cos=editTxtAño.text.toString()
+                                                                                        cultivados1135.setValue(cos1135.toInt())
+                                                                                        dia1135cult.setValue(d1135cos.toInt())
+                                                                                        mes1135cult.setValue(m1135cos.toInt())
+                                                                                        año1135cult.setValue(a1135cos.toInt())
                                                                                         contadorcultivados113 = 5
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 5 -> {
-                                                                                        cultivados1136.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1136cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1136cult.setValue(editTxtMes.text.toString())
-                                                                                        año1136cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1136=editTxtCultivados.text.toString()
+                                                                                        var d1136cos=editTxtDia.text.toString()
+                                                                                        var m1136cos=editTxtMes.text.toString()
+                                                                                        var a1136cos=editTxtAño.text.toString()
+                                                                                        cultivados1136.setValue(cos1136.toInt())
+                                                                                        dia1136cult.setValue(d1136cos.toInt())
+                                                                                        mes1136cult.setValue(m1136cos.toInt())
+                                                                                        año1136cult.setValue(a1136cos.toInt())
                                                                                         contadorcultivados113 = 6
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 6 -> {
-                                                                                        cultivados1137.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1137cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1137cult.setValue(editTxtMes.text.toString())
-                                                                                        año1137cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1137=editTxtCultivados.text.toString()
+                                                                                        var d1137cos=editTxtDia.text.toString()
+                                                                                        var m1137cos=editTxtMes.text.toString()
+                                                                                        var a1137cos=editTxtAño.text.toString()
+                                                                                        cultivados1137.setValue(cos1137.toInt())
+                                                                                        dia1137cult.setValue(d1137cos.toInt())
+                                                                                        mes1137cult.setValue(m1137cos.toInt())
+                                                                                        año1137cult.setValue(a1137cos.toInt())
                                                                                         contadorcultivados113 = 7
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 7 -> {
-                                                                                        cultivados1138.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1138cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1138cult.setValue(editTxtMes.text.toString())
-                                                                                        año1138cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1138=editTxtCultivados.text.toString()
+                                                                                        var d1138cos=editTxtDia.text.toString()
+                                                                                        var m1138cos=editTxtMes.text.toString()
+                                                                                        var a1138cos=editTxtAño.text.toString()
+                                                                                        cultivados1138.setValue(cos1138.toInt())
+                                                                                        dia1138cult.setValue(d1138cos.toInt())
+                                                                                        mes1138cult.setValue(m1138cos.toInt())
+                                                                                        año1138cult.setValue(a1138cos.toInt())
                                                                                         contadorcultivados113 = 8
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 8 -> {
-                                                                                        cultivados1139.setValue(editTxtCultivados.text.toString())
-                                                                                        dia1139cult.setValue(editTxtDia.text.toString())
-                                                                                        mes1139cult.setValue(editTxtMes.text.toString())
-                                                                                        año1139cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos1139=editTxtCultivados.text.toString()
+                                                                                        var d1139cos=editTxtDia.text.toString()
+                                                                                        var m1139cos=editTxtMes.text.toString()
+                                                                                        var a1139cos=editTxtAño.text.toString()
+                                                                                        cultivados1139.setValue(cos1139.toInt())
+                                                                                        dia1139cult.setValue(d1139cos.toInt())
+                                                                                        mes1139cult.setValue(m1139cos.toInt())
+                                                                                        año1139cult.setValue(a1139cos.toInt())
                                                                                         contadorcultivados113 = 9
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
                                                                                 9 -> {
-                                                                                        cultivados11310.setValue(editTxtCultivados.text.toString())
-                                                                                        dia11310cult.setValue(editTxtDia.text.toString())
-                                                                                        mes11310cult.setValue(editTxtMes.text.toString())
-                                                                                        año11310cult.setValue(editTxtAño.text.toString())
+                                                                                        var cos11310=editTxtCultivados.text.toString()
+                                                                                        var d11310cos=editTxtDia.text.toString()
+                                                                                        var m11310cos=editTxtMes.text.toString()
+                                                                                        var a11310cos=editTxtAño.text.toString()
+                                                                                        cultivados11310.setValue(cos11310.toInt())
+                                                                                        dia11310cult.setValue(d11310cos.toInt())
+                                                                                        mes11310cult.setValue(m11310cos.toInt())
+                                                                                        año11310cult.setValue(a11310cos.toInt())
                                                                                         contadorcultivados113 = 10
                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                 }
@@ -1800,89 +1976,129 @@ class ZonasActivity : AppCompatActivity() {
                                                                         }
                                                                 }else
                                                                         if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                                                                when(contadorembolsados113) {
+                                                                                when (contadorembolsados113) {
                                                                                         0 -> {
-                                                                                                embolsados1131.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1131.setValue(editTxtDia.text.toString())
-                                                                                                mes1131.setValue(editTxtMes.text.toString())
-                                                                                                año1131.setValue(editTxtAño.text.toString())
+                                                                                                var emb1131=editTxtEmbolsados.text.toString()
+                                                                                                var d1131=editTxtDia.text.toString()
+                                                                                                var m1131=editTxtMes.text.toString()
+                                                                                                var a1131=editTxtAño.text.toString()
+                                                                                                embolsados1131.setValue(emb1131.toInt())
+                                                                                                dia1131.setValue(d1131.toInt())
+                                                                                                mes1131.setValue(m1131.toInt())
+                                                                                                año1131.setValue(a1131.toInt())
                                                                                                 contadorembolsados113 = 1
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         1 -> {
-                                                                                                embolsados1132.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1132.setValue(editTxtDia.text.toString())
-                                                                                                mes1132.setValue(editTxtMes.text.toString())
-                                                                                                año1132.setValue(editTxtAño.text.toString())
+                                                                                                var emb1132=editTxtEmbolsados.text.toString()
+                                                                                                var d1132=editTxtDia.text.toString()
+                                                                                                var m1132=editTxtMes.text.toString()
+                                                                                                var a1132=editTxtAño.text.toString()
+                                                                                                embolsados1132.setValue(emb1132.toInt())
+                                                                                                dia1132.setValue(d1132.toInt())
+                                                                                                mes1132.setValue(m1132.toInt())
+                                                                                                año1132.setValue(a1132.toInt())
                                                                                                 contadorembolsados113 = 2
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         2 -> {
-                                                                                                embolsados1133.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1133.setValue(editTxtDia.text.toString())
-                                                                                                mes1133.setValue(editTxtMes.text.toString())
-                                                                                                año1133.setValue(editTxtAño.text.toString())
+                                                                                                var emb1133=editTxtEmbolsados.text.toString()
+                                                                                                var d1133=editTxtDia.text.toString()
+                                                                                                var m1133=editTxtMes.text.toString()
+                                                                                                var a1133=editTxtAño.text.toString()
+                                                                                                embolsados1133.setValue(emb1133.toInt())
+                                                                                                dia1133.setValue(d1133.toInt())
+                                                                                                mes1133.setValue(m1133.toInt())
+                                                                                                año1133.setValue(a1133.toInt())
                                                                                                 contadorembolsados113 = 3
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         3 -> {
-                                                                                                embolsados1134.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1134.setValue(editTxtDia.text.toString())
-                                                                                                mes1134.setValue(editTxtMes.text.toString())
-                                                                                                año1134.setValue(editTxtAño.text.toString())
+                                                                                                var emb1134=editTxtEmbolsados.text.toString()
+                                                                                                var d1134=editTxtDia.text.toString()
+                                                                                                var m1134=editTxtMes.text.toString()
+                                                                                                var a1134=editTxtAño.text.toString()
+                                                                                                embolsados1134.setValue(emb1134.toInt())
+                                                                                                dia1134.setValue(d1134.toInt())
+                                                                                                mes1134.setValue(m1134.toInt())
+                                                                                                año1134.setValue(a1134.toInt())
                                                                                                 contadorembolsados113 = 4
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         4 -> {
-                                                                                                embolsados1135.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1135.setValue(editTxtDia.text.toString())
-                                                                                                mes1135.setValue(editTxtMes.text.toString())
-                                                                                                año1135.setValue(editTxtAño.text.toString())
+                                                                                                var emb1135=editTxtEmbolsados.text.toString()
+                                                                                                var d1135=editTxtDia.text.toString()
+                                                                                                var m1135=editTxtMes.text.toString()
+                                                                                                var a1135=editTxtAño.text.toString()
+                                                                                                embolsados1135.setValue(emb1135.toInt())
+                                                                                                dia1135.setValue(d1135.toInt())
+                                                                                                mes1135.setValue(m1135.toInt())
+                                                                                                año1135.setValue(a1135.toInt())
                                                                                                 contadorembolsados113 = 5
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         5 -> {
-                                                                                                embolsados1136.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1136.setValue(editTxtDia.text.toString())
-                                                                                                mes1136.setValue(editTxtMes.text.toString())
-                                                                                                año1136.setValue(editTxtAño.text.toString())
+                                                                                                var emb1136=editTxtEmbolsados.text.toString()
+                                                                                                var d1136=editTxtDia.text.toString()
+                                                                                                var m1136=editTxtMes.text.toString()
+                                                                                                var a1136=editTxtAño.text.toString()
+                                                                                                embolsados1136.setValue(emb1136.toInt())
+                                                                                                dia1136.setValue(d1136.toInt())
+                                                                                                mes1136.setValue(m1136.toInt())
+                                                                                                año1136.setValue(a1136.toInt())
                                                                                                 contadorembolsados113 = 6
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         6 -> {
-                                                                                                embolsados1137.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1137.setValue(editTxtDia.text.toString())
-                                                                                                mes1137.setValue(editTxtMes.text.toString())
-                                                                                                año1137.setValue(editTxtAño.text.toString())
+                                                                                                var emb1137=editTxtEmbolsados.text.toString()
+                                                                                                var d1137=editTxtDia.text.toString()
+                                                                                                var m1137=editTxtMes.text.toString()
+                                                                                                var a1137=editTxtAño.text.toString()
+                                                                                                embolsados1137.setValue(emb1137.toInt())
+                                                                                                dia1137.setValue(d1137.toInt())
+                                                                                                mes1137.setValue(m1137.toInt())
+                                                                                                año1137.setValue(a1137.toInt())
                                                                                                 contadorembolsados113 = 7
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         7 -> {
-                                                                                                embolsados1138.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1138.setValue(editTxtDia.text.toString())
-                                                                                                mes1138.setValue(editTxtMes.text.toString())
-                                                                                                año1138.setValue(editTxtAño.text.toString())
+                                                                                                var emb1138=editTxtEmbolsados.text.toString()
+                                                                                                var d1138=editTxtDia.text.toString()
+                                                                                                var m1138=editTxtMes.text.toString()
+                                                                                                var a1138=editTxtAño.text.toString()
+                                                                                                embolsados1138.setValue(emb1138.toInt())
+                                                                                                dia1138.setValue(d1138.toInt())
+                                                                                                mes1138.setValue(m1138.toInt())
+                                                                                                año1138.setValue(a1138.toInt())
                                                                                                 contadorembolsados113 = 8
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         8 -> {
-                                                                                                embolsados1139.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia1139.setValue(editTxtDia.text.toString())
-                                                                                                mes1139.setValue(editTxtMes.text.toString())
-                                                                                                año1139.setValue(editTxtAño.text.toString())
+                                                                                                var emb1139=editTxtEmbolsados.text.toString()
+                                                                                                var d1139=editTxtDia.text.toString()
+                                                                                                var m1139=editTxtMes.text.toString()
+                                                                                                var a1139=editTxtAño.text.toString()
+                                                                                                embolsados1139.setValue(emb1139.toInt())
+                                                                                                dia1139.setValue(d1139.toInt())
+                                                                                                mes1139.setValue(m1139.toInt())
+                                                                                                año1139.setValue(a1139.toInt())
                                                                                                 contadorembolsados113 = 9
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         9 -> {
-                                                                                                embolsados11310.setValue(editTxtEmbolsados.text.toString())
-                                                                                                dia11310.setValue(editTxtDia.text.toString())
-                                                                                                mes11310.setValue(editTxtMes.text.toString())
-                                                                                                año11310.setValue(editTxtAño.text.toString())
+                                                                                                var emb11310=editTxtEmbolsados.text.toString()
+                                                                                                var d11310=editTxtDia.text.toString()
+                                                                                                var m11310=editTxtMes.text.toString()
+                                                                                                var a11310=editTxtAño.text.toString()
+                                                                                                embolsados11310.setValue(emb11310.toInt())
+                                                                                                dia11310.setValue(d11310.toInt())
+                                                                                                mes11310.setValue(m11310.toInt())
+                                                                                                año11310.setValue(a11310.toInt())
                                                                                                 contadorembolsados113 = 10
                                                                                                 contembolsados113.setValue(contadorembolsados113)
                                                                                         }
                                                                                         10 -> {
-                                                                                                if(contadorcultivados113==10){
+                                                                                                if (contadorcultivados113 == 10) {
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
                                                                                                         botonGuardarZonas.visibility = View.VISIBLE
@@ -1890,91 +2106,131 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 }
                                                                         }else
                                                                                 if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                                                                        when(contadorcultivados113) {
+                                                                                        when (contadorcultivados113) {
                                                                                                 0 -> {
-                                                                                                        cultivados1131.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1131cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1131cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1131cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1131=editTxtCultivados.text.toString()
+                                                                                                        var d1131cos=editTxtDia.text.toString()
+                                                                                                        var m1131cos=editTxtMes.text.toString()
+                                                                                                        var a1131cos=editTxtAño.text.toString()
+                                                                                                        cultivados1131.setValue(cos1131.toInt())
+                                                                                                        dia1131cult.setValue(d1131cos.toInt())
+                                                                                                        mes1131cult.setValue(m1131cos.toInt())
+                                                                                                        año1131cult.setValue(a1131cos)
                                                                                                         contadorcultivados113 = 1
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 1 -> {
-                                                                                                        cultivados1132.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1132cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1132cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1132cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1132=editTxtCultivados.text.toString()
+                                                                                                        var d1132cos=editTxtDia.text.toString()
+                                                                                                        var m1132cos=editTxtMes.text.toString()
+                                                                                                        var a1132cos=editTxtAño.text.toString()
+                                                                                                        cultivados1132.setValue(cos1132.toInt())
+                                                                                                        dia1132cult.setValue(d1132cos.toInt())
+                                                                                                        mes1132cult.setValue(m1132cos.toInt())
+                                                                                                        año1132cult.setValue(a1132cos.toInt())
                                                                                                         contadorcultivados113 = 2
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 2 -> {
-                                                                                                        cultivados1133.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1133cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1133cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1133cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1133=editTxtCultivados.text.toString()
+                                                                                                        var d1133cos=editTxtDia.text.toString()
+                                                                                                        var m1133cos=editTxtMes.text.toString()
+                                                                                                        var a1133cos=editTxtAño.text.toString()
+                                                                                                        cultivados1133.setValue(cos1133.toInt())
+                                                                                                        dia1133cult.setValue(d1133cos.toInt())
+                                                                                                        mes1133cult.setValue(m1133cos.toInt())
+                                                                                                        año1133cult.setValue(a1133cos.toInt())
                                                                                                         contadorcultivados113 = 3
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 3 -> {
-                                                                                                        cultivados1134.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1134cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1134cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1134cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1134=editTxtCultivados.text.toString()
+                                                                                                        var d1134cos=editTxtDia.text.toString()
+                                                                                                        var m1134cos=editTxtMes.text.toString()
+                                                                                                        var a1134cos=editTxtAño.text.toString()
+                                                                                                        cultivados1134.setValue(cos1134.toInt())
+                                                                                                        dia1134cult.setValue(d1134cos.toInt())
+                                                                                                        mes1134cult.setValue(m1134cos.toInt())
+                                                                                                        año1134cult.setValue(a1134cos.toInt())
                                                                                                         contadorcultivados113 = 4
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 4 -> {
-                                                                                                        cultivados1135.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1135cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1135cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1135cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1135=editTxtCultivados.text.toString()
+                                                                                                        var d1135cos=editTxtDia.text.toString()
+                                                                                                        var m1135cos=editTxtMes.text.toString()
+                                                                                                        var a1135cos=editTxtAño.text.toString()
+                                                                                                        cultivados1135.setValue(cos1135.toInt())
+                                                                                                        dia1135cult.setValue(d1135cos.toInt())
+                                                                                                        mes1135cult.setValue(m1135cos.toInt())
+                                                                                                        año1135cult.setValue(a1135cos.toInt())
                                                                                                         contadorcultivados113 = 5
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 5 -> {
-                                                                                                        cultivados1136.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1136cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1136cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1136cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1136=editTxtCultivados.text.toString()
+                                                                                                        var d1136cos=editTxtDia.text.toString()
+                                                                                                        var m1136cos=editTxtMes.text.toString()
+                                                                                                        var a1136cos=editTxtAño.text.toString()
+                                                                                                        cultivados1136.setValue(cos1136.toInt())
+                                                                                                        dia1136cult.setValue(d1136cos.toInt())
+                                                                                                        mes1136cult.setValue(m1136cos.toInt())
+                                                                                                        año1136cult.setValue(a1136cos.toInt())
                                                                                                         contadorcultivados113 = 6
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 6 -> {
-                                                                                                        cultivados1137.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1137cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1137cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1137cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1137=editTxtCultivados.text.toString()
+                                                                                                        var d1137cos=editTxtDia.text.toString()
+                                                                                                        var m1137cos=editTxtMes.text.toString()
+                                                                                                        var a1137cos=editTxtAño.text.toString()
+                                                                                                        cultivados1137.setValue(cos1137.toInt())
+                                                                                                        dia1137cult.setValue(d1137cos.toInt())
+                                                                                                        mes1137cult.setValue(m1137cos.toInt())
+                                                                                                        año1137cult.setValue(a1137cos.toInt())
                                                                                                         contadorcultivados113 = 7
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 7 -> {
-                                                                                                        cultivados1138.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1138cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1138cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1138cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1138=editTxtCultivados.text.toString()
+                                                                                                        var d1138cos=editTxtDia.text.toString()
+                                                                                                        var m1138cos=editTxtMes.text.toString()
+                                                                                                        var a1138cos=editTxtAño.text.toString()
+                                                                                                        cultivados1138.setValue(cos1138.toInt())
+                                                                                                        dia1138cult.setValue(d1138cos.toInt())
+                                                                                                        mes1138cult.setValue(m1138cos.toInt())
+                                                                                                        año1138cult.setValue(a1138cos.toInt())
                                                                                                         contadorcultivados113 = 8
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 8 -> {
-                                                                                                        cultivados1139.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia1139cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes1139cult.setValue(editTxtMes.text.toString())
-                                                                                                        año1139cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos1139=editTxtCultivados.text.toString()
+                                                                                                        var d1139cos=editTxtDia.text.toString()
+                                                                                                        var m1139cos=editTxtMes.text.toString()
+                                                                                                        var a1139cos=editTxtAño.text.toString()
+                                                                                                        cultivados1139.setValue(cos1139.toInt())
+                                                                                                        dia1139cult.setValue(d1139cos.toInt())
+                                                                                                        mes1139cult.setValue(m1139cos.toInt())
+                                                                                                        año1139cult.setValue(a1139cos.toInt())
                                                                                                         contadorcultivados113 = 9
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 9 -> {
-                                                                                                        cultivados11310.setValue(editTxtCultivados.text.toString())
-                                                                                                        dia11310cult.setValue(editTxtDia.text.toString())
-                                                                                                        mes11310cult.setValue(editTxtMes.text.toString())
-                                                                                                        año11310cult.setValue(editTxtAño.text.toString())
+                                                                                                        var cos11310=editTxtCultivados.text.toString()
+                                                                                                        var d11310cos=editTxtDia.text.toString()
+                                                                                                        var m11310cos=editTxtMes.text.toString()
+                                                                                                        var a11310cos=editTxtAño.text.toString()
+                                                                                                        cultivados11310.setValue(cos11310.toInt())
+                                                                                                        dia11310cult.setValue(d11310cos.toInt())
+                                                                                                        mes11310cult.setValue(m11310cos.toInt())
+                                                                                                        año11310cult.setValue(a11310cos.toInt())
                                                                                                         contadorcultivados113 = 10
                                                                                                         contcultivados113.setValue(contadorcultivados113)
                                                                                                 }
                                                                                                 10 -> {
-                                                                                                        if(contadorembolsados113==10){
+                                                                                                        if (contadorembolsados113 == 10) {
                                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
-                                                                                                        }else
+                                                                                                        } else
                                                                                                                 botonGuardarZonas.visibility = View.VISIBLE
                                                                                                 }
                                                                                         }
