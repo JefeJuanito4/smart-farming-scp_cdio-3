@@ -1587,10 +1587,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                         if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
                                                                                 when(contadorcultivados112) {
                                                                                         0 -> {
-                                                                                                var cos1121=editTxtCultivados.text.toString()
-                                                                                                var d1121cos=editTxtDia.text.toString()
-                                                                                                var m1121cos=editTxtMes.text.toString()
-                                                                                                var a1121cos=editTxtAño.text.toString()
+                                                                                                val cos1121=editTxtCultivados.text.toString()
+                                                                                                val d1121cos=editTxtDia.text.toString()
+                                                                                                val m1121cos=editTxtMes.text.toString()
+                                                                                                val a1121cos=editTxtAño.text.toString()
                                                                                                 cultivados1121.setValue(cos1121.toInt())
                                                                                                 dia1121cult.setValue(d1121cos.toInt())
                                                                                                 mes1121cult.setValue(m1121cos.toInt())
@@ -1599,10 +1599,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         1 -> {
-                                                                                                var cos1122=editTxtCultivados.text.toString()
-                                                                                                var d1122cos=editTxtDia.text.toString()
-                                                                                                var m1122cos=editTxtMes.text.toString()
-                                                                                                var a1122cos=editTxtAño.text.toString()
+                                                                                                val cos1122=editTxtCultivados.text.toString()
+                                                                                                val d1122cos=editTxtDia.text.toString()
+                                                                                                val m1122cos=editTxtMes.text.toString()
+                                                                                                val a1122cos=editTxtAño.text.toString()
                                                                                                 cultivados1122.setValue(cos1122.toInt())
                                                                                                 dia1122cult.setValue(d1122cos.toInt())
                                                                                                 mes1122cult.setValue(m1122cos.toInt())
@@ -1611,10 +1611,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         2 -> {
-                                                                                                var cos1123=editTxtCultivados.text.toString()
-                                                                                                var d1123cos=editTxtDia.text.toString()
-                                                                                                var m1123cos=editTxtMes.text.toString()
-                                                                                                var a1123cos=editTxtAño.text.toString()
+                                                                                                val cos1123=editTxtCultivados.text.toString()
+                                                                                                val d1123cos=editTxtDia.text.toString()
+                                                                                                val m1123cos=editTxtMes.text.toString()
+                                                                                                val a1123cos=editTxtAño.text.toString()
                                                                                                 cultivados1123.setValue(cos1123.toInt())
                                                                                                 dia1123cult.setValue(d1123cos.toInt())
                                                                                                 mes1123cult.setValue(m1123cos.toInt())
@@ -1623,10 +1623,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         3 -> {
-                                                                                                var cos1124=editTxtCultivados.text.toString()
-                                                                                                var d1124cos=editTxtDia.text.toString()
-                                                                                                var m1124cos=editTxtMes.text.toString()
-                                                                                                var a1124cos=editTxtAño.text.toString()
+                                                                                                val cos1124=editTxtCultivados.text.toString()
+                                                                                                val d1124cos=editTxtDia.text.toString()
+                                                                                                val m1124cos=editTxtMes.text.toString()
+                                                                                                val a1124cos=editTxtAño.text.toString()
                                                                                                 cultivados1124.setValue(cos1124.toInt())
                                                                                                 dia1124cult.setValue(d1124cos.toInt())
                                                                                                 mes1124cult.setValue(m1124cos.toInt())
@@ -1635,10 +1635,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         4 -> {
-                                                                                                var cos1125=editTxtCultivados.text.toString()
-                                                                                                var d1125cos=editTxtDia.text.toString()
-                                                                                                var m1125cos=editTxtMes.text.toString()
-                                                                                                var a1125cos=editTxtAño.text.toString()
+                                                                                                val cos1125=editTxtCultivados.text.toString()
+                                                                                                val d1125cos=editTxtDia.text.toString()
+                                                                                                val m1125cos=editTxtMes.text.toString()
+                                                                                                val a1125cos=editTxtAño.text.toString()
                                                                                                 cultivados1125.setValue(cos1125.toInt())
                                                                                                 dia1125cult.setValue(d1125cos.toInt())
                                                                                                 mes1125cult.setValue(m1125cos.toInt())
@@ -1647,10 +1647,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         5 -> {
-                                                                                                var cos1126=editTxtCultivados.text.toString()
-                                                                                                var d1126cos=editTxtDia.text.toString()
-                                                                                                var m1126cos=editTxtMes.text.toString()
-                                                                                                var a1126cos=editTxtAño.text.toString()
+                                                                                                val cos1126=editTxtCultivados.text.toString()
+                                                                                                val d1126cos=editTxtDia.text.toString()
+                                                                                                val m1126cos=editTxtMes.text.toString()
+                                                                                                val a1126cos=editTxtAño.text.toString()
                                                                                                 cultivados1126.setValue(cos1126.toInt())
                                                                                                 dia1126cult.setValue(d1126cos.toInt())
                                                                                                 mes1126cult.setValue(m1126cos.toInt())
@@ -1659,10 +1659,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         6 -> {
-                                                                                                var cos1127=editTxtCultivados.text.toString()
-                                                                                                var d1127cos=editTxtDia.text.toString()
-                                                                                                var m1127cos=editTxtMes.text.toString()
-                                                                                                var a1127cos=editTxtAño.text.toString()
+                                                                                                val cos1127=editTxtCultivados.text.toString()
+                                                                                                val d1127cos=editTxtDia.text.toString()
+                                                                                                val m1127cos=editTxtMes.text.toString()
+                                                                                                val a1127cos=editTxtAño.text.toString()
                                                                                                 cultivados1127.setValue(cos1127.toInt())
                                                                                                 dia1127cult.setValue(d1127cos.toInt())
                                                                                                 mes1127cult.setValue(m1127cos.toInt())
@@ -1671,10 +1671,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         7 -> {
-                                                                                                var cos1128=editTxtCultivados.text.toString()
-                                                                                                var d1128cos=editTxtDia.text.toString()
-                                                                                                var m1128cos=editTxtMes.text.toString()
-                                                                                                var a1128cos=editTxtAño.text.toString()
+                                                                                                val cos1128=editTxtCultivados.text.toString()
+                                                                                                val d1128cos=editTxtDia.text.toString()
+                                                                                                val m1128cos=editTxtMes.text.toString()
+                                                                                                val a1128cos=editTxtAño.text.toString()
                                                                                                 cultivados1128.setValue(cos1128.toInt())
                                                                                                 dia1128cult.setValue(d1128cos.toInt())
                                                                                                 mes1128cult.setValue(m1128cos.toInt())
@@ -1683,10 +1683,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         8 -> {
-                                                                                                var cos1129=editTxtCultivados.text.toString()
-                                                                                                var d1129cos=editTxtDia.text.toString()
-                                                                                                var m1129cos=editTxtMes.text.toString()
-                                                                                                var a1129cos=editTxtAño.text.toString()
+                                                                                                val cos1129=editTxtCultivados.text.toString()
+                                                                                                val d1129cos=editTxtDia.text.toString()
+                                                                                                val m1129cos=editTxtMes.text.toString()
+                                                                                                val a1129cos=editTxtAño.text.toString()
                                                                                                 cultivados1129.setValue(cos1129.toInt())
                                                                                                 dia1129cult.setValue(d1129cos.toInt())
                                                                                                 mes1129cult.setValue(m1129cos.toInt())
@@ -1695,10 +1695,10 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 contcultivados112.setValue(contadorcultivados112)
                                                                                         }
                                                                                         9 -> {
-                                                                                                var cos11210=editTxtCultivados.text.toString()
-                                                                                                var d11210cos=editTxtDia.text.toString()
-                                                                                                var m11210cos=editTxtMes.text.toString()
-                                                                                                var a11210cos=editTxtAño.text.toString()
+                                                                                                val cos11210=editTxtCultivados.text.toString()
+                                                                                                val d11210cos=editTxtDia.text.toString()
+                                                                                                val m11210cos=editTxtMes.text.toString()
+                                                                                                val a11210cos=editTxtAño.text.toString()
                                                                                                 cultivados11210.setValue(cos11210.toInt())
                                                                                                 dia11210cult.setValue(d11210cos.toInt())
                                                                                                 mes11210cult.setValue(m11210cos.toInt())
