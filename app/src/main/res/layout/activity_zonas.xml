@@ -34,7 +34,7 @@
     <EditText
         android:id="@+id/editTxtEmbolsados"
         android:layout_width="160dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/CantidadEmbolsados"
@@ -64,7 +64,7 @@
     <EditText
         android:id="@+id/editTxtCultivados"
         android:layout_width="155dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/CantidadCultivados"

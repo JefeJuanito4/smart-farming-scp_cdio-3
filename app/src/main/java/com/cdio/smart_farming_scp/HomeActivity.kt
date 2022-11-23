@@ -187,7 +187,7 @@ class HomeActivity : AppCompatActivity() {
 
                 var id_CULT = db.getReference(ruta)
                 GlobalScope.launch {
-                    //myID.add((id_CULT.get().await().value as Long).toString())
+                    //myID.add(id_CULT.get().await().value as String)
                 }
                 i++
                 if(i==8)i=0
