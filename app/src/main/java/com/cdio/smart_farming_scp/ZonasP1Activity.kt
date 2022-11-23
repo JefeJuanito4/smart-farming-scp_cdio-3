@@ -41,26 +41,16 @@ class ZonasP1Activity: AppCompatActivity1() {
                 botonZona11.visibility = View.VISIBLE
                 botonZona12.visibility = View.INVISIBLE
                 botonZona13.visibility = View.INVISIBLE
-                botonZona14.visibility = View.INVISIBLE
 
                 if (p1 == 1) {
                     botonmasP1.visibility = View.VISIBLE
                     botonZona12.visibility = View.VISIBLE
                     botonZona13.visibility = View.INVISIBLE
-                    botonZona14.visibility = View.INVISIBLE
                 } else {
                     if (p1 == 2) {
                         botonmasP1.visibility = View.VISIBLE
                         botonZona12.visibility = View.VISIBLE
                         botonZona13.visibility = View.VISIBLE
-                        botonZona14.visibility = View.INVISIBLE
-                    } else {
-                        if (p1 == 3) {
-                            botonmasP1.visibility = View.VISIBLE
-                            botonZona12.visibility = View.VISIBLE
-                            botonZona13.visibility = View.VISIBLE
-                            botonZona14.visibility = View.VISIBLE
-                        }
                     }
                 }
 
@@ -68,14 +58,13 @@ class ZonasP1Activity: AppCompatActivity1() {
                     when (p1){
                         0 -> botonZona12.visibility = View.VISIBLE
                         1 -> botonZona13.visibility = View.VISIBLE
-                        2 -> botonZona14.visibility = View.VISIBLE
                     }
-                    if (p1 == 3) {
+                    if (p1 == 2) {
                         botonmasP1.visibility = View.INVISIBLE
                     } else {
                         botonmasP1.visibility = View.VISIBLE
                         p1++
-                        if (p1== 3) {
+                        if (p1== 2) {
                             botonmasP1.visibility = View.INVISIBLE
                         }
                     }
@@ -98,12 +87,6 @@ class ZonasP1Activity: AppCompatActivity1() {
 
         binding.botonZona13.setOnClickListener {
             idz = 3
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
-        }
-
-        binding.botonZona14.setOnClickListener {
-            idz = 4
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP1Activity, ZonasActivity::class.java))
         }

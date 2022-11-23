@@ -50,26 +50,16 @@ class ZonasP2Activity : AppCompatActivity() {
                 botonZona21.visibility = View.VISIBLE
                 botonZona22.visibility = View.INVISIBLE
                 botonZona23.visibility = View.INVISIBLE
-                botonZona24.visibility = View.INVISIBLE
 
                 if (p2 == 1) {
                     botonmasP2.visibility = View.VISIBLE
                     botonZona22.visibility = View.VISIBLE
                     botonZona23.visibility = View.INVISIBLE
-                    botonZona24.visibility = View.INVISIBLE
                 } else {
                     if (p2 == 2) {
                         botonmasP2.visibility = View.VISIBLE
                         botonZona22.visibility = View.VISIBLE
                         botonZona23.visibility = View.VISIBLE
-                        botonZona24.visibility = View.INVISIBLE
-                    } else {
-                        if (p2 == 3) {
-                            botonmasP2.visibility = View.VISIBLE
-                            botonZona22.visibility = View.VISIBLE
-                            botonZona23.visibility = View.VISIBLE
-                            botonZona24.visibility = View.VISIBLE
-                        }
                     }
                 }
 
@@ -77,14 +67,13 @@ class ZonasP2Activity : AppCompatActivity() {
                     when (p2) {
                         0 -> botonZona22.visibility = View.VISIBLE
                         1 -> botonZona23.visibility = View.VISIBLE
-                        2 -> botonZona24.visibility = View.VISIBLE
                     }
-                    if (p2 == 3) {
+                    if (p2 == 2) {
                         botonmasP2.visibility = View.INVISIBLE
                     } else {
                         botonmasP2.visibility = View.VISIBLE
                         p2++
-                        if (p2 == 3) {
+                        if (p2 == 2) {
                             botonmasP2.visibility = View.INVISIBLE
                         }
                     }
@@ -107,12 +96,6 @@ class ZonasP2Activity : AppCompatActivity() {
 
         binding.botonZona23.setOnClickListener {
             idz = 3
-            id_zonaU1.setValue(idz)
-            startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
-        }
-
-        binding.botonZona24.setOnClickListener {
-            idz = 4
             id_zonaU1.setValue(idz)
             startActivity(Intent(this@ZonasP2Activity, ZonasActivity::class.java))
         }
