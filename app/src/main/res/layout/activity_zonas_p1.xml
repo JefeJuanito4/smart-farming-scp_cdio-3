@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/botonmasP1"
-        android:layout_width="107dp"
-        android:layout_height="83dp"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
         android:background="@drawable/button_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,65 +22,49 @@
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/botonZona14"
-        android:layout_width="148dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="16dp"
-        android:text="ZONA 4"
-        android:textSize="20sp"
-        android:background="@drawable/button_rounded_border"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonZona12"
-        app:layout_constraintVertical_bias="0.0"
-        tools:visibility="invisible" />
-
-    <Button
         android:id="@+id/botonZona12"
         android:layout_width="148dp"
         android:layout_height="90dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/button_rounded_border"
         android:text="ZONA 2"
         android:textSize="20sp"
-        android:background="@drawable/button_rounded_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156"
+        app:layout_constraintTop_toBottomOf="@+id/botonZona11"
+        app:layout_constraintVertical_bias="0.633"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/botonZona13"
         android:layout_width="148dp"
         android:layout_height="90dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/button_rounded_border"
         android:text="ZONA 3"
         android:textSize="20sp"
-        android:background="@drawable/button_rounded_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonZona11"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/botonZona12"
+        app:layout_constraintVertical_bias="0.573"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/botonZona11"
         android:layout_width="148dp"
         android:layout_height="90dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/button_rounded_border"
         android:text="ZONA 1"
         android:textSize="20sp"
-        android:background="@drawable/button_rounded_border"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156"
         tools:visibility="visible" />
 
     <TextView

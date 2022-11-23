@@ -7,6 +7,18 @@
     tools:context=".ZonasActivity">
 
     <TextView
+        android:id="@+id/txtInfo2"
+        android:layout_width="292dp"
+        android:layout_height="43dp"
+        android:text="@string/info22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
         android:id="@+id/txtEmbolsados"
         android:layout_width="184dp"
         android:layout_height="41dp"
@@ -40,8 +52,8 @@
         android:id="@+id/txtCultivados"
         android:layout_width="181dp"
         android:layout_height="43dp"
-        android:text="@string/platanosCultivados"
         android:gravity="center"
+        android:text="@string/platanosCosechados"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
@@ -160,12 +172,12 @@
         android:id="@+id/txtInfo"
         android:layout_width="292dp"
         android:layout_height="43dp"
-        android:text="@string/llena_los_campos_vacios_con_0_si_no_hay_"
+        android:text="@string/info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintVertical_bias="0.42" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
