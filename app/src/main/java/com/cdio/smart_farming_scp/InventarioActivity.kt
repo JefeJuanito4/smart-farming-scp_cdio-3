@@ -4,11 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.cdio.smart_farming_scp.databinding.ActivityInventarioBinding
-
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 
 class InventarioActivity : AppCompatActivity(){
 
+    private val database = Firebase.database
     private lateinit var binding: ActivityInventarioBinding
 
     override fun onCreate(savedInstanceState: Bundle?){
