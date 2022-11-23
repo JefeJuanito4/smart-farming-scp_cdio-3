@@ -7,23 +7,54 @@
     tools:context=".ZonasActivity">
 
     <TextView
+        android:id="@+id/txtInfo3"
+        android:layout_width="188dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="@string/var"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
         android:id="@+id/txtInfo2"
         android:layout_width="292dp"
         android:layout_height="43dp"
         android:text="@string/info22"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="292dp"
+        android:layout_height="43dp"
+        android:text="@string/info"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/txtEmbolsados"
         android:layout_width="184dp"
         android:layout_height="41dp"
-        android:text="@string/platanosEmbolsados"
         android:gravity="center"
+        android:text="@string/platanosEmbolsados"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
@@ -54,6 +85,8 @@
         android:layout_height="43dp"
         android:gravity="center"
         android:text="@string/platanosCosechados"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
@@ -79,10 +112,12 @@
 
     <Button
         android:id="@+id/botonGuardarZonas"
-        android:layout_width="86dp"
-        android:layout_height="65dp"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
         android:background="@drawable/button_rounded_border"
+        android:backgroundTint="@color/verde"
         android:text="@string/GuardarInfo"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -141,6 +176,8 @@
         android:layout_width="304dp"
         android:layout_height="41dp"
         android:text="@string/ingrese_la_fecha_de_ingreso_de_datos_con_formato_dd_mm_aaaa"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.373"
@@ -154,7 +191,8 @@
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/button_rounded"
+        android:background="@android:drawable/gallery_thumb"
+        android:backgroundTint="@color/verde"
         android:gravity="center"
         android:text="@string/informacion_zona"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -167,17 +205,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
-    <TextView
-        android:id="@+id/txtInfo"
-        android:layout_width="292dp"
-        android:layout_height="43dp"
-        android:text="@string/info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

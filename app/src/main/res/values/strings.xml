@@ -101,5 +101,6 @@
     <string name="platanosCosechados">PLATANOS COSECHADOS</string>
     <string name="info">- Deja los campos vacíos si no hay información de plátanos por ingresar</string>
     <string name="info22">- Ingresa solo números enteros</string>
+    <string name="var">RECOMENDACIONES</string>
 
 </resources>
