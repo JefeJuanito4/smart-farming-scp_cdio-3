@@ -30,7 +30,6 @@ enum class ProviderType{
 class HomeActivity : AppCompatActivity() {
 
 
-    private val db = Firebase.database//.reference
 
     private lateinit var binding: ActivityHomeBinding
 
@@ -44,29 +43,9 @@ class HomeActivity : AppCompatActivity() {
     lateinit var  actividad_inventario: MenuItem
     lateinit var  actividad_calendario: MenuItem
 
-    //VARIABLES QUE TRAEN LA INFO DE LA BASE DE DATOS
-    var myID= ArrayList<String>()
-    var racimosEMBOLSADOS = ArrayList<String>()
+
     var totalracCult = 409
     var totalracEmb = 1209
-    var racimosCULTIVADOS = ArrayList<String>()
-    var fechas= ArrayList<String>()
-
-    //variables categoicas
-    var usu = "USUARIO"
-    var numusu = 1//2 //numero usuario
-    var pros = "PROPIEDADES"
-    var numpros = 1//2 //numero propiedades
-    var pro = "PROPIEDAD"
-    var numpro = 11//2 //numero propiedades
-    var zon = "ZONA"
-    var numzon = 111//3 //numero usuario
-    var fech = "FECHAINV"
-    var numfech = 111 //numero FECHAINV
-    var numerofechas = 2 // variable que itera en los for <---------------------
-
-    //Variables auxiliares
-    var info = true // esta ---------------------> debo verificar si se han subido datos para llamar la info nueva.
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?){
@@ -75,11 +54,7 @@ class HomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        while (info){
-            llamarinfoDb()
-            info = !info
-        } // traigo la info de la bd
-        traerInfo()
+
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
         val navView: NavigationView = findViewById(R.id.navegadorLateral)
         //asignar la varriable local los valores de variable gloaal
@@ -144,114 +119,4 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    private fun llamarinfoDb(){
-
-        val Varint = arrayOf("EMBOLSADOS", "año",  "mes",  "dia", "CULTIVADOS","año","mes", "dia")//variablesInternas
-        var i = 0
-
-        var ruta: String
-
-        //for para traer fechas del mes actual
-//for (i in 1..10 step 3)
-        /*for (j in 1..10) {
-            for (x in 1..2) {
-                if (x == 1) {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + Varint[2] + numfech + j
-                } else {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + Varint[6]+ numfech + j + "cult"
-                }
-
-                 var id_CULT = db.getReference(ruta)
-
-                GlobalScope.launch {
-                    myID.add(id_CULT.get().await().value as String)
-
-
-                    println(myID)
-                }
-
-            }
-            println("   ")
-        }*/
-
-
-        //for (x in Varint.indices) {
-        for (j in 1..numerofechas) {
-            for (x in Varint) {
-                if (i <= 4) {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + x + numfech + j
-                } else {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + x + numfech + j + "cult"
-                }
-                println(ruta)
-
-                var id_CULT = db.getReference(ruta)
-                GlobalScope.launch {
-                    myID.add(id_CULT.get().await().value as String)
-                }
-                i++
-                if(i==8)i=0
-            }
-            println("   ")
-        }
-        println("Racimos toda la info2222222222222222222")
-        for (i in myID.indices) {
-            print("sdddddddddddddddddd: ")
-            println(myID[i])
-
-        }
-    }
-
-    private fun traerInfo(){
-        /*firebaseDatabase = getInstance()
-        databaseReference = firebaseDatabase?.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111")
-        //database = getInstance().getReference("USUARIO1")
-            //FirebaseDatabase.getInstance().getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1111")
-        val child = databaseReference?.child("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111")?.get()?.addOnSuccessListener {
-
-        }*/
-        estableccerFechas()
-        println("Racimos toda la info")
-        for (i in myID.indices) {
-            print("sdddddddddddddddddd: ")
-            println(myID[i])
-
-        }
-        println()
-        println("Racimos embolsados")
-        for (i in racimosEMBOLSADOS.indices) {
-            print("sdddddddddddddddddd: ")
-            println(racimosEMBOLSADOS[i])
-
-        }
-        println()
-        println("Racimos cultivados")
-        for (i in racimosCULTIVADOS.indices) {
-            print("sdddddddddddddddddd: ")
-            println(racimosCULTIVADOS[i])
-
-        }
-        println()
-        println("FEchass")
-        for (array in fechas) {
-            for (value in array) {
-                print(value)
-            }
-            println()
-        }
-    }
-
-    private fun estableccerFechas() {
-        var i=0
-        for(g in myID.indices){
-            if (i == 0) racimosEMBOLSADOS.add(myID[g])
-            else if (i in 1..3)  fechas.add(myID[g])
-            else if (i == 4) racimosCULTIVADOS.add(myID[g])
-            else if (i in 5..7) fechas.add(myID[g])
-            i++
-            if(i==8)i=0
-        }
-        println("PFGHHHHHHHHHHHHHHHHHHHHHHHHH")
-        //calendar.set(2022,11,22)
-    }
 }
