@@ -10,32 +10,83 @@ import kotlin.math.roundToInt
 
 
 class EstadisticaInventario : AppCompatActivity() {
-    private lateinit var binding: EstadisticasInventarioBinding
+   // val bundle: Bundle? = intent.extras
 
+    //val embolsados11: String? = bundle?.getString("TracimosEmbolsadosP1")
+
+    //val cantTotcos1: String? = bundle?.getString("TracimosCultivadosP1")
+
+   // val cantTotemb2: String? = bundle?.getString("TracimosCultivadosP2")
+
+   // val cantTotcos2: String? = bundle?.getString("TracimosCultivadosP2")
+
+    val embo: String= "Tembolsados1"
+    var embolsados1 = 5
+    private lateinit var binding: EstadisticasInventarioBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = EstadisticasInventarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val puntos= ArrayList<Bar>()
+        val puntos1= ArrayList<Bar>()
+        val barra = Bar()
+        val color = generarColorHexAleatorio()
+        barra.color = Color.parseColor(color)
+        barra.name = embo
+        barra.value = embolsados1.toFloat()
 
-        binding.botonAgregar.setOnClickListener {
+        puntos1.add(barra)
+
+        val grafica = findViewById<View>(R.id.graphBar) as BarGraph
+        grafica.bars = puntos1
+
+
+        val puntos = ArrayList<Bar>()
+      // val puntos1 = ArrayList<Bar>()
+
+        binding.botonGrficar.setOnClickListener {
             graficarBarras(puntos)
         }
 
+        binding.buttonAgregar.setOnClickListener{
+            agregarGraficasBarras(puntos1)
+        }
+
+
     }
 
-    fun graficarBarras( puntos: ArrayList<Bar>){
+
+    fun agregarGraficasBarras(puntos1: ArrayList<Bar>) {
+
         val barra = Bar()
-        val color =generarColorHexAleatorio()
-        barra.color =Color.parseColor(color)
-        barra.name =binding.concepto.text.toString()
+        val color = generarColorHexAleatorio()
+        barra.color = Color.parseColor(color)
+        barra.name = embo
+        barra.value = embolsados1.toFloat()
+
+        puntos1.add(barra)
+
+        val grafica = findViewById<View>(R.id.graphBar) as BarGraph
+        grafica.bars = puntos1
+
+
+    }
+
+    fun graficarBarras( puntos: ArrayList<Bar>) {
+
+        val barra = Bar()
+        val color = generarColorHexAleatorio()
+        barra.color = Color.parseColor(color)
+        barra.name = binding.concepto.text.toString()
         barra.value = binding.valor.text.toString().toFloat()
 
         puntos.add(barra)
 
-        val grafica =findViewById<View>(R.id.graphBar) as BarGraph
+        val grafica = findViewById<View>(R.id.graphBar) as BarGraph
         grafica.bars = puntos
+
+
+
     }
 
     fun generarColorHexAleatorio(): String {

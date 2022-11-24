@@ -30,14 +30,14 @@
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/botonAgregar"
+        android:id="@+id/botonGrficar"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="170dp"
         android:background="@drawable/button_rounded_border"
-        android:text="@string/agregar"
-        android:textColor="@color/verdeoscuro"/>
+        android:text="@string/GRAFICAR"
+        android:textColor="@color/verdeoscuro" />
 
     <com.echo.holographlibrary.BarGraph
         android:id="@+id/graphBar"
@@ -45,6 +45,15 @@
         android:layout_height="341dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="250dp" />
+
+    <Button
+        android:id="@+id/buttonAgregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/agregar" />
 
 
 </FrameLayout>
