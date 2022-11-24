@@ -1,6 +1,7 @@
 package com.cdio.smart_farming_scp
 
 
+import android.content.Intent
 import android.os.Build
 
 
@@ -58,7 +59,8 @@ class CalendarioActivity : AppCompatActivity() {
     var pro = "PROPIEDAD"
     var numpro = 11//2 //numero propiedades
     var zon = "ZONA"
-    var numzon = 111//3 //numero usuario
+    var numzon = 11//3 //numero usuario
+    var numzonas = 3
     var fech = "FECHAINV"
     var numfech = 111 //numero FECHAINV
     var numerofechas = 10 // variable que itera en los for
@@ -131,6 +133,9 @@ class CalendarioActivity : AppCompatActivity() {
 
 
         //sumar4meses( )
+        val intent = Intent(this@CalendarioActivity, HomeActivity::class.java)
+        intent.putExtra("P1totalEnbolsados", totalembolsados)
+        intent.putExtra("P1totalCultivados", totalcultivados)
 
 
     }
@@ -280,25 +285,29 @@ if(i==2){
 
 
         //for (x in Varint.indices) {
-        for (j in 1..numerofechas) {
-            for (x in Varint) {
-                if (i <= 4) {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + x + numfech + j
-                } else {
-                    ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + j + "/" + x + numfech + j + "cult"
-                }
-                //println(ruta)
+        for(h in 1..numzonas) {
+            for (j in 1..numerofechas) {
+                for (x in Varint) {
+                    if (i <= 4) {
+                        ruta =
+                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + h +"/" + fech  + numzon + h + j + "/" + x   + numzon + h + j
+                    } else {
+                        ruta =
+                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + h + "/" + fech  + numzon+ h + j + "/" + x   + numzon + h + j + "cult"
+                    }
+                    println(ruta)
 
-                var id_CULT = db.getReference(ruta)
-                GlobalScope.launch {
-                    myID.add(id_CULT.get().await().value as String)
-                    inforbd.add(id_CULT.get().await().value as String)
-                //= id_CULT.get().await().value as String
+                    var id_CULT = db.getReference(ruta)
+                    GlobalScope.launch {
+                        myID.add(id_CULT.get().await().value as String)
+                        inforbd.add(id_CULT.get().await().value as String)
+                        //= id_CULT.get().await().value as String
+                    }
+                    i++
+                    if (i == 8) i = 0
                 }
-                i++
-                if(i==8)i=0
+                println("   ")
             }
-            println("   ")
         }
 
     }
