@@ -86,10 +86,10 @@ class InventarioActivity : AppCompatActivity() {
             binding.ButtonEstaInv.setOnClickListener {
                 val intent2 = Intent(this, EstadisticaInventario::class.java).apply {
                     imprimir ()
-                    //putExtra("TracimosCultivadosP1", totalracCultP1)
-                    //putExtra("TracimosEmbolsadosP1", totalracEmbP1)
-                    //putExtra("TracimosCultivadosP2", totalracCultP2)
-                    // putExtra("TracimosEmbolsadosP2", totalracEmbP2)
+                    putExtra("TracimosCultivadosP1", totalracCultP1)
+                    putExtra("TracimosEmbolsadosP1", totalracEmbP1)
+                    putExtra("TracimosCultivadosP2", totalracCultP2)
+                    putExtra("TracimosEmbolsadosP2", totalracEmbP2)
                 }
                 startActivity(intent2)
 
@@ -97,7 +97,6 @@ class InventarioActivity : AppCompatActivity() {
         }
 
     private fun imprimir (){
-        PRUEBA.setText(local)
         totalracCultP1 = local.toString()
         totalracEmbP1 =local2
         totalracCultP2 = local3

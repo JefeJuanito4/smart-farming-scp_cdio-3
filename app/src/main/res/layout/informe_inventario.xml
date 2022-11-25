@@ -18,15 +18,16 @@
         android:layout_width="196dp"
         android:layout_height="193dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="280dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="268dp"
         android:background="@drawable/button_rounded_border"
         android:contentDescription="@string/botonparagenerarelpdf"
         android:scaleType="centerCrop"
         android:src="@drawable/pdf"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/pdf"
         tools:ignore="ImageContrastCheck" />
 
@@ -51,28 +52,26 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="136dp"
-        android:text="@string/pdf_descargable"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="23dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="136dp"
-        android:background="@color/gris"
-        android:contentDescription="@string/logodedescarga"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Genera tu infome dando un unico click en la imagen, y el informe se te guardara en una carpeta local de la aplicación"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        android:gravity="center"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/stat_sys_download" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Android/data/com.cdio.smart_farming_scp/informe de producción.pdf "
+        android:gravity="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrearPdf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
