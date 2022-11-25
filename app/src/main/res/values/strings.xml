@@ -69,7 +69,7 @@
     <string name="propiedad_n_4">Propiedad N°4</string>
     <string name="cantidad">cantidad</string>
     <string name="cosechaTotal" />
-    <string name="agregar">AGREGAR</string>
+    <string name="AGREGAR">AGREGAR</string>
     <string name="graficar">Graficar</string>
     <string name="valor">Valor</string>
     <string name="Concepto">Concepto</string>
@@ -97,10 +97,17 @@
     <string name="imagendehome">imagendehome</string>
     <string name="_20_racimos_400_kg_martes_11">20 racimos (400 kg) Martes 11</string>
     <string name="calendarioTitulo">Calendario</string>
-    <string name="_50_racimos_1000_kg_miercoles_12">50 racimos (1000 kg) Miercoles 12</string>
+
     <string name="platanosCosechados">PLATANOS COSECHADOS</string>
     <string name="info">- Deja los campos vacíos si no hay información de plátanos por ingresar</string>
     <string name="info22">- Ingresa solo números enteros</string>
     <string name="var">RECOMENDACIONES</string>
+
+    <string name="_50_racimos_1000_kg_miercoles_12">-- --</string>
+
+    <string name="total_de_cosechados">Total de cosechados</string>
+    <string name="total_de_cosechados2">Total de cosechados</string>
+    <string name="GRAFICAR">GRAFICAR</string>
+    <string name="agregar">AGREGAR</string>
 
 </resources>
