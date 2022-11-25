@@ -8,57 +8,30 @@
 
 
     <Button
-        android:id="@+id/botonPropiedad4"
-        android:layout_width="175dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_rounded_border"
-        android:backgroundTint="#426897"
-        android:text="PROPIEDAD 4"
-        android:textSize="20sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonPropiedad3" />
-
-    <Button
-        android:id="@+id/botonPropiedad3"
-        android:layout_width="175dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_rounded_border"
-        android:backgroundTint="#426897"
-        android:text="PROPIEDAD 3"
-        android:textSize="20sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonPropiedad2" />
-
-    <Button
         android:id="@+id/botonPropiedad2"
-        android:layout_width="175dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="210dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/button_rounded_border"
+        android:backgroundTint="@color/verdebloque"
         android:text="@string/propiedad_2"
         android:textSize="20sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonPropiedad1" />
 
-
     <TextView
         android:id="@+id/txtDatosUsuario"
-        android:layout_width="231dp"
-        android:layout_height="41dp"
-        android:background="@drawable/button_rounded"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/gallery_thumb"
         android:backgroundTint="@color/verde"
+        android:gravity="center"
         android:text="@string/datos_del_usuario"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
-        android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,20 +57,22 @@
 
     <Button
         android:id="@+id/botonPropiedad1"
-        android:layout_width="175dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="180dp"
+        android:layout_width="210dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/button_rounded_border"
+        android:backgroundTint="@color/verdebloque"
         android:text="@string/propiedad_1"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/botonmas"
-        android:layout_width="86dp"
-        android:layout_height="76dp"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
         android:background="@drawable/button_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

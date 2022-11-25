@@ -98,12 +98,16 @@
     <string name="_20_racimos_400_kg_martes_11">20 racimos (400 kg) Martes 11</string>
     <string name="calendarioTitulo">Calendario</string>
 
+    <string name="platanosCosechados">PLATANOS COSECHADOS</string>
+    <string name="info">- Deja los campos vacíos si no hay información de plátanos por ingresar</string>
+    <string name="info22">- Ingresa solo números enteros</string>
+    <string name="var">RECOMENDACIONES</string>
+
     <string name="_50_racimos_1000_kg_miercoles_12">-- --</string>
 
     <string name="total_de_cosechados">Total de cosechados</string>
     <string name="total_de_cosechados2">Total de cosechados</string>
     <string name="GRAFICAR">GRAFICAR</string>
     <string name="agregar">AGREGAR</string>
-
 
 </resources>

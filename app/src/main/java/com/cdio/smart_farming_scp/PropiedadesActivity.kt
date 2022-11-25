@@ -15,8 +15,8 @@ class PropiedadesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPropiedadesBinding
 
-    var id= 0
-    var idp=0
+    var id = 0
+    var idp = 0
 
     private val database = Firebase.database
     private var id_propiedad1 = database.getReference("USUARIO1/IDU1/IDPROPIEDADU1")
@@ -34,53 +34,21 @@ class PropiedadesActivity : AppCompatActivity() {
 
             runOnUiThread {
                 binding.botonmas.visibility = View.VISIBLE
-               binding.botonPropiedad2.visibility = View.INVISIBLE
-               binding.botonPropiedad3.visibility = View.INVISIBLE
-               binding.botonPropiedad4.visibility = View.INVISIBLE
+                binding.botonPropiedad1.visibility = View.VISIBLE
+                binding.botonPropiedad2.visibility = View.INVISIBLE
 
                 if (id == 1) {
-                   binding.botonmas.visibility = View.VISIBLE
+                   binding.botonmas.visibility = View.INVISIBLE
                    binding.botonPropiedad2.visibility = View.VISIBLE
-                   binding.botonPropiedad3.visibility = View.INVISIBLE
-                   binding.botonPropiedad4.visibility = View.INVISIBLE
-                } else {
-                    if (id == 2) {
-                      binding.botonmas.visibility = View.VISIBLE
-                     binding.botonPropiedad2.visibility = View.VISIBLE
-                       binding.botonPropiedad3.visibility = View.VISIBLE
-                       binding.botonPropiedad4.visibility = View.INVISIBLE
-                    } else {
-                        if (id == 3) {
-                           binding.botonmas.visibility = View.INVISIBLE
-                           binding.botonPropiedad2.visibility = View.VISIBLE
-                           binding.botonPropiedad3.visibility = View.VISIBLE
-                           binding.botonPropiedad4.visibility = View.VISIBLE
-                        }
-                    }
                 }
 
                binding.botonmas.setOnClickListener {
-                    when (id) {
-                        0 -> binding.botonPropiedad2.visibility = View.VISIBLE
-                        1 ->  binding.botonPropiedad3.visibility = View.VISIBLE
-                        2 ->  binding.botonPropiedad4.visibility = View.VISIBLE
-                        else -> {
-                            binding.botonPropiedad2.visibility = View.VISIBLE
-                            binding.botonPropiedad3.visibility = View.VISIBLE
-                            binding.botonPropiedad4.visibility = View.VISIBLE
-                            binding.botonmas.visibility = View.INVISIBLE
-                        }
-                    }
-                    if (id == 3) {
-                        binding.botonmas.visibility = View.INVISIBLE
-                    } else {
-                        binding.botonmas.visibility = View.VISIBLE
-                        id++
-                        if (id == 3) {
-                            binding.botonmas.visibility = View.INVISIBLE
-                        }
-                    }
-                    id_propiedad1.setValue(id)
+                   if(id == 0){
+                       binding.botonPropiedad2.visibility = View.VISIBLE
+                       binding.botonmas.visibility = View.INVISIBLE
+                       id=1
+                   }
+                   id_propiedad1.setValue(id)
                 }
             }
         }
@@ -95,18 +63,6 @@ class PropiedadesActivity : AppCompatActivity() {
             idp = 2;
             id_botonpropiedad.setValue(idp)
             startActivity(Intent(this@PropiedadesActivity, ZonasP2Activity::class.java));
-        }
-
-        binding.botonPropiedad3.setOnClickListener {
-            idp = 3;
-            id_botonpropiedad.setValue(idp)
-            startActivity(Intent(this@PropiedadesActivity, ZonasP3Activity::class.java));
-        }
-
-        binding.botonPropiedad4.setOnClickListener {
-            idp = 4;
-            id_botonpropiedad.setValue(idp)
-            startActivity(Intent(this@PropiedadesActivity, ZonasP4Activity::class.java));
         }
 
         //Setup

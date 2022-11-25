@@ -253,27 +253,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 8 propiedad 1
                 private var cultivados1118 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/CULTIVADOS1118")
-                private var dia1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/dia1118")
-                private var mes1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/mes1118")
-                private var año1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/año1118")
+                private var dia1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/dia1118cult")
+                private var mes1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/mes1118cult")
+                private var año1118cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/año1118cult")
                 private var embolsados1118 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/EMBOLSADOS1118")
                 private var dia1118 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/dia1118")
                 private var mes1118 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/mes1118")
                 private var año1118 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1118/año1118")
 
                 private var cultivados1128 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/CULTIVADOS1128")
-                private var dia1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/dia1128")
-                private var mes1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/mes1128")
-                private var año1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/año1128")
+                private var dia1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/dia1128cult")
+                private var mes1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/mes1128cult")
+                private var año1128cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/año1128cult")
                 private var embolsados1128 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/EMBOLSADOS1128")
                 private var dia1128 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/dia1128")
                 private var mes1128 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/mes1128")
                 private var año1128 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1128/año1128")
 
                 private var cultivados1138 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/CULTIVADOS1138")
-                private var dia1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/dia1138")
-                private var mes1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/mes1138")
-                private var año1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/año1138")
+                private var dia1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/dia1138cult")
+                private var mes1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/mes1138cult")
+                private var año1138cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/año1138cult")
                 private var embolsados1138 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/EMBOLSADOS1138")
                 private var dia1138 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/dia1138")
                 private var mes1138 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1138/mes1138")
@@ -281,27 +281,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 9 propiedad 1
                 private var cultivados1119 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/CULTIVADOS1119")
-                private var dia1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/dia1119")
-                private var mes1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/mes1119")
-                private var año1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/año1119")
+                private var dia1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/dia1119cult")
+                private var mes1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/mes1119cult")
+                private var año1119cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/año1119cult")
                 private var embolsados1119 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/EMBOLSADOS1119")
                 private var dia1119 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/dia1119")
                 private var mes1119 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/mes1119")
                 private var año1119 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV1119/año1119")
 
                 private var cultivados1129 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/CULTIVADOS1129")
-                private var dia1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/dia1129")
-                private var mes1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/mes1129")
-                private var año1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/año1129")
+                private var dia1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/dia1129cult")
+                private var mes1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/mes1129cult")
+                private var año1129cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/año1129cult")
                 private var embolsados1129 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/EMBOLSADOS1129")
                 private var dia1129 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/dia1129")
                 private var mes1129 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/mes1129")
                 private var año1129 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1129/año1129")
 
                 private var cultivados1139 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/CULTIVADOS1139")
-                private var dia1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/dia1139")
-                private var mes1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/mes1139")
-                private var año1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/año1139")
+                private var dia1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/dia1139cult")
+                private var mes1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/mes1139cult")
+                private var año1139cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/año1139cult")
                 private var embolsados1139 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/EMBOLSADOS1139")
                 private var dia1139 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/dia1139")
                 private var mes1139 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1139/mes1139")
@@ -309,27 +309,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 10 propiedad 1
                 private var cultivados11110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/CULTIVADOS11110")
-                private var dia11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/dia11110")
-                private var mes11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/mes11110")
-                private var año11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/año11110")
+                private var dia11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/dia11110cult")
+                private var mes11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/mes11110cult")
+                private var año11110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/año11110cult")
                 private var embolsados11110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/EMBOLSADOS11110")
                 private var dia11110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/dia11110")
                 private var mes11110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/mes11110")
                 private var año11110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA111/FECHAINV11110/año11110")
 
                 private var cultivados11210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/CULTIVADOS11210")
-                private var dia11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/dia11210")
-                private var mes11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/mes11210")
-                private var año11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/año11210")
+                private var dia11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/dia11210cult")
+                private var mes11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/mes11210cult")
+                private var año11210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/año11210cult")
                 private var embolsados11210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/EMBOLSADOS11210")
                 private var dia11210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/dia11210")
                 private var mes11210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/mes11210")
                 private var año11210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV11210/año11210")
 
                 private var cultivados11310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/CULTIVADOS11310")
-                private var dia11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/dia11310")
-                private var mes11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/mes11310")
-                private var año11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/año11310")
+                private var dia11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/dia11310cult")
+                private var mes11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/mes11310cult")
+                private var año11310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/año11310cult")
                 private var embolsados11310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/EMBOLSADOS11310")
                 private var dia11310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/dia11310")
                 private var mes11310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV11310/mes11310")
@@ -366,7 +366,7 @@ class ZonasActivity : AppCompatActivity() {
 
                 private var cultivados1231 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/CULTIVADOS1231")
                 private var dia1231cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/dia1231cult")
-                 private var mes1231cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/mes1231cult")
+                private var mes1231cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/mes1231cult")
                 private var año1231cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/año1231cult")
                 private var embolsados1231 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/EMBOLSADOS1231")
                 private var dia1231 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1231/dia1231")
@@ -450,12 +450,12 @@ class ZonasActivity : AppCompatActivity() {
 
                 private var cultivados1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/CULTIVADOS1234")
                 private var dia1234cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/dia1234cult")
-                private var mes1234cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/mes1134cult")
-                private var año1234cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/año1134cult")
-                private var embolsados1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/EMBOLSADOS1134")
-                private var dia1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/dia1134")
-                private var mes1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/mes1134")
-                private var año1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA113/FECHAINV1134/año1134")
+                private var mes1234cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/mes1234cult")
+                private var año1234cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/año1234cult")
+                private var embolsados1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/EMBOLSADOS1234")
+                private var dia1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/dia1234")
+                private var mes1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/mes1234")
+                private var año1234 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1234/año1234")
 
                 // FECHA 5 propiedad 2
                 private var cultivados1215 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1215/CULTIVADOS1215")
@@ -467,14 +467,14 @@ class ZonasActivity : AppCompatActivity() {
                 private var mes1215 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1215/mes1215")
                 private var año1215 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1215/año1215")
 
-                private var cultivados1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/CULTIVADOS1125")
-                private var dia1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/dia1125cult")
-                private var mes1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/mes1125cult")
-                private var año1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/año1125cult")
-                private var embolsados1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/EMBOLSADOS1125")
-                private var dia1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/dia1125")
-                private var mes1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/mes1125")
-                private var año1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/ZONA112/FECHAINV1125/año1125")
+                private var cultivados1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/CULTIVADOS1225")
+                private var dia1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/dia1225cult")
+                private var mes1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/mes1225cult")
+                private var año1225cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/año1225cult")
+                private var embolsados1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/EMBOLSADOS1225")
+                private var dia1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/dia1225")
+                private var mes1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/mes1225")
+                private var año1225 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1225/año1225")
 
                 private var cultivados1235 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1235/CULTIVADOS1235")
                 private var dia1235cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1235/dia1235cult")
@@ -543,27 +543,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 8 propiedad 2
                 private var cultivados1218 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/CULTIVADOS1218")
-                private var dia1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/dia1218")
-                private var mes1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/mes1218")
-                private var año1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/año1218")
+                private var dia1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/dia1218cult")
+                private var mes1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/mes1218cult")
+                private var año1218cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/año1218cult")
                 private var embolsados1218 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/EMBOLSADOS1218")
                 private var dia1218 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/dia1218")
                 private var mes1218 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/mes1218")
                 private var año1218 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1218/año1218")
 
                 private var cultivados1228 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/CULTIVADOS1228")
-                private var dia1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/dia1228")
-                private var mes1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/mes1228")
-                private var año1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/año1228")
+                private var dia1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/dia1228cult")
+                private var mes1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/mes1228cult")
+                private var año1228cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/año1228cult")
                 private var embolsados1228 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/EMBOLSADOS1228")
                 private var dia1228 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/dia1228")
                 private var mes1228 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/mes1228")
                 private var año1228 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1228/año1228")
 
                 private var cultivados1238 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/CULTIVADOS1238")
-                private var dia1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/dia1238")
-                private var mes1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/mes1238")
-                private var año1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/año1238")
+                private var dia1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/dia1238cult")
+                private var mes1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/mes1238cult")
+                private var año1238cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/año1238cult")
                 private var embolsados1238 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/EMBOLSADOS1238")
                 private var dia1238 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/dia1238")
                 private var mes1238 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1238/mes1238")
@@ -571,27 +571,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 9 propiedad 2
                 private var cultivados1219 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/CULTIVADOS1219")
-                private var dia1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/dia1219")
-                private var mes1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/mes1219")
-                private var año1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/año1219")
+                private var dia1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/dia1219cult")
+                private var mes1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/mes1219cult")
+                private var año1219cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/año1219cult")
                 private var embolsados1219 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/EMBOLSADOS1219")
                 private var dia1219 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/dia1219")
                 private var mes1219 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/mes1219")
                 private var año1219 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV1219/año1219")
 
                 private var cultivados1229 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/CULTIVADOS1229")
-                private var dia1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/dia1229")
-                private var mes1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/mes1229")
-                private var año1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/año1229")
+                private var dia1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/dia1229cult")
+                private var mes1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/mes1229cult")
+                private var año1229cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/año1229cult")
                 private var embolsados1229 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/EMBOLSADOS1229")
                 private var dia1229 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/dia1229")
                 private var mes1229 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/mes1229")
                 private var año1229 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV1229/año1229")
 
                 private var cultivados1239 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/CULTIVADOS1239")
-                private var dia1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/dia1239")
-                private var mes1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/mes1239")
-                private var año1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/año1239")
+                private var dia1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/dia1239cult")
+                private var mes1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/mes1239cult")
+                private var año1239cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/año1239cult")
                 private var embolsados1239 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/EMBOLSADOS1239")
                 private var dia1239 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/dia1239")
                 private var mes1239 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV1239/mes1239")
@@ -599,27 +599,27 @@ class ZonasActivity : AppCompatActivity() {
 
                 // FECHA 10 propiedad 2
                 private var cultivados12110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/CULTIVADOS12110")
-                private var dia12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/dia12110")
-                private var mes12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/mes12110")
-                private var año12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/año12110")
+                private var dia12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/dia12110cult")
+                private var mes12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/mes12110cult")
+                private var año12110cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/año12110cult")
                 private var embolsados12110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/EMBOLSADOS12110")
                 private var dia12110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/dia12110")
                 private var mes12110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/mes12110")
                 private var año12110 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA121/FECHAINV12110/año12110")
 
                 private var cultivados12210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/CULTIVADOS12210")
-                private var dia12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/dia12210")
-                private var mes12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/mes12210")
-                private var año12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/año12210")
+                private var dia12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/dia12210cult")
+                private var mes12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/mes12210cult")
+                private var año12210cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/año12210cult")
                 private var embolsados12210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/EMBOLSADOS12210")
                 private var dia12210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/dia12210")
                 private var mes12210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/mes12210")
                 private var año12210 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA122/FECHAINV12210/año12210")
 
                 private var cultivados12310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/CULTIVADOS12310")
-                private var dia12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/dia12310")
-                private var mes12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/mes12310")
-                private var año12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/año12310")
+                private var dia12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/dia12310cult")
+                private var mes12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/mes12310cult")
+                private var año12310cult = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/año12310cult")
                 private var embolsados12310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/EMBOLSADOS12310")
                 private var dia12310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/dia12310")
                 private var mes12310 = database.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/ZONA123/FECHAINV12310/mes12310")
@@ -756,8 +756,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                         año11110.setValue(editTxtAño.text.toString())
                                                                         contadorembolsados111=10
                                                                         contembolsados111.setValue(contadorembolsados111)
-                                                                }
-                                                                10 -> {
                                                                         if(contadorcultivados111==10){
                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                         }else
@@ -844,8 +842,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                         año11110cult.setValue(editTxtAño.text.toString())
                                                                         contadorcultivados111=10
                                                                         contcultivados111.setValue(contadorcultivados111)
-                                                                }
-                                                                10 -> {
                                                                         if(contadorembolsados111==10){
                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                         }else
@@ -934,8 +930,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 año11110.setValue(editTxtAño.text.toString())
                                                                                 contadorembolsados111=10
                                                                                 contembolsados111.setValue(contadorembolsados111)
-                                                                        }
-                                                                        10 -> {
                                                                                 if(contadorcultivados111==10){
                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                 }else
@@ -1024,8 +1018,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año11110cult.setValue(editTxtAño.text.toString())
                                                                                         contadorcultivados111=10
                                                                                         contcultivados111.setValue(contadorcultivados111)
-                                                                                }
-                                                                                10 -> {
                                                                                         if(contadorembolsados111==10){
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -1117,8 +1109,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 año11210.setValue(editTxtAño.text.toString())
                                                                                 contadorembolsados112=10
                                                                                 contembolsados112.setValue(contadorembolsados112)
-                                                                        }
-                                                                        10 -> {
                                                                                 if(contadorcultivados112==10){
                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                 }else
@@ -1205,8 +1195,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 año11210cult.setValue(editTxtAño.text.toString())
                                                                                 contadorcultivados112 = 10
                                                                                 contcultivados112.setValue(contadorcultivados112)
-                                                                        }
-                                                                        10 -> {
                                                                                 if(contadorembolsados112==10){
                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                 }else
@@ -1295,8 +1283,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año11210.setValue(editTxtAño.text.toString())
                                                                                         contadorembolsados112=10
                                                                                         contembolsados112.setValue(contadorembolsados112)
-                                                                                }
-                                                                                10 -> {
                                                                                         if(contadorcultivados112==10){
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -1385,8 +1371,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año11210cult.setValue(editTxtAño.text.toString())
                                                                                                 contadorcultivados112 = 10
                                                                                                 contcultivados112.setValue(contadorcultivados112)
-                                                                                        }
-                                                                                        10 -> {
                                                                                                 if(contadorembolsados112==10){
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
@@ -1478,8 +1462,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año11310.setValue(editTxtAño.text.toString())
                                                                                         contadorembolsados113 = 10
                                                                                         contembolsados113.setValue(contadorembolsados113)
-                                                                                }
-                                                                                10 -> {
                                                                                         if (contadorcultivados113 == 10) {
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -1566,8 +1548,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año11310cult.setValue(editTxtAño.text.toString())
                                                                                         contadorcultivados113 = 10
                                                                                         contcultivados113.setValue(contadorcultivados113)
-                                                                                }
-                                                                                10 -> {
                                                                                         if (contadorembolsados113 == 10) {
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         } else
@@ -1576,7 +1556,7 @@ class ZonasActivity : AppCompatActivity() {
                                                                         }
                                                                 }else
                                                                         if (editTxtEmbolsados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                                                                when(contadorembolsados113) {
+                                                                                when (contadorembolsados113) {
                                                                                         0 -> {
                                                                                                 embolsados1131.setValue(editTxtEmbolsados.text.toString())
                                                                                                 dia1131.setValue(editTxtDia.text.toString())
@@ -1656,9 +1636,7 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año11310.setValue(editTxtAño.text.toString())
                                                                                                 contadorembolsados113 = 10
                                                                                                 contembolsados113.setValue(contadorembolsados113)
-                                                                                        }
-                                                                                        10 -> {
-                                                                                                if(contadorcultivados113==10){
+                                                                                                if (contadorcultivados113 == 10) {
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
                                                                                                         botonGuardarZonas.visibility = View.VISIBLE
@@ -1666,7 +1644,7 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 }
                                                                         }else
                                                                                 if (editTxtCultivados.text.isNotEmpty() && editTxtDia.text.isNotEmpty() && editTxtMes.text.isNotEmpty() && editTxtAño.text.isNotEmpty()) {
-                                                                                        when(contadorcultivados113) {
+                                                                                        when (contadorcultivados113) {
                                                                                                 0 -> {
                                                                                                         cultivados1131.setValue(editTxtCultivados.text.toString())
                                                                                                         dia1131cult.setValue(editTxtDia.text.toString())
@@ -1746,11 +1724,9 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                         año11310cult.setValue(editTxtAño.text.toString())
                                                                                                         contadorcultivados113 = 10
                                                                                                         contcultivados113.setValue(contadorcultivados113)
-                                                                                                }
-                                                                                                10 -> {
-                                                                                                        if(contadorembolsados113==10){
+                                                                                                        if (contadorembolsados113 == 10) {
                                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
-                                                                                                        }else
+                                                                                                        } else
                                                                                                                 botonGuardarZonas.visibility = View.VISIBLE
                                                                                                 }
                                                                                         }
@@ -1841,8 +1817,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 año12110.setValue(editTxtAño.text.toString())
                                                                                 contadorembolsados121=10
                                                                                 contembolsados121.setValue(contadorembolsados121)
-                                                                        }
-                                                                        10 -> {
                                                                                 if(contadorcultivados121==10){
                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                 }else
@@ -1929,8 +1903,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                 año12110cult.setValue(editTxtAño.text.toString())
                                                                                 contadorcultivados121=10
                                                                                 contcultivados121.setValue(contadorcultivados121)
-                                                                        }
-                                                                        10 -> {
                                                                                 if(contadorembolsados121==10){
                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                 }else
@@ -2019,8 +1991,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año12110.setValue(editTxtAño.text.toString())
                                                                                         contadorembolsados121=10
                                                                                         contembolsados121.setValue(contadorembolsados121)
-                                                                                }
-                                                                                10 -> {
                                                                                         if(contadorcultivados121==10){
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -2109,8 +2079,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año12110cult.setValue(editTxtAño.text.toString())
                                                                                                 contadorcultivados121=10
                                                                                                 contcultivados121.setValue(contadorcultivados121)
-                                                                                        }
-                                                                                        10 -> {
                                                                                                 if(contadorembolsados121==10){
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
@@ -2202,8 +2170,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año12210.setValue(editTxtAño.text.toString())
                                                                                         contadorembolsados122=10
                                                                                         contembolsados122.setValue(contadorembolsados122)
-                                                                                }
-                                                                                10 -> {
                                                                                         if(contadorcultivados122==10){
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -2290,8 +2256,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                         año12210cult.setValue(editTxtAño.text.toString())
                                                                                         contadorcultivados122 = 10
                                                                                         contcultivados122.setValue(contadorcultivados122)
-                                                                                }
-                                                                                10 -> {
                                                                                         if(contadorembolsados122==10){
                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                         }else
@@ -2380,8 +2344,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año12210.setValue(editTxtAño.text.toString())
                                                                                                 contadorembolsados122=10
                                                                                                 contembolsados122.setValue(contadorembolsados122)
-                                                                                        }
-                                                                                        10 -> {
                                                                                                 if(contadorcultivados122==10){
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
@@ -2470,8 +2432,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                         año12210cult.setValue(editTxtAño.text.toString())
                                                                                                         contadorcultivados122 = 10
                                                                                                         contcultivados122.setValue(contadorcultivados122)
-                                                                                                }
-                                                                                                10 -> {
                                                                                                         if(contadorembolsados122==10){
                                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                         }else
@@ -2563,8 +2523,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año12310.setValue(editTxtAño.text.toString())
                                                                                                 contadorembolsados123 = 10
                                                                                                 contembolsados123.setValue(contadorembolsados123)
-                                                                                        }
-                                                                                        10 -> {
                                                                                                 if (contadorcultivados123 == 10) {
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 }else
@@ -2651,8 +2609,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                 año12310cult.setValue(editTxtAño.text.toString())
                                                                                                 contadorcultivados123 = 10
                                                                                                 contcultivados123.setValue(contadorcultivados123)
-                                                                                        }
-                                                                                        10 -> {
                                                                                                 if (contadorembolsados123 == 10) {
                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                 } else
@@ -2741,8 +2697,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                         año12310.setValue(editTxtAño.text.toString())
                                                                                                         contadorembolsados123 = 10
                                                                                                         contembolsados123.setValue(contadorembolsados123)
-                                                                                                }
-                                                                                                10 -> {
                                                                                                         if (contadorcultivados123 == 10) {
                                                                                                                 botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                         }else
@@ -2831,8 +2785,6 @@ class ZonasActivity : AppCompatActivity() {
                                                                                                                 año12310cult.setValue(editTxtAño.text.toString())
                                                                                                                 contadorcultivados123 = 10
                                                                                                                 contcultivados123.setValue(contadorcultivados123)
-                                                                                                        }
-                                                                                                        10 -> {
                                                                                                                 if (contadorembolsados123 == 10) {
                                                                                                                         botonGuardarZonas.visibility = View.INVISIBLE
                                                                                                                 } else
