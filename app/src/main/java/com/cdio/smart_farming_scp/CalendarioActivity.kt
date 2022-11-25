@@ -33,6 +33,11 @@ class CalendarioActivity : AppCompatActivity() {
     // variables for text view and calendar view
 
     private val db = Firebase.database//.reference
+    private var id_propiedad1cul = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/P1TotalCultivados")
+    private var id_propiedad1emb = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD11/P1TotalEmbolsados")
+    private var id_propiedad1culP2 = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/P2TotalCultivados")
+    private var id_propiedad1embP2 = db.getReference("USUARIO1/PROPIEDADES1/PROPIEDAD12/P2TotalEmbolsados")
+
     lateinit var dateTV: TextView
     lateinit var mascerccana:TextView
     lateinit var cerccana:TextView
@@ -43,8 +48,10 @@ class CalendarioActivity : AppCompatActivity() {
     val inforbd: MutableList<String> = ArrayList()
 
 
-    var totalembolsados = 0
-    var totalcultivados = 0
+    var P1totalembolsados = 0
+    var P1totalcultivados = 0
+    var P2totalembolsados = 0
+    var P2totalcultivados = 0
     var myID = ArrayList<String>()
     var racimosEMBOLSADOS = ArrayList<String>()
     var racimosCULTIVADOS = ArrayList<String>()
@@ -57,7 +64,7 @@ class CalendarioActivity : AppCompatActivity() {
     var pros = "PROPIEDADES"
     var numpros = 1//2 //numero propiedades
     var pro = "PROPIEDAD"
-    var numpro = 11//2 //numero propiedades
+    var numpro = 1//2 //numero propiedades
     var zon = "ZONA"
     var numzon = 11//3 //numero usuario
     var numzonas = 3
@@ -133,9 +140,7 @@ class CalendarioActivity : AppCompatActivity() {
 
 
         //sumar4meses( )
-        val intent = Intent(this@CalendarioActivity, HomeActivity::class.java)
-        intent.putExtra("P1totalEnbolsados", totalembolsados)
-        intent.putExtra("P1totalCultivados", totalcultivados)
+
 
 
     }
@@ -152,29 +157,29 @@ class CalendarioActivity : AppCompatActivity() {
                 fechas.add(myID[g])
 
                 var mesproximo =0
-if(i==2){
-     mesproximo = myID[g].toInt() + 4
-    if(mesproximo > 12) mesproximo = 11
-    println("mes proximo 22222222222 = " + mesproximo)
-}
+                if(i==2){
+                    mesproximo = myID[g].toInt() + 4
+                    if(mesproximo > 12) mesproximo = 11
+                    println("mes proximo 22222222222 = " + mesproximo)
+                }
 
-         /*       if(mesproximo > 16) mesproximo = 11
+                /*       if(mesproximo > 16) mesproximo = 11
 
-                println("mes proximo = " + mesproximo)
-                if (i ==2 &&  mesproximo >=12){
-                var mesproxannio =0
+                       println("mes proximo = " + mesproximo)
+                       if (i ==2 &&  mesproximo >=12){
+                       var mesproxannio =0
 
-                    mesproximo = mesproximo - 12
-                    var anniopromimo = 2023
-                }*/
+                           mesproximo = mesproximo - 12
+                           var anniopromimo = 2023
+                       }*/
 
 
 
-                    var internoshoy = 0
+                var internoshoy = 0
                 var internosmanana = 0
-                var internospasadomanana = 0
+                //var internospasadomanana = 0
 
-                    if(mesproximo.toString() == mesActual.toString() && i==2){//&& j==1
+                if(mesproximo.toString() == mesActual.toString() && i==2){//&& j==1
                     var diasproximos = diaActual.toInt() +1
 
                     if(diaActual == myID[g+1] ){
@@ -189,8 +194,8 @@ if(i==2){
                         }
                         else{
                             internoshoy += myID[g-2].toInt()
-                        fechaponida = "Hoy " +internoshoy +" racimos (" + myID[g-2].toInt()*pesoKilo + " Kg aprox) "//+ myID[g-1] +"-"+myID[g]+"-"+myID[g+1]
-                        mascerccana.setText( fechaponida)}}
+                            fechaponida = "Hoy " +internoshoy +" racimos (" + myID[g-2].toInt()*pesoKilo + " Kg aprox) "//+ myID[g-1] +"-"+myID[g]+"-"+myID[g+1]
+                            mascerccana.setText( fechaponida)}}
 
 
                     else if(diasproximos.toString() == myID[g+1] ){
@@ -249,16 +254,16 @@ if(i==2){
 
         var ruta: String
 
-       /*  ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + 1 + "/" + Varint[6]+ numfech + 1 + "cult"
-        println(ruta)
+        /*  ruta = usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + "/" + fech + numfech + 1 + "/" + Varint[6]+ numfech + 1 + "cult"
+         println(ruta)
 
-        var id_CULT = db.getReference(ruta)
+         var id_CULT = db.getReference(ruta)
 
-        GlobalScope.launch {
-            myID.add((id_CULT.get().await().value as Long).toString())
+         GlobalScope.launch {
+             myID.add((id_CULT.get().await().value as Long).toString())
 
-            println(ninj)
-        }*/
+             println(ninj)
+         }*/
 
         //for para traer fechas del mes actual
 //for (i in 1..10 step 3)
@@ -284,31 +289,58 @@ if(i==2){
         }*/
 
 
+
+//me falta una estructura d control para la propiedad 2
         //for (x in Varint.indices) {
-        for(h in 1..numzonas) {
+        for (f in 1..numpro) {
+            for (h in 1..numzonas) {
+                for (j in 1..numerofechas) {
+                    for (x in Varint) {
+                        if (i <= 4) {
+                            ruta =
+                                usu + numusu + "/" + pros + numpros + "/" + pro + numpro + f + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j
+                        } else {
+                            ruta =
+                                usu + numusu + "/" + pros + numpros + "/" + pro + numpro + f + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j + "cult"
+                        }
+                        println(ruta)
+
+                        var id_CULT = db.getReference(ruta)
+                        GlobalScope.launch {
+                            myID.add(id_CULT.get().await().value as String)
+                            inforbd.add(id_CULT.get().await().value as String)
+                            //= id_CULT.get().await().value as String
+                        }
+                        i++
+                        if (i == 8) i = 0
+                    }
+                    println("   ")
+                }
+            }
+        }
+
+        //funcion para vaciar la base de datos---> basta con combiar el "2" (vacia la propiedad 1 usuario1) por "1" (vacia la propiedad 1 usuario1) (vacia la propiedad 2 usuario1)
+        /*for (h in 1..numzonas) {
             for (j in 1..numerofechas) {
                 for (x in Varint) {
                     if (i <= 4) {
                         ruta =
-                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + h +"/" + fech  + numzon + h + j + "/" + x   + numzon + h + j
+                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "2" + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j
                     } else {
                         ruta =
-                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "/" + zon + numzon + h + "/" + fech  + numzon+ h + j + "/" + x   + numzon + h + j + "cult"
+                            usu + numusu + "/" + pros + numpros + "/" + pro + numpro + "2" + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j + "cult"
                     }
                     println(ruta)
 
                     var id_CULT = db.getReference(ruta)
-                    GlobalScope.launch {
-                        myID.add(id_CULT.get().await().value as String)
-                        inforbd.add(id_CULT.get().await().value as String)
-                        //= id_CULT.get().await().value as String
-                    }
+                    id_CULT.setValue("0")
                     i++
                     if (i == 8) i = 0
                 }
                 println("   ")
             }
-        }
+        }*/
+
 
     }
     private fun sumar4meses(mes: String): Int {
@@ -320,7 +352,7 @@ if(i==2){
             var anniopromimo = 2023
         }
 
-return mesproximo
+        return mesproximo
     }
 
     private fun traerInfo(diaActual: String, mesActual: String){
@@ -343,29 +375,39 @@ return mesproximo
         }
         println("Racimos embolsados")
         for (i in racimosEMBOLSADOS.indices) {
-            totalembolsados += racimosEMBOLSADOS[i].toInt()
+            P1totalembolsados += racimosEMBOLSADOS[i].toInt()
             print("sdddddddddddddddddd: ")
             println(racimosEMBOLSADOS[i])
         }
-        println("---------------> Total cultivados: " + totalembolsados)
+        println("---------------> Total cultivados: " + P1totalembolsados)
         println()
         println("Racimos cultivados")
         for (i in racimosCULTIVADOS.indices) {
-            totalcultivados += racimosCULTIVADOS[i].toInt()
+            P1totalcultivados += racimosCULTIVADOS[i].toInt()
             print("sdddddddddddddddddd: ")
             println(racimosCULTIVADOS[i])
 
         }
-        println("---------------> Total cultivados: " + totalcultivados)
+        println("---------------> Total cultivados: " + P1totalcultivados)
         println()
         println("FEchass")
         for (array in fechas) {
+
+
             for (value in array) {
                 print(value)
             }
             println()
         }
+
+        println("cultivados ---------------> "+P1totalcultivados)
+        println("embolsados ---------------> "+P1totalembolsados)
+        id_propiedad1cul.setValue(P1totalcultivados.toString())
+        id_propiedad1emb.setValue(P1totalembolsados.toString())
+        id_propiedad1culP2.setValue(P2totalcultivados.toString())
+        id_propiedad1embP2.setValue(P2totalembolsados.toString())
     }
 
 }
+
 
