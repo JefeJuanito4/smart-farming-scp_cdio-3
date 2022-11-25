@@ -53,9 +53,13 @@ class CalendarioActivity : AppCompatActivity() {
     var P2totalembolsados = 0
     var P2totalcultivados = 0
     var myID = ArrayList<String>()
+    var myIDP2 = ArrayList<String>()
     var racimosEMBOLSADOS = ArrayList<String>()
     var racimosCULTIVADOS = ArrayList<String>()
     var fechas = ArrayList<String>()
+    var racimosEMBOLSADOSP2 = ArrayList<String>()
+    var racimosCULTIVADOSP2 = ArrayList<String>()
+    var fechasP2 = ArrayList<String>()
 
 
     //variables categoicas
@@ -64,9 +68,9 @@ class CalendarioActivity : AppCompatActivity() {
     var pros = "PROPIEDADES"
     var numpros = 1//2 //numero propiedades
     var pro = "PROPIEDAD"
-    var numpro = 1//2 //numero propiedades
+    var numpro = 2//2 //numero propiedades
     var zon = "ZONA"
-    var numzon = 11//3 //numero usuario
+    var numzon = 1//3 //numero usuario
     var numzonas = 3
     var fech = "FECHAINV"
     var numfech = 111 //numero FECHAINV
@@ -146,8 +150,8 @@ class CalendarioActivity : AppCompatActivity() {
     }
 
     private fun estableccerFechas(diaActual: String, mesActual: String) {
+        // EL SIGUIENTE PROCESO ES UN TANTO INEFICIENTE, PUES SE REPITE DOS VECES EL MISMO CODIGO (LA SOLUCION ES IMPORATAR LASS VARIABLES A MODIFICAR E EL ARGUMENTO DE LA FUNCION
         var i = 0
-        var j = 0
         for (g in myID.indices) {
             if (i == 0) {
                 if(myID[g] == "2022")racimosEMBOLSADOS.add(myID[g-1])
@@ -162,18 +166,6 @@ class CalendarioActivity : AppCompatActivity() {
                     if(mesproximo > 12) mesproximo = 11
                     println("mes proximo 22222222222 = " + mesproximo)
                 }
-
-                /*       if(mesproximo > 16) mesproximo = 11
-
-                       println("mes proximo = " + mesproximo)
-                       if (i ==2 &&  mesproximo >=12){
-                       var mesproxannio =0
-
-                           mesproximo = mesproximo - 12
-                           var anniopromimo = 2023
-                       }*/
-
-
 
                 var internoshoy = 0
                 var internosmanana = 0
@@ -207,7 +199,6 @@ class CalendarioActivity : AppCompatActivity() {
                         var fechaponida = ""
                         fechaponida = myID[g-2] +" racimos (" + myID[g-2].toInt()*20 + " Kg aprox) "+myID[g+1]+"-"+myID[g] +"-"+ myID[g-1]
                         pococerccana.setText( fechaponida)}
-
                 }
 
             }
@@ -215,9 +206,70 @@ class CalendarioActivity : AppCompatActivity() {
             else if (i in 5..7) fechas.add(myID[g])
             i++
             if (i == 8) i = 0
+        }
 
 
+// LAS SIGUIENTES LINEAS SEPARAN EL ARREGLO myIdeP2 en embolsados  cultivados y fechas
+         i = 0
+        for (g in myIDP2.indices) {
+            if (i == 0) {
+                if(myIDP2[g] == "2022")racimosEMBOLSADOSP2.add(myIDP2[g-1])
+                else racimosEMBOLSADOSP2.add(myIDP2[g])
+            }
+            else if (i in 1..3) {
+                fechasP2.add(myIDP2[g])
 
+                var mesproximo =0
+                if(i==2){ // i = 2, en g, contiene meses del vector de info
+                    mesproximo = myIDP2[g].toInt() + 4
+                    if(mesproximo > 12) mesproximo = 11
+                    println("mes proximo 22222222222 = " + mesproximo)
+                }
+
+                var internoshoy = 0
+                var internosmanana = 0
+                //var internospasadomanana = 0
+
+                if(mesproximo.toString() == mesActual.toString() && i==2){//&& j==1
+                    var diasproximos = diaActual.toInt() +1
+
+                    if(diaActual == myIDP2[g+1] ){
+                        var fechaponida = ""
+
+                        //if(c==0)  fechaponida = myID[c] +"racimosssss" + fechas[c-1] +"-"+fechas[c]+"-"+fechas[c+1]
+
+                        if(myIDP2[g-2] == "2022"){
+                            internoshoy += myIDP2[g-1].toInt()
+                            fechaponida = "Hoy " +internoshoy +" racimos (" + myIDP2[g-2].toInt()*pesoKilo + " Kg aprox) "//+ myID[g-1] +"-"+myID[g]+"-"+myID[g+1]
+                            //mascerccana.setText( fechaponida)
+                        }
+                        else{
+                            internoshoy += myIDP2[g-2].toInt()
+                            fechaponida = "Hoy " +internoshoy +" racimos (" + myIDP2[g-2].toInt()*pesoKilo + " Kg aprox) "//+ myID[g-1] +"-"+myID[g]+"-"+myID[g+1]
+                            //mascerccana.setText( fechaponida)
+                        }
+                    }
+
+
+                    else if(diasproximos.toString() == myIDP2[g+1] ) {
+                                var fechaponida = ""
+                                fechaponida =
+                                    "Mañana " + myIDP2[g - 2] + " racimos (" + myIDP2[g - 2].toInt() * pesoKilo + " Kg aprox) "//+ myID[g-1] +"-"+myID[g]+"-"+myID[g+1]
+                    //            cerccana.setText( fechaponida)
+                    }
+
+                    else if((diasproximos+1).toString() == myIDP2[g+1] ){
+                        var fechaponida = ""
+                        fechaponida = myID[g-2] +" racimos (" + myIDP2[g-2].toInt()*20 + " Kg aprox) "+myIDP2[g+1]+"-"+myIDP2[g] +"-"+ myIDP2[g-1]
+                    //    pococerccana.setText( fechaponida)
+                    }
+                }
+
+            }
+            else if (i == 4) racimosCULTIVADOSP2.add(myIDP2[g])
+            else if (i in 5..7) fechasP2.add(myIDP2[g])
+            i++
+            if (i == 8) i = 0
         }
 
         /*for(c in fechas.indices){
@@ -293,23 +345,28 @@ class CalendarioActivity : AppCompatActivity() {
 //me falta una estructura d control para la propiedad 2
         //for (x in Varint.indices) {
         for (f in 1..numpro) {
+            println("-------------------------------------------> "+numpro)
             for (h in 1..numzonas) {
                 for (j in 1..numerofechas) {
                     for (x in Varint) {
+
                         if (i <= 4) {
                             ruta =
-                                usu + numusu + "/" + pros + numpros + "/" + pro + numpro + f + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j
+                                usu + numusu + "/" + pros + numzon + "/" + pro + numzon + f + "/" + zon + numzon +f + h + "/" + fech + numzon + f + h + j + "/" + x + numzon + f + h + j
                         } else {
                             ruta =
-                                usu + numusu + "/" + pros + numpros + "/" + pro + numpro + f + "/" + zon + numzon + h + "/" + fech + numzon + h + j + "/" + x + numzon + h + j + "cult"
+                                usu + numusu + "/" + pros + numzon + "/" + pro + numzon + f + "/" + zon + numzon +f + h + "/" + fech + numzon+ f + h + j + "/" + x + numzon + f + h + j  + "cult"
                         }
                         println(ruta)
 
                         var id_CULT = db.getReference(ruta)
                         GlobalScope.launch {
-                            myID.add(id_CULT.get().await().value as String)
+                            if(f==1)myID.add(id_CULT.get().await().value as String)
+                            else myIDP2.add(id_CULT.get().await().value as String)
+                            /*myID.add(id_CULT.get().await().value as String)
                             inforbd.add(id_CULT.get().await().value as String)
-                            //= id_CULT.get().await().value as String
+                            //= id_CULT.get().await().value as String*/
+                            //println(myIDP2)
                         }
                         i++
                         if (i == 8) i = 0
