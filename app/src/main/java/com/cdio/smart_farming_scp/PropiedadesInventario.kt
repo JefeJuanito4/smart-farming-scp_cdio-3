@@ -16,7 +16,6 @@ import kotlinx.coroutines.tasks.await
 class PropiedadesInventario : AppCompatActivity() {
     private val DT = Firebase.database
     private lateinit var binding: PropiedadesInventarioBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = PropiedadesInventarioBinding.inflate(layoutInflater)

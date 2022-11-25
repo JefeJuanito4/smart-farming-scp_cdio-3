@@ -28,20 +28,23 @@ import java.lang.Exception
 
 class InformeInventario : AppCompatActivity() {
     private lateinit var binding: InformeInventarioBinding
-    var tituloText = "Este es el titulo del documento"
-    var descripcionText =  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \n" +
-            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, \n" +
-            "when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n" +
-            "It has survived not only five centuries, but also the leap into electronic typesetting, \n" +
-            "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset\n" +
-            " sheets containing Lorem Ipsum passages, and more recently with desktop publishing software\n" +
-            " like Aldus PageMaker including versions of Lorem Ipsum.\n";
+    var titulo1Text= "El total de producción de la propiedad es: "
+    var tituloText = "INFORME DE PRODUCCIÓN"
+    var descripcionText =  "Con el fin de contribuir a procesos internos como lo es el control y manejo de la producción platanera y  \n" +
+            "aportar con dicha información a organizaciones públicas, tales como el Instituto Colombiano Agropecuario ICA, \n" +
+            "que tiene como fin contribuir al desarrollo del sector, velando por la sanidad agropecuaria y el Sistema \n" +
+            "de Información de Gestión y Desempeño de las Organizaciones de Cadenas SIOC, el cual facilita la toma de decisiones\n" +
+            "para establecer metas de las Organizaciones en Cadenas para el mejoramiento continuo y amplie su competitividad.\n" +
+            "Se ha generado este documento el cual contiene la información que cuenta con el total de producción registrado \n" +
+            "en el inventario que desarrollo la compañía Smart Farming,  facilitando procesos de control de inventarios \n"+
+            "y así sistematización la industria.\n";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = InformeInventarioBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
+        val bundle: Bundle? = intent.extras
+        val cantTotcos1: String? = bundle?.getString("TracimosCultivadosP1")
 
 
         val botonpdf =  findViewById<ImageButton>(R.id.btnCrearPdf)
@@ -52,14 +55,18 @@ class InformeInventario : AppCompatActivity() {
         }
 
             botonpdf.setOnClickListener {
-            generarPdf()
+                if (cantTotcos1 != null) {
+                    generarPdf(cantTotcos1)
+                }
         }
     }
 
-    fun generarPdf() {
+    fun generarPdf(cantTotcos1: String) {
 
         var pdfDocument = PdfDocument()
         var paint = Paint()
+        var titulo1 = TextPaint()
+        var descripcion1 = TextPaint()
         var titulo = TextPaint()
         var descripcion = TextPaint()
 
@@ -74,7 +81,15 @@ class InformeInventario : AppCompatActivity() {
 
         titulo.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD))
         titulo.textSize = 20f
-        canvas.drawText(tituloText, 10f, 150f, titulo)
+        canvas.drawText(tituloText, 268f, 150f, titulo)
+
+        titulo1.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD))
+        titulo1.textSize = 20f
+        canvas.drawText(titulo1Text, 50f, 350f, titulo1)
+
+        descripcion1.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD))
+        descripcion1.textSize = 20f
+        canvas.drawText(cantTotcos1, 420f, 350f, descripcion1)
 
         descripcion.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL))
         descripcion.textSize = 14f
@@ -83,12 +98,12 @@ class InformeInventario : AppCompatActivity() {
 
         var y = 200f
         for (item in arrDescripcion) {
-            canvas.drawText(item, 10f, y, descripcion)
+            canvas.drawText(item, 50f, y, descripcion)
             y += 15
         }
 
         pdfDocument.finishPage(pagina1)
-        val file = File(applicationContext.getExternalFilesDir(null), "Archivo.pdf")
+        val file = File(applicationContext.getExternalFilesDir(null), "informe de producción.pdf")
 
         //val file = File(Environment.getExternalStorageDirectory(), "Archivo.pdf")
        // val file = File(applicationContext.filesDir, "Archivo.pdf")
