@@ -7,4 +7,5 @@ el registro de información de la siembra y cosecha del cultivo del plátano par
 que realizan los productores colombianos. 
 
 #Interfaz Usuario:
+
 ![image](https://github.com/JefeJuanito4/smart-farming-scp_cdio-3/assets/71717504/e982c981-8387-4d55-becf-16925fc9911b)
